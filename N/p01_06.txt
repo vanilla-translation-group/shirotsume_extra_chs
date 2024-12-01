@@ -1,0 +1,261 @@
+//----------------------------------------------------------------
+//	リビング。夜。
+//	津名川さん登場
+//----------------------------------------------------------------
+#base_path "../"
+page MsgWait
+{
+	WaitAction("ME*");
+	wait 300;
+}
+
+page Main
+{
+	SetBaseTextInterval( 65 );
+	CreateImage("BA_ROOM", -10,center,middle, "Image/living2.bmp");
+//	CreateEffect("EF_SNOW",-9,240,145,402,185,"Snow");
+	CreateEffect("EF_SNOW",-9,240,145,1608,740,"SlowSnow");
+	Zoom("EF_SNOW",0,250,false);
+	CreateImageEx("BA_WINDOW", -8,238,135, "Image/living2b.png","Normal");
+
+	CreateColor("BLACK",200,in_left,in_top,800,600,"black");
+
+//->1
+//少し時間経過。
+//ピンポーン。
+	Draw();
+/*透花*/CreateBalloon("ME_01", 102, 340,2, 240, 120, "Ellipse" , 320,"<TYPE style=Normal>您是哪位？</TYPE>");
+/*エマ*/CreateBalloon("ME_02", 102, 225,182, 275, 133, "Dumpling" , -20,"<TYPE style=Normal>真是——　,这次又是谁——？</TYPE>");
+/*さゆ*/CreateBalloon("ME_03", 102, 245,360, 180, 120, "Cloud" , 304,"<TYPE style=Normal><FONT face='G' size=20>谁——？</TYPE>");
+	Request("ME_*","Erase");
+	CreateNode("NO_T",50,680,18);
+	CreateNode("NO_E",50,550,200);
+	CreateNode("NO_S",50,445,410);
+	CreateOutlineEx("NO_T/O",50,0,0,200,210, "Fade",#663300,8);
+	CreateOutlineEx("NO_E/O",50,0,0,190,220, "Fade",#663300,8);
+	CreateOutlineEx("NO_S/O",50,0,0,260,180, "Fade",#663300,8);
+	CreateImage("NO_T/1",50,0,0,"Image/tu-1-1-1.bmp");
+	CreateImage("NO_E/1",50,0,0,"Image/tu-1-1-2.bmp");
+	CreateImage("NO_S/1",50,0,0,"Image/tu-1-1-3.bmp");
+	Opaque("NO_*/1",0,0,true);
+	Opaque("NO_*/O",0,0,true);
+	SoundLoad(SE0,"SE/A6_25662.WAV");
+	Draw();
+
+	SoundPlayEx(SE0, "SE/A6_25662.wav", 900, 0, 1000, false);
+//	SoundPlay(SE0,"SE/A6_25662.WAV");	wait 500;
+	DrawEffect("BLACK",1500,"CurtainLeft",0,1000);
+	WaitAction("BLACK");
+
+	Delete("BLACK");
+	MoveEx("NO_T",800,@-100,@0,false,"Dec3");
+	Opaque("NO_T/O",600,1000,false);
+	Opaque("NO_T/1",600,1000,false);	wait 500;
+	Request("ME_01","TapEnter");	call MsgWait;
+	MoveEx("NO_E",800,@-100,@0,false,"Dec3");
+	Opaque("NO_E/O",600,1000,false);
+	Opaque("NO_E/1",600,1000,false);	wait 500;
+	Request("ME_02","TapEnter");	call MsgWait;
+	MoveEx("NO_S",800,@-100,@0,false,"Dec3");
+	Opaque("NO_S/O",600,1000,false);
+	Opaque("NO_S/1",600,1000,false);	wait 500;
+	Request("ME_03","TapEnter");	call MsgWait;
+	WaitKey();
+	Opaque("ME_01",500,0,false);	wait 100;
+	Opaque("ME_02",500,0,false);	wait 100;
+	Opaque("ME_03",500,0,true);
+	Delete("ME_*");
+//	SoundStop(SE0);
+//<-1
+
+//->2
+	Draw();
+/*津名*/CreateBalloon("ME_01", 102, 10,35, 337, 160, "Dumpling", invalid,"<TYPE style=Normal>哈哈哈<BR>,不好意思来晚了,<BR>是我啊</TYPE>");
+/*津名*/CreateBalloon("ME_02", 102, -45,290, 290, 140, "Dumpling", invalid,"<TYPE style=Normal>行李有点多,<BR>空不出来手</TYPE>");
+/*津名*/CreateBalloon("ME_03", 102, 65,385, 260, 125, "Dumpling", invalid,"<TYPE style=Normal>能帮我开下门吗</TYPE>");
+	Request("ME_*","Erase");
+//	CreateImage("IM_TU",50,0,0,"Image/tu-1-1-4.png");
+//	CreateColor("津名川",50,in_left,in_top,200,600,#000066);
+
+	CreateFrameEx("津名川",30,-600,0,"Image/tu-Sky02.bmp", "Fade",#000000,8);
+	CreateEffect("津名川/雪",0,600,0,200,600,"SlowSnow");
+	Opaque("津名川",0,0,true);
+
+	SoundPlayEx(BGM0,"M/BGM_11.ogg",1000,0,1000,true);
+	Draw();
+
+	Opaque("津名川",1200,1000,false);	wait 800;
+	Request("ME_01","Enter");	call MsgWait;
+	Request("ME_02","Enter");	call MsgWait;
+	Request("ME_03","Enter");	call MsgWait;
+	WaitKey();
+	Opaque("ME_*",500,0,true);
+	Delete("ME_*");
+//<-2
+
+//->3
+	Draw();
+/*透花*/CreateBalloon("ME_01", 102, 350,-10, 120, 100, "Ellipse" , invalid,"<TYPE style=Jump><FONT size=22>！</FONT></TYPE>");
+/*透花*/CreateBalloon("ME_02",102, 400,20, 220, 120, "Ellipse" , 320,"<TYPE style=Normal>主人大人···</TYPE>");
+/*エマ*/CreateBalloon("ME_04", 102, 280,180, 200, 130, "Potato" ,-20,"<TYPE style=Normal>宗慈！</TYPE>");
+/*さゆ*/CreateBalloon("ME_03", 102, 570,370, 210, 140, "Cloud" , 220,"<TYPE style=Normal><FONT face='G' size=20>老师～..<BR>终于～</TYPE>");
+	Request("ME_*","Erase");
+	CreateImage("NO_T/2",52,0,0,"Image/tu-1-1-5.bmp");
+	CreateImage("NO_E/2",52,0,0,"Image/tu-1-1-6.bmp");
+	CreateImage("NO_S/2",52,0,0,"Image/tu-1-1-7.bmp");
+	Opaque("NO_T/2",0,0,true);
+	Opaque("NO_E/2",0,0,true);
+	Opaque("NO_S/2",0,0,true);
+	CreateColor("WHITE",200,in_left,in_top,800,600,white);
+	Opaque("WHITE",0,0,true);
+	CreateColor("SIRO",-5,in_left,in_top,800,600,white);
+	Opaque("SIRO",0,0,true);
+	Draw();
+
+	Opaque("NO_T/2",800,1000,false);
+//	Request("ME_01","TapEnter");	wait 500;
+	Request("ME_02","Enter");	call MsgWait;
+	Opaque("NO_E/2",800,1000,false);
+	Request("ME_04","TapEnter");	call MsgWait;
+	Opaque("NO_S/2",800,1000,false);
+	Request("ME_03","TapEnter");	call MsgWait;
+	WaitKey();
+
+	wait 1000;
+	SoundPlay(SE0, "SE/A6_22584.WAV");
+	Opaque("WHITE",1500,1000,true);
+	Opaque("SIRO",0,1000,true);
+	Delete("ME_*");
+	Delete("IM_*");
+	Delete("NO_*");
+	Delete("津名川*");
+//<-3
+//<-3
+
+	System( "DisableControl" );
+
+//->4
+	//ドアを開ける。プレゼントを沢山持った津名川。外は雪。
+/*さゆ*/CreateBalloon("ME_01", 102, 395,213, 360, 175, "Cloud" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=24 face='G'>欢迎回来——！</TYPE>");
+/*えま*/CreateBalloon("ME_02", 102, 180,342, 330, 150, "Ellipse" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=26>欢迎回来——！</TYPE>");
+/*透花*/CreateBalloon("ME_03", 102, 365,450,290, 125, "Dumpling" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=22>欢迎回来——！</TYPE>");
+//そのままゆっくりフェードアウト。
+//終了。
+	Request("ME_*","Erase");
+	CreateImage("BA_SKY",5,0,in_bottom,"Image/tu-sky.bmp");
+	CreateEffect("EF_SKY",10,0,0,800,600,"SlowSnow");
+	CreateColor("KURO",-10,in_left,in_top,800,600,"black");
+	Delete("SIRO");
+	Delete("BA_ROOM");
+	Delete("BA_WINDOW");
+	Delete("EF_SNOW");
+	Draw();
+
+	Move("BA_SKY",17000,@0,in_top,false);
+	Opaque("WHITE",1500,0,true);
+	wait 1500;
+	Request("ME_01","Enter");
+	wait 200;
+	Request("ME_02","Enter");
+	wait 100;
+	Request("ME_03","Enter");	call MsgWait;
+	wait 2000;
+
+	SoundVolume(BGM0,8000,0);
+	Opaque("WHITE",2000, 1000, true);
+	Delete("ME_*");
+	Delete("BA_SKY");
+	Delete("EF_SKY");
+	Delete("KURO");
+	Draw();
+
+//<-4
+
+	CreateNode("Node",250,340,205);
+	CreateImage("Node/IM_PI",00,center,middle,"Image/ex.png");
+	ZoomEx("Node",0,600,600,true,"Acc3");
+
+	CreateImage("IM_INFO",250,320,220,"Image/info.png");
+	Opaque("Node",0,0,true);
+	Opaque("IM_INFO",0,0,true);
+
+	wait 1800;
+	CreateImage("IM_STAFF",250,400,370,"Image/staffroll.png");
+	Opaque("IM_STAFF",0,0,true);
+
+	SoundLoad(SE0,"SE/僇僷.wav"); //カパ.wav
+	SoundLoad(SE1,"SE/僐僩.wav"); //コト.wav
+	SoundLoad(SE2,"SE/僐僩.wav");
+	SoundLoad(SE3,"SE/僐僩.wav");
+	SoundLoad(SE4,"SE/僺儏乕.wav"); //ピュー.wav
+	SoundStop(BGM0);
+	Draw();
+
+	Opaque("IM_STAFF",2500,1000,true);
+	wait 2500;
+	Opaque("IM_STAFF",2000,0,true);
+
+	Opaque("Node",200,1000,false);
+//	Rotate("Node", 450, 720, false);
+
+
+	MoveEx("Node", 500,330,200, false, "Acc2");
+	ZoomEx("Node",400,1400,1400,true,"Acc3");
+	ZoomEx("Node",100,1000,1000,true,"Dec3");
+	wait 100;
+	SoundPlayEx(SE0, "SE/僇僷.wav", 880, 0, 1000, false);
+
+/*
+	ShakeMove("Node",150,@0,@0,5,5,0,0,true);
+	wait 250;
+	ShakeMove("Node",150,@0,@0,5,5,0,0,true);
+	wait 200;
+*/
+
+//	ShakeMove("Node",100,@0,@0,4,4,0,0,true);
+	wait 50;
+
+	Rotate("Node", 50, -30, true);
+	Rotate("Node", 50, 0, true);
+	wait 550;
+
+	SoundPlayEx(SE1, "SE/僐僩.wav", 860, 0, 1000, false);
+	Rotate("Node", 50, -20, true);
+	Rotate("Node", 50, 0, true);
+	wait 50;
+
+	SoundPlayEx(SE2, "SE/僐僩.wav", 880, 0, 1000, false);
+	Rotate("Node", 50, -20, true);
+	Rotate("Node", 50, 0, true);
+	wait 50;
+
+	SoundPlayEx(SE3, "SE/僐僩.wav", 860, 0, 1000, false);
+	Rotate("Node", 50, -20, true);
+	Rotate("Node", 50, 0, false);
+	wait 200;
+
+
+//	Opaque("Node",1000,0,false);
+
+	Opaque("IM_INFO",1500,1000,false);
+	wait 800;
+
+
+	SoundPlayEx(SE4, "SE/僺儏乕.wav", 760, 0, 1000, false);
+	MoveEx("Node", 500,@0,@220, false, "AccSin");
+  	Opaque("Node",500,0,false);
+	Rotate("Node", 500, 1440, false);
+
+//	wait 2200;
+	WaitKey(); 
+
+	Opaque("IM_INFO",1000,0,true);
+	wait 2000;
+
+	Delete("*");
+
+
+
+
+
+}
