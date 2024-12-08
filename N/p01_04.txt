@@ -119,7 +119,7 @@ page Main
 	CreateFrameEx("IM_B1",50, 340,270,"Image/ka-2-2-4.bmp","Shadow",black,8);
 	Opaque("IM_B1",0,0,true);
 
-//	SoundLoad(SE2, "SE/刺す〜深く.wav");	//ブレード
+//	SoundLoad(SE2, "SE/刺す～深く.wav");	//ブレード
 
 	Draw();
 
@@ -133,7 +133,7 @@ page Main
 	DrawEffectEx("IM_B1",300,"LinearRight",1000,0, "Dec4");
 
 	wait 200;
-//	SoundPlay(SE2, "SE/刺す〜深く.wav");	
+//	SoundPlay(SE2, "SE/刺す～深く.wav");	
 
 
 	Request("ME_03","TapEnter");	call MsgWait;

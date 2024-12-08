@@ -240,7 +240,7 @@ page Main
 /*透花*/CreateBalloon("ME_01", 102, 175,45, 320, 145, "Lump" , 300,"<TYPE style=Normal><FONT size=14>斯帕德先生···<BR>,还是搞错了什么···</TYPE>");
 /*エマ*/CreateBalloon("ME_02", 102, 410,360, 255, 150, "Ellipse" ,75,"<TYPE style=Normal>嗯...　毕竟是个<BR>不吸取教训的人啊···</TYPE>");
 
-//1204小林；セリフ変更・削除
+//1204小林；セリフ変更·削除
 ///*エマ*/CreateBalloon("ME_03", 102, 490,405, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>反省とか後悔とか...<BR>そういう言葉とは<BR>無縁ぽかったし···</TYPE>");
 /*さゆ*/CreateBalloon("ME_04", 102, 25,385, 240, 160, "Cloud" , 60,"<TYPE style=Normal><FONT face='G' size=18>真是伤脑筋啊——</TYPE>");
 	Request("ME_*","Erase");
