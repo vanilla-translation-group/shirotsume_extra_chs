@@ -314,7 +314,7 @@ page Main
 
 //1204小林セリフ削除
 //	CreateBalloon("ME_02", 102, 120,80, 360, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>みんな、..<BR>私の誕生日を祝ってくれてありがとう。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 202, 90,330, 460, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>话虽如此，,但在这个世界规模的庆祝活动中，,<BR>就连我的内心也感到激动不已。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 202, 90,330, 460, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>话虽如此，,但在这个世界规模的庆祝活动中，,<BR>就连我的内心也充满了紧张和激动。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	CreateImage("IM_GRA",-2,center,middle,"Image/ku-1-7-58.bmp");
 	Draw();
@@ -359,7 +359,7 @@ page Main
 	Draw();
 	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>说起来前几天，,在三丁目的公园里发现了<BR>一只毛色好、血统好的秋田犬。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 10,220, 415, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>虽然我一直尝试说服他与我合作，,<BR>但他就是不肯答应我。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是答应着我,　<B>汪汪</B>，,<BR>却怎么也不肯答应..　<B>愿意</B>。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是答应着我,　<B>汪汪</B>，,<BR>却怎么也不肯答应我说..　<B>嗯</B>。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	Draw();
 

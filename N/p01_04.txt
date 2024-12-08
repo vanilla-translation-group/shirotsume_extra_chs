@@ -33,7 +33,7 @@ page Main
 /*エマ*/CreateBalloon("ME_02", 102, 185,180, 160, 100, "Ice" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=18>呀<TYPE interval=200 speed=200 style=Spring>—</TYPE>");
 /*上代*/CreateBalloon("ME_03", 102, 325,270, 300, 140, "DropDumpling" , 72,"<TYPE style=Normal><FONT size=18>我带了<BR>礼物来哦——</TYPE>");
 /*透花*/CreateBalloon("ME_04", 102, 190,400, 230, 110, "Clay" , 120,"<FONT size=14><TYPE interval=25>啊..　上代小姐..<BR>很危险的</TYPE>");
-/*透花*/CreateBalloon("ME_05", 102, 244,465, 285, 115, "Clay" , invalid,"<FONT size=14><TYPE interval=20>请不要把刀<BR>拔出来乱挥···</TYPE>");
+/*透花*/CreateBalloon("ME_05", 102, 244,465, 285, 115, "Clay" , invalid,"<FONT size=14><TYPE interval=20>请不要把刀<BR>拿出来乱挥···</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_K1",50, out_right,60,"Image/ka-1-1-1.bmp", "Fade",#663300,8);
 	CreateImage("IM_B1",50, 252,126,"Image/ka-1-1-1a.png");
