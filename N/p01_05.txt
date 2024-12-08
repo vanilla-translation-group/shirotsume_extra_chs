@@ -1,0 +1,341 @@
+//----------------------------------------------------------------
+//	リビング。夜。
+//	品藤さん登場
+//----------------------------------------------------------------
+#base_path "../"
+page MsgWait
+{
+	WaitAction("ME*");
+	wait 300;
+}
+
+page Main
+{
+	SetBaseTextInterval( 50 );
+	CreateFrame("BA_ROOM",-10,center,middle, "Image/living2.bmp");
+	CreateEffect("EF_SNOW",-9,240,145,1608,740,"SlowSnow");
+	Zoom("EF_SNOW",0,250,false);
+	CreateImageEx("BA_WINDOW", -8,238,135, "Image/living2b.png","Normal");
+
+	CreateColor("BLACK",200,in_left,in_top,800,600,"black");
+
+	//ガチャ。ドアが開く。
+	SoundLoad(SE0, "SE/A6_22584.WAV");
+	SoundPlay(SE0, "SE/A6_22584.WAV");
+	DrawEffect("BLACK",1500,"CurtainLeft",0,1000);
+	Draw();
+	WaitAction("BLACK");
+	Delete("BLACK");
+
+//->1
+	Draw();
+/*品藤*/CreateBalloon("ME_01", 102, 350,15, 200, 120, "Ellipse" , invalid,"<TYPE style=Normal>晚上好</TYPE>");
+/*品藤*/CreateBalloon("ME_02", 102, 560,300, 220, 130, "Ellipse" , 103,"<TYPE style=Normal>大家　...都还好吗？</TYPE>");
+/*さゆ*/CreateBalloon("ME_03", 102, 90,400, 250, 150, "Cloud" , 0,"<TYPE style=Normal><FONT face='G' size=24>嗯<TYPE style=Spring speed=500>—</TYPE></FONT></TYPE>");
+/*透花*/CreateBalloon("ME_04", 102, -10,240, 240, 130, "Ellipse" , 60,"<TYPE style=Normal>啊　是的,<BR>我很好！</TYPE>");
+	Request("ME_*","Erase");
+	CreateFrameEx("IM_SI",50,432,68,"Image/si-1-1-1.bmp", "Fade",#663300,8);
+	CreateFrameEx("IM_S1",50,267,out_bottom,"Image/si-1-1-2.bmp", "Fade",#663300,8);
+	CreateFrameEx("IM_T1",50,100,-80,"Image/si-1-1-3.bmp", "Fade",#663300,8);
+	Opaque("IM_*",0,0,true);
+	Draw();
+
+	SoundPlay(BGM0,"M/BGM_05.ogg");
+	Opaque("IM_SI",500,1000,false);	
+	Request("ME_01","TapEnter");	call MsgWait;
+	Request("ME_02","TapEnter");	call MsgWait;
+
+	Opaque("IM_S1",300,1000,false);
+	MoveEx("IM_S1",800,@0,264,false,"Dec4");
+	wait 400;
+	Request("ME_03","BoundEnter");	call MsgWait;
+
+	Opaque("IM_T1",300,1000,false);
+	MoveEx("IM_T1",800,@0,20,false,"Dec2");
+	wait 400;
+	Request("ME_04","TapEnter");	call MsgWait;	wait 200;
+	WaitKey();
+/*	Opaque("ME_01",500,0,false);	wait 100;
+	Opaque("ME_02",500,0,false);	wait 100;
+	Opaque("ME_03",500,0,false);	wait 100;
+	Opaque("ME_04",500,0,true);
+*/
+	Opaque("ME_*",300,0,false);
+	Opaque("IM_S1",300,0,false);
+	Opaque("IM_T1",300,0,true);
+	Delete("ME_*");
+//<-1
+
+//->2
+	Draw();
+/*エマ*/CreateBalloon("ME_01", 102, 130,192, 300, 140, "DropDumpling" , 255,"<TYPE style=Normal>品藤小姐,<BR>今天怎么来了？</TYPE>");
+/*品藤*/CreateBalloon("ME_02", 102, 305,340, 290, 130, "DropDumpling" , 80,"<TYPE style=Normal>哼哼,<BR>又是圣诞节了嘛</TYPE>");
+/*品藤*/CreateBalloon("ME_03", 102, 433,415, 292, 130, "Ellipse" , invalid,"<TYPE style=Normal>好久..没有<BR>见到...大家了</TYPE>");
+	Request("ME_*","Erase");
+
+	CreateFrameEx("IM_E1",50,-80,290,"Image/si-1-1-4.bmp", "Fade",#663300,8);
+	Opaque("IM_E1",0,0,true);
+	Draw();
+
+	Opaque("IM_E1",500,1000,false);
+	MoveEx("IM_E1",500,15,@0,false,"Dec2");
+	wait 300;
+	Request("ME_01","TapEnter");	call MsgWait;
+	Request("ME_02","TapEnter");	call MsgWait;
+	Request("ME_03","TapEnter");	call MsgWait;
+	WaitKey();
+	Opaque("ME_01",300,0,false);	wait 100;
+	Opaque("ME_02",300,0,false);	wait 100;
+	Opaque("ME_03",300,0,true);	wait 100;
+	Delete("ME_*");
+
+	Draw();
+/*エマ*/CreateBalloon("ME_04", 102, 95,170, 305, 162, "Potato" , 260,"<TYPE style=Normal>骗人——,<BR>反正你的目标肯定是<BR>来见宗慈吧？</TYPE>");
+/*エマ*/CreateBalloon("ME_05", 102, 240,280, 260, 110, "Potato" , invalid,"<TYPE style=Normal interval=30>我都明白的！</TYPE>");
+/*品藤*/CreateBalloon("ME_06", 102, 500,325, 290, 140, "DropDumpling" , 100,"<TYPE style=Normal>啊啦...　没有<BR>那回事哦</TYPE>");
+/*品藤*/CreateBalloon("ME_07", 102, 405,425, 345, 150, "Dumpling" , invalid,"<TYPE style=Normal>礼物什么的　..看,<BR>也给各位带来了</TYPE>");
+//（渡す）
+	Request("ME_*","Erase");
+	Draw();
+
+	Request("ME_04","TapEnter");	WaitAction("ME*");
+	Request("ME_05","BoundEnter");	call MsgWait;
+	Request("ME_06","TapEnter");	call MsgWait;
+	Request("ME_07","TapEnter");	call MsgWait;
+	WaitKey();
+/*	Opaque("ME_04",500,0,false);	wait 100;
+	Opaque("ME_05",500,0,false);	wait 100;
+	Opaque("ME_06",500,0,false);	wait 100;
+	Opaque("ME_07",500,0,false);	wait 100;
+*/
+//	SoundVolume(BGM0,9000,0);
+
+	Opaque("ME_*",300,0,false);
+	Opaque("IM_*",300,0,true);
+	Delete("ME_*");
+	Delete("IM_*");
+//<-2
+
+//->3
+	Draw();
+/*さゆ*/CreateBalloon("ME_01", 102, 150,-35, 320, 200, "Cloud" , 350,"<TYPE style=Normal><FONT face='G' size=18>好可爱——<BR>是人偶先生啊</TYPE>");
+/*品藤*/CreateBalloonEx("ME_02", 102, 210,215, 180, 100, "RoundRect" , 110,"<TYPE style=Fade interval=30><FONT color=white shadow=black><B>是恐龙土偶</B>哦</TYPE>", "Vivide",#000000e0,black);
+/*透花*/CreateBalloon("ME_03", 102, 330,340, 330, 135, "Potato" , 50,"<TYPE style=Normal>非常不可思议的画···...<BR><TYPE style=Normal interval=45>非常感谢！</TYPE>");
+/*品藤*/CreateBalloonEx("ME_04", 102, 240,467, 230, 100, "RoundRect" , 110,"<TYPE style=Fade interval=30><FONT color=white shadow=black><B>是皮里雷斯的地图</B>哦</TYPE>", "Vivide",#000000e0,black);
+/*エマ*/CreateBalloon("ME_05", 102, 510,380, 140, 80, "Ice" , invalid,"<TYPE style=Normal interval=0>啊</TYPE>");
+/*エマ*/CreateBalloon("ME_051", 102, 235,345, 315, 145, "DropDumpling" , 305,"<TYPE style=Normal interval=45>那　难道说<BR>这个是....　水晶头骨？</TYPE>");
+//*エマ*/CreateBalloon("ME_06", 102, 150,460, 310, 150, "Ice" , 0,"<TYPE style=Normal interval=20>と言うか品藤さん！,<BR><TYPE style=Normal interval=25>なんで全部.オーパーツ<BR>ですか！</TYPE>");
+	Request("ME_*","Erase");
+
+	CreateFrameEx("IM_S1",50,510,37,"Image/si-1-1-7.bmp", "Fade",#000000,8);
+	CreateFrameEx("IM_SI1",50,-40,100,"Image/si-1-1-6.bmp", "Fade",#000000,12);
+	CreateFrameEx("IM_T1",50,410,#300,"Image/si-1-1-8.bmp", "Fade",#000000,8);
+	CreateFrameEx("IM_SI2",50,-40,350,"Image/si-1-1-6.bmp", "Fade",#000000,12);
+	CreateFrameEx("IM_E1",50,510,413,"Image/si-1-1-9.bmp", "Fade",#000000,8);
+	Opaque("IM_*",0,0,false);
+	Draw();
+
+//	SoundPlayEx(BGM1,"M/BGM_25.ogg",0,0,1000,true);
+//	SoundVolume(BGM1,500,1000);
+//	wait 800;
+//	SoundStop( BGM0 );
+
+	MoveEx("IM_S1",500,in_right,@0,false,"Dec3");
+	Opaque("IM_S1",500,1000,false);
+	wait 400;
+	Request("ME_01","TapEnter");	WaitAction("ME*");
+
+	MoveEx("IM_SI1",500,in_left,@0,false,"Dec4");
+	Opaque("IM_SI1",500,1000,false);
+	wait 200;
+	Request("ME_02","TapEnter");	WaitAction("ME*");
+
+	MoveEx("IM_T1",500,in_right,@0,false,"Dec3");
+	Opaque("IM_T1",500,1000,false);
+	wait 400;
+	Request("ME_03","TapEnter");	WaitAction("ME*");
+
+	MoveEx("IM_SI2",500,in_left,@0,false,"Dec4");
+	Opaque("IM_SI2",500,1000,false);
+	wait 200;
+	Request("ME_04","TapEnter");	WaitAction("ME*");
+	wait 500;
+
+	WaitKey();
+
+	Opaque("ME_01",200,0,false);	wait 50;
+	Opaque("ME_02",200,0,false);	wait 50;
+	Opaque("ME_03",200,0,false);	wait 50;
+	Opaque("ME_04",200,0,true);
+
+	MoveEx("IM_E1",500,in_right,@0,false,"Dec3");
+	Opaque("IM_E1",500,1000,false);
+	wait 200;
+	Request("ME_05","BoundEnter");	WaitAction("ME*");
+
+	Request("ME_051","TapEnter");	call MsgWait;
+//	Request("ME_06","BoundEnter");	call MsgWait;
+	WaitKey();
+	Opaque("ME_*",200,0,false);
+	Opaque("IM_*",300,0,true);
+	Delete("ME_*");
+	Delete("IM_*");
+
+//<-3
+
+//1206小林；セリフ削除
+
+
+//->4
+///*品藤*/CreateBalloon("ME_01", 102, 330,30, 320, 140, "Ellipse" , 310,"<TYPE style=Normal>ごっ、ごめんなさい,<BR>仕事柄、手に入れ易いから<BR>,つい???</TYPE>");
+///*品藤*/CreateBalloon("ME_02", 102, 240,120, 300, 140, "Ellipse" , invalid,"<TYPE style=Normal>やっぱり<BR>別のがよかったかな???</TYPE>");
+///*品藤*/CreateBalloon("ME_03", 102, 480,310, 280, 130, "Ellipse" , 80,"<TYPE style=Normal>燕の子安貝とか,<BR>火鼠の皮衣とか???</TYPE>");
+///*エマ*/CreateBalloon("ME_04", 102, 50,330, 300, 140, "Clay" , 100,"<TYPE style=Normal>だから...<BR>なんでそんなマニアック<BR>なんですか！</TYPE>");
+///*エマ*/CreateBalloon("ME_05", 102, 200,400, 220, 120, "Dumpling" , invalid,"<TYPE style=Normal>もっと普通の???</TYPE>");
+//	Request("ME_*","Erase");
+//
+//	CreateFrame("IM_SI",50,520,50,"Image/si-2-2-9.bmp");
+//	CreateFrame("IM_E1",50,40,150,"Image/si-2-2-10.bmp");
+//	Opaque("IM_*",0,0,true);
+//	Draw();
+//
+//	Opaque("IM_E1",800,1000,false);
+//	Opaque("IM_SI",800,1000,false);	wait 500;
+//	Request("ME_01","TapEnter");	call MsgWait;
+//	Request("ME_02","TapEnter");	call MsgWait;
+//	Request("ME_03","TapEnter");	call MsgWait;
+//	Request("ME_04","TapEnter");	call MsgWait;
+//	Request("ME_05","TapEnter");	call MsgWait;
+//	WaitKey();
+//	Opaque("ME_01",500,0,false);	wait 100;
+//	Opaque("ME_02",500,0,false);	wait 100;
+//	Opaque("ME_03",500,0,false);	wait 100;
+//	Opaque("ME_04",500,0,false);	wait 100;
+//	Opaque("ME_05",500,0,true);
+//	Delete("ME_*");
+////<-4
+//
+//
+//->5
+	Draw();
+/*エマ*/CreateBalloon("ME_06", 102, 195,45, 327, 160, "Ice" , 215,"<TYPE style=Normal interval=20>说起来品藤小姐！,<BR><TYPE style=Normal interval=25>为什么全部都是<BR>时代错误遗物.呢！</TYPE>");
+/*エマ*/CreateBalloon("ME_05", 102, 60,245, 300, 130, "DropDumpling" , 105,"<TYPE style=Normal>有没有<BR>更普通一点的礼物···</TYPE>");
+/*品藤*/CreateBalloon("ME_01", 102, 290,210, 285, 130, "Pool" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=24>诶诶！</TYPE>");
+/*品藤*/CreateBalloon("ME_012", 102, 251,390, 282, 117, "Rock" , 330,"<TYPE style=Fade interval=85><FONT size=14>..因为.......因为<BR>.......我···</TYPE>");
+/*品藤*/CreateBalloon("ME_013", 102, 120,455, 370, 130, "Rock" , invalid,"<TYPE style=Normal interval=75><FONT size=14>普通的女孩子想要的东西<BR>什么的...　不知道啊···</TYPE>");
+
+//逃げる。ガチャン。ドアが閉まる。
+	Request("ME_*","Erase");
+
+	CreateFrameEx("IM_SI",50,420,280,"Image/si-2-2-9.bmp", "Fade",#000000,8);
+	CreateFrameEx("IM_E1",50,80,60,"Image/si-2-2-10.bmp", "Fade",#663300,8);
+	Opaque("IM_*",0,0,true);
+
+	SoundLoad(SE1,"SE/se_s.wav");
+	SoundLoad(BGM2,"M/BGM_03.ogg");
+	SoundLoad(SE0,"SE/A6_22585.WAV");
+	Draw();
+
+
+
+	Request("ME_06","BoundEnter");
+	Opaque("IM_E1",500,1000,false);
+	MoveEx("IM_E1",300,@-60,@0,false,"Dec4");
+	WaitAction("ME*");
+
+	SoundVolume(BGM0,9000,0);
+
+	Request("ME_05","TapEnter");	WaitAction("ME*");
+	SoundPlay(SE1,"SE/se_s.wav");	//ガーン
+	Request("ME_01","ShockEnter");
+	wait 500;
+
+//	Opaque("IM_E1",800,1000,false);
+	Opaque("IM_SI",500,1000,false);
+	MoveEx("IM_SI",300,@60,@0,false,"Dec4");
+	wait 1200;
+	SoundVolume(SE1,12000,0);
+	wait 1200;
+
+	Request("ME_012","Enter");
+	wait 300;
+	SoundPlayEx(BGM2,"M/BGM_03.ogg",0,0,1000,true);
+	SoundVolume(BGM2,500,1000);
+//	wait 800;
+//	Opaque("IM_E1",800,1000,false);
+//	MoveEx("IM_E1",1200,@-40,@0,false,"Dec4");
+	call MsgWait;
+	wait 500;
+	Request("ME_013","Enter");	call MsgWait;
+	WaitKey();
+	SoundStop( BGM0 );
+	SoundStop( SE0 );
+	Opaque("ME_06",300,0,false);	wait 100;
+	Opaque("ME_05",300,0,false);	wait 100;
+	Opaque("ME_01",300,0,false);	wait 100;
+	Opaque("ME_012",300,0,false);	wait 100;
+	Opaque("ME_013",300,0,true);	wait 100;
+
+	Draw();
+/*品藤*/CreateBalloon("ME_02", 102, 193,160, 450, 170, "Rock" , 290,"<TYPE style=Normal interval=75><FONT size=15>从小时候开始..就一心只顾古痕的工作···<BR>,去原宿的话...绝对会迷路的···</TYPE>");
+/*品藤*/CreateBalloon("ME_03", 102, 320,390, 190, 83, "Clay" , invalid,"<TYPE style=Fade interval=65><FONT size=14>呜呜呜···</TYPE>");
+/*品藤*/CreateBalloon("ME_04", 102, 103,420, 360, 160, "FatStar" , invalid,"<TYPE style=Normal interval=20><FONT size=18 face='G' >艾玛<BR>...对不起！</TYPE>");
+	Request("ME_*","Erase");
+
+
+	Request("ME_02","Enter");	call MsgWait;
+	Request("ME_03","Enter");	call MsgWait;
+	Request("ME_04","BoundEnter");	call MsgWait;
+
+	WaitKey();
+	SoundVolume(BGM2,8000,0);
+	MoveEx("IM_SI",500,@200,@0,false,"Acc4");
+	Opaque("IM_SI",500,0,true);
+	SoundPlay(SE0,"SE/A6_22585.WAV");	wait 1000;
+
+	SoundPlayEx(BGM1,"M/BGM_09.ogg",0,0,1000,true);
+	SoundVolume(BGM1,2000,1000);
+	Opaque("ME_01",500,0,false);	wait 100;
+	Opaque("ME_02",500,0,false);	wait 100;
+	Opaque("ME_03",500,0,false);	wait 100;
+	Opaque("ME_04",500,0,false);	wait 100;
+	Opaque("IM_*",500,0,true);
+	Delete("ME_*");
+	Delete("IM_*");
+//<-5
+
+//->6
+	Draw();
+/*さゆ*/CreateBalloon("ME_01", 102, 530,185, 345, 190, "Cloud" , 110,"<TYPE style=Normal><FONT size=22 face='G' >啊<TYPE style=Spring speed=400>—</TYPE>,<BR>艾玛把她弄哭了<TYPE style=Spring speed=500>—</TYPE>");
+/*透花*/CreateBalloon("ME_02", 102, 82,120, 330, 150, "DropDumpling" , 300,"<TYPE style=Normal interval=35>艾玛　,<TYPE style=Normal interval=55>之后要向品藤小姐<BR>好好道歉哦</TYPE>");
+/*エマ*/CreateBalloon("ME_03", 102, -30,280, 260, 120, "Clay" , 280,"<TYPE style=Normal>明　<TYPE style=Normal interval=35>...明白了啦</TYPE>");
+/*エマ*/CreateBalloon("ME_04", 102, 250,455, 330, 150, "Clay" , 145,"<TYPE style=Normal>呜——,　<BR><TYPE style=Normal interval=35>为什么人家身边的大人们<BR>...都这么奇怪呢！</TYPE>");
+	Request("ME_*","Erase");
+	CreateFrameEx("IM_S1",52,443,48,"Image/si-2-2-11.bmp", "Fade",#663300,8);
+	CreateFrameEx("IM_T1",51,center,middle,"Image/si-2-2-12.bmp", "Fade",#663300,8);
+	CreateFrameEx("IM_E1",50,42,361,"Image/si-2-2-13.bmp", "Fade",#663300,8);
+	Opaque("IM_*",0,0,true);
+	Draw();
+
+	Opaque("IM_S1",500,1000,false);	wait 300;
+	Request("ME_01","BoundEnter");	call MsgWait;
+	Opaque("IM_T1",500,1000,false);	wait 500;
+	Request("ME_02","TapEnter");	call MsgWait;
+	Opaque("IM_E1",300,1000,false);	wait 200;
+	Request("ME_03","TapEnter");	call MsgWait;
+	Request("ME_04","TapEnter");	call MsgWait;
+	WaitKey();
+
+	SoundStop( BGM2 );
+//<-6
+
+//続く。
+	SoundVolume(BGM1,8000,0);
+	CreateColor("BLACK",200,in_left,in_top,800,600,"black");
+	DrawEffectEx("BLACK",2000,"CurtainLeft",1000,0,"Acc2");
+	WaitAction("BLACK");
+	Draw();
+	Delete("*");
+	SoundStop(BGM0);
+	SoundStop(BGM1);
+}
