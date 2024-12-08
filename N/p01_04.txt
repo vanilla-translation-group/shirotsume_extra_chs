@@ -33,7 +33,7 @@ page Main
 /*エマ*/CreateBalloon("ME_02", 102, 185,180, 160, 100, "Ice" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=18>呀<TYPE interval=200 speed=200 style=Spring>—</TYPE>");
 /*上代*/CreateBalloon("ME_03", 102, 325,270, 300, 140, "DropDumpling" , 72,"<TYPE style=Normal><FONT size=18>我带了<BR>礼物来哦——</TYPE>");
 /*透花*/CreateBalloon("ME_04", 102, 190,400, 230, 110, "Clay" , 120,"<FONT size=14><TYPE interval=25>啊..　上代小姐..<BR>很危险的</TYPE>");
-/*透花*/CreateBalloon("ME_05", 102, 244,465, 285, 115, "Clay" , invalid,"<FONT size=14><TYPE interval=20>请不要把<BR>刀拿出来乱挥···</TYPE>");
+/*透花*/CreateBalloon("ME_05", 102, 244,465, 285, 115, "Clay" , invalid,"<FONT size=14><TYPE interval=20>请不要把刀<BR>拿出来乱挥···</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_K1",50, out_right,60,"Image/ka-1-1-1.bmp", "Fade",#663300,8);
 	CreateImage("IM_B1",50, 252,126,"Image/ka-1-1-1a.png");
@@ -53,20 +53,20 @@ page Main
 	MoveEx("IM_K1",300,450,@0,false,"Dec4");	wait 300;
 //	Request("ME_01","TapEnter");	WaitAction("ME*");
 		Opaque("IM_B1",0,1000,false);
-		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード
+		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード //空を切る.wav
 		DrawEffect("IM_B1",300,"FanLeft",1000,0);	wait 200;
 		Opaque("IM_B2",0,1000,false);
-		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード
+		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード //空を切る.wav
 		DrawEffect("IM_B2",100,"FanRight",1000,0);	wait 200;
 	Request("ME_02","ShockEnter");	WaitAction("ME*");
 		Opaque("IM_B3",0,1000,false);
-		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード
+		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード //空を切る.wav
 		DrawEffect("IM_B3",200,"FanLeft",1000,0);	wait 200;
 		Opaque("IM_B4",0,1000,false);
-		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード
+		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード //空を切る.wav
 		DrawEffect("IM_B4",100,"FanRight",1000,0);	wait 200;
 		Opaque("IM_B5",0,1000,false);
-		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード
+		SoundPlay(SE1, "SE/嬻傪愗傞.wav");	//ブレード //空を切る.wav
 		DrawEffect("IM_B5",200,"FanLeft",1000,0);	wait 200;
 	Request("ME_03","TapEnter");	call MsgWait;
 
@@ -86,7 +86,7 @@ page Main
 //->2
 	Draw();
 /*上代*/CreateBalloon("ME_01", 102, 190,90, 240, 100, "Potato" , invalid,"<TYPE style=Normal>哎呀<TYPE interval=300 speed=300 style=Spring>—</TYPE>..　没事的啦</TYPE>");
-/*上代*/CreateBalloon("ME_02", 102, 200,155, 310, 140, "DropPotato" , 30,"<TYPE style=Normal><TYPE interval=30>这种武器就是<BR>以强度为卖点的...<BR>所以不会坏的啦——</TYPE>");
+/*上代*/CreateBalloon("ME_02", 102, 200,155, 310, 140, "DropPotato" , 30,"<TYPE style=Normal><TYPE interval=30>我手上这武器<BR>就是以强度为卖点的...<BR>所以不会坏的啦——</TYPE>");
 /*透花*/CreateBalloon("ME_03", 102, 220,320, 270, 125, "FatStar" , invalid,"<TYPE style=Normal interval=20><FONT face='G' size=20>房子会坏的！</TYPE>");
 /*上代*/CreateBalloon("ME_04", 102, 383,383, 240, 120, "DropPotato" , 85,"<TYPE style=Normal>啊,　<TYPE interval=0>这样.啊</TYPE>...<BR>抱歉啦<TYPE interval=200 speed=200 style=Spring>—</TYPE>");
 	Request("ME_*","Erase");
@@ -111,15 +111,15 @@ page Main
 
 //->3
 	Draw();
-/*さゆ*/CreateBalloon("ME_01", 102, 150,125, 380, 190, "Cloud" , 230,"<TYPE style=Normal interval=50><FONT face='G' size=18>上代小姐,<BR>今天怎么来了？</TYPE>");
+/*さゆ*/CreateBalloon("ME_01", 102, 150,125, 380, 190, "Cloud" , 230,"<TYPE style=Normal interval=50><FONT face='G' size=18>上代小姐,<BR>今天来干什么？</TYPE>");
 /*上代*/CreateBalloon("ME_02", 102, 590,230, 187, 102, "DropDumpling" , 110,"<TYPE style=Normal interval=0><FONT size=18 face='G'>对了..对了！</TYPE>");
-/*上代*/CreateBalloon("ME_03", 102, 492,313, 265, 135, "Potato" , invalid,"<TYPE style=Normal interval=0>快来看！,.<BR><TYPE style=Normal interval=30>这个新型的刀片！</TYPE>");	Request("ME_*","Erase");
+/*上代*/CreateBalloon("ME_03", 102, 492,313, 265, 135, "Potato" , invalid,"<TYPE style=Normal interval=0>快看啊！,.<BR><TYPE style=Normal interval=30>这个新型的刀刃！</TYPE>");	Request("ME_*","Erase");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_S1",50, 60,out_bottom,"Image/ka-1-1-3.bmp", "Fade",#663300,8);
 	CreateFrameEx("IM_B1",50, 340,270,"Image/ka-2-2-4.bmp","Shadow",black,8);
 	Opaque("IM_B1",0,0,true);
 
-//	SoundLoad(SE2, "SE/刺す～深く.wav");	//ブレード
+//	SoundLoad(SE2, "SE/刺す〜深く.wav");	//ブレード
 
 	Draw();
 
@@ -133,7 +133,7 @@ page Main
 	DrawEffectEx("IM_B1",300,"LinearRight",1000,0, "Dec4");
 
 	wait 200;
-//	SoundPlay(SE2, "SE/刺す～深く.wav");	
+//	SoundPlay(SE2, "SE/刺す〜深く.wav");	
 
 
 	Request("ME_03","TapEnter");	call MsgWait;
@@ -147,7 +147,7 @@ page Main
 	Draw();
 ///*上代*/CreateBalloon("ME_01", 102, 620,0, 180, 120, "Dumpling" , 250,"<TYPE style=Normal>そうそう</TYPE>");
 ///*上代*/CreateBalloon("ME_02", 102, 280,46, 270, 140, "Dumpling" , invalid,"<TYPE style=Normal>見てよ！...<BR>これ新型のブレード！</TYPE>");
-/*上代*/CreateBalloon("ME_03", 102, 200,150, 320, 170, "DropPotato" , 40,"<TYPE style=Normal interval=30>不久前刚刚完成的,<BR>我高兴得不得了</TYPE>");
+/*上代*/CreateBalloon("ME_03", 102, 200,150, 320, 170, "DropPotato" , 40,"<TYPE style=Normal interval=30>不久前刚刚做完的,<BR>我高兴得不得了</TYPE>");
 /*エマ*/CreateBalloon("ME_04", 102, 144,325, 320, 160, "DropDumpling" , 235,"<TYPE style=Normal>这么重要的东西,<BR>把它拿出来<BR>真的好吗？</TYPE>");
 /*上代*/CreateBalloon("ME_05", 102, 367,390, 313, 177, "Ice" , invalid,"<TYPE style=Normal interval=25><FONT face='G' size=18>不用.在意啦！</TYPE>");
 	Request("ME_*","Erase");
@@ -190,11 +190,11 @@ page Main
 	Draw();
 /*上代*/CreateBalloon("ME_11", 102, 225,0, 350, 162, "DropPotato" , 298,"<TYPE style=Normal interval=45>虽说我尽情地<BR>用尽了实验室的<BR>资金、设备和人员</TYPE>");
 /*上代*/CreateBalloon("ME_12", 102, 272,275, 335, 145, "DropPotato" , 73,"<TYPE style=Normal interval=45>但毕竟这玩意<BR>是我因为自己的兴趣<BR>而造出来的</TYPE>");
-/*上代*/CreateBalloon("ME_13", 102, 345,365, 340, 147, "Potato" , invalid,"<FONT size=18 face='G'>所以大部分都是我的东西,<BR>像这样的感觉？</TYPE>");
-/*透花*/CreateBalloon("ME_14", 102, 230,490, 250, 120, "Clay" , 145,"<TYPE style=Normal><FONT  size=14>那个,　有点<BR>不一样吧···</TYPE>");
+/*上代*/CreateBalloon("ME_13", 102, 345,365, 340, 147, "Potato" , invalid,"<FONT size=18 face='G'>已经一半以上都是我的东西了,<BR>我猜？</TYPE>");
+/*透花*/CreateBalloon("ME_14", 102, 230,490, 250, 120, "Clay" , 145,"<TYPE style=Normal><FONT  size=14>那个,　有点<BR>不太对吧···</TYPE>");
 
-/*上代*/CreateBalloon("ME_01", 102, 265,10, 330, 153, "DropPotato" , 290,"<TYPE style=Normal interval=0>嘛.嘛！,<BR><TYPE style=Normal interval=45>收下吧小透花</TYPE>");
-/*上代*/CreateBalloon("ME_02", 102, 167,111, 305, 155, "Potato" , invalid,"<TYPE style=Normal interval=35><FONT size=17>我给你的<BR>圣诞礼物！</TYPE>");
+/*上代*/CreateBalloon("ME_01", 102, 265,10, 330, 153, "DropPotato" , 290,"<TYPE style=Normal interval=0>没事.没事！,<BR><TYPE style=Normal interval=45>收下吧小透花</TYPE>");
+/*上代*/CreateBalloon("ME_02", 102, 167,111, 305, 155, "Potato" , invalid,"<TYPE style=Normal interval=35><FONT size=17>作为我给你的<BR>圣诞礼物！</TYPE>");
 //1205小林セリフ削除
 ///*上代*/CreateBalloon("ME_03", 102, 260,290, 320, 150, "Ellipse" , 40,"<TYPE style=Normal>これなら<BR>プレキオサウルスも瞬殺よ,<BR>絶滅してるけど</TYPE>");
 /*透花*/CreateBalloon("ME_04", 102, 90,390, 235, 100, "Rock" , 105,"<TYPE style=Normal interval=60><FONT size=13>不,　不用了···</TYPE>");
@@ -255,7 +255,7 @@ page Main
 //->7
 	Draw();
 /*上代*/CreateBalloon("ME_01", 102, 213,15, 367, 210, "Cloud" , invalid,"<FONT size=24 face='G'>锵<TYPE style=Spring interval=500 speed=500>—</TYPE>！");
-/*上代*/CreateBalloon("ME_02", 102, 40,177, 453, 153, "Dumpling" , invalid,"<TYPE style=Normal interval=35>探测生物细胞固有的振动频率<BR>用微波从内部<BR>杀死生物的超..振.动.机.械.臂<TYPE style=Spring interval=500 speed=500>—</TYPE>！</TYPE>");
+/*上代*/CreateBalloon("ME_02", 102, 40,177, 453, 153, "Dumpling" , invalid,"<TYPE style=Normal interval=35>探测生物细胞固有的振动频率<BR>用微波从内部强力杀死生物的<BR>超..振.动.机.械.臂<TYPE style=Spring interval=500 speed=500>—</TYPE>！</TYPE>");
 //1205小林セリフ削除
 ///*上代*/CreateBalloon("ME_03", 102, 25,170, 320, 130, "Ellipse" , invalid,"<TYPE style=Normal>こいつの一撃にかかれば<BR>アフリカ象も思わず昇天！</TYPE>");
 ///*上代*/CreateBalloon("ME_04", 102, 80,256, 350, 150, "Potato" , invalid,"<TYPE style=Normal>あっ　,でもアフリカ象は<BR>国連保護動物だから...ホントに<BR><RUBY text=' ヤ '>殺</RUBY>る時には気をつけて</TYPE>");
@@ -304,7 +304,7 @@ page Main
 /*上代*/CreateBalloon("ME_03", 102, 50,95, 280, 150, "Ice" , invalid,"<TYPE style=Normal interval=35>给小艾玛的是.<BR>超振动！</TYPE>");
 //（無理やり渡す）
 /*上代*/CreateBalloon("ME_04", 102, 247,372, 340, 195, "Ice" , 120,"<TYPE style=Normal interval=10><FONT face='G' size=18>啊<TYPE style=Spring interval=300 speed=300>—</TYPE>　...<TYPE style=Normal interval=15>糟了！,.<BR><TYPE style=Normal interval=35>今天的武器只有这些了</TYPE>");
-/*上代*/CreateBalloon("ME_05", 102, 25,80, 350, 160, "Ice" , 260,"<TYPE style=Normal interval=30><FONT face='G' size=18>嗯　,那就,<BR>给小沙友的是<BR>这个糖果！</TYPE>");
+/*上代*/CreateBalloon("ME_05", 102, 25,80, 350, 160, "Ice" , 260,"<TYPE style=Normal interval=30><FONT face='G' size=18>嗯　,那么,<BR>给小沙友的是<BR>这个糖果！</TYPE>");
 //（渡す）
 /*さゆ*/CreateBalloon("ME_06", 102, 242,345, 310, 220, "Cloud" , 140,"<TYPE style=Normal interval=65><FONT face='G' size=22>好耶<TYPE style=Spring interval=300 speed=300>—</TYPE>...<BR>是糖果——</TYPE>");
 	Request("ME_*","Erase");
@@ -405,7 +405,7 @@ page Main
 
 //->10
 	Draw();
-///*透花*/CreateBalloon("ME_01", 102, 540,20, 240, 130, "Dumpling" , 270,"<TYPE style=Normal>?.?.?.なんか,<BR>圧倒されたね</TYPE>");
+///*透花*/CreateBalloon("ME_01", 102, 540,20, 240, 130, "Dumpling" , 270,"<TYPE style=Normal>·.·.·.なんか,<BR>圧倒されたね</TYPE>");
 /*エマ*/CreateBalloon("ME_02", 102, 180,100, 280, 145, "Dumpling" , 290,"<TYPE style=Normal>怎么办呢,<BR>这个武器···</TYPE>");
 /*透花*/CreateBalloon("ME_03", 102, 400,140, 315, 140, "Dumpling" , 270,"<TYPE style=Normal>跟主人大人说一声<BR>让他还回去吧</TYPE>");
 //*エマ*/CreateBalloon("ME_04", 102, 230,320, 200, 120, "Dumpling" , invalid,"<TYPE style=Normal>うーん,<BR>そーだね</TYPE>");

@@ -49,7 +49,7 @@ page Main
 //->2
 	Draw();
 /*さゆ*/CreateBalloon("ME_01", 102, 95,100, 265, 200, "Cloud"  , invalid,"<TYPE style=Normal><FONT face='G' size=22>是谁呀——？</TYPE>");
-/*透花*/CreateBalloon("ME_02", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>嗯　..邮递员<BR>,送来了一封圣诞贺卡一样的信</TYPE>");
+/*透花*/CreateBalloon("ME_02", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>嗯　..是邮递员<BR>,送来了一封像是圣诞贺卡的信</TYPE>");
 //1204小林；セリフ統合
 ///*透花*/CreateBalloon("ME_03", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>クリスマスカードみたい</TYPE>");
 /*透花*/CreateBalloon("ME_04", 102, 275,395, 310, 140, "Dumpling" , invalid,"<TYPE style=Normal>是谁寄的呢···,<BR>嗯——...　首先是···</TYPE>");
@@ -80,7 +80,7 @@ page Main
 	WaitKey();
 
 	SoundVolume(BGM0,3000,0);
-	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false); //サーッ.wav
 
 
 
@@ -108,8 +108,8 @@ page Main
 //スパットさんからのメール
 	Draw();
 	CreateBalloonEx("ME_01", 202, 40,70, 420, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>你们最近还好吗。,我是...<B>斯帕德</B>。,.<BR>这一年，真的是承蒙你们关照了呢。", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_02", 202, 470,230, 310, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我现在，,在最北边的牧场<BR>养着牛，..<BR>过着安静的生活。", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 202, 15,410, 320, 160, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我重新审视了自己，,<BR>为了找到全新的、...不输给任何人的、...<BR>强大的自己。", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_02", 202, 470,230, 310, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我现在，,在最北边的牧场<BR>一边养着牛，..<BR>一边过着宁静的生活。", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 202, 15,410, 320, 160, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我重新审视了自己，,<BR>为了找到全新的、...强大的、...<BR>不输给任何人的自己。", "Fade",#000000c0,white);
 
 	Request("ME_*","Erase");
 
@@ -139,7 +139,7 @@ page Main
 
 	Draw();
 	CreateBalloonEx("ME_04", 202, 290,70, 330, 160, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>牧场的生活虽然艰苦，..<BR>但每天都有新的发现，<BR>过得非常充实。", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_05", 202, 10,240, 380, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>当地的人们都很温柔，,<BR>很自然地尊重着我。", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_05", 202, 10,240, 380, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>当地的人们都很温柔，,<BR>平等地尊重着我。", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_06", 202, 420,460, 290, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我对现在的生活，,<BR>真的很满意。", "Fade",#000000c0,white);
 
 //1204小林；台詞削除
@@ -166,15 +166,15 @@ page Main
 //->32
 
 	Draw();
-	CreateBalloonEx("ME_01", 102, 100,20, 450, 170, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=65>在这个地方，...我至今为止所轻视的，...<BR>人与人之间的联系、...温暖、..这样小小的<BR>事情，,个个都触动了我的心灵。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01", 102, 100,20, 450, 170, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=65>在这个地方，...我至今为止所轻视的，...<BR>人与人之间的联系、...温暖，..像这样<BR>小小的事情，,个个都触动我的心灵。</TYPE>", "Fade",#000000c0,white);
 
 //1204小林；台詞削除
 //	CreateBalloon("ME_02", 102, 190,120, 300, 150, "StepRect",invalid,"雄大な北の自然が、..<BR>僕の病んだ心をゆっくりと<BR>癒してくれるみたいだ。</TYPE>");
 
 	CreateBalloonEx("ME_03", 102, 430,140, 260, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>我是个软弱的人。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_04", 102, 5,260, 380, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black>现在再想起那个事件，..也许就是我的软弱<BR>成了一切的根源吧。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_05", 102, 85,420, 320, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>什么的，,<BR>事到如今还说这种话是不是太卑鄙了？</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_06", 102,460,455, 300, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=50>以及牛粪臭得让我<BR>三天就要晕倒一次。,..<BR><TYPE interval=75>我真的是个软弱的人。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_04", 102, 5,260, 380, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black>现在回想起来，..那件事的罪魁祸首<BR>或许就是我的软弱吧。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_05", 102, 85,420, 320, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>像我这样的人，,事到如今<BR>还说这种话是不是太卑鄙了？</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_06", 102,460,455, 300, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=50>还有牛粪臭得让我<BR>三天就要晕倒一次。,..<BR><TYPE interval=75>我真的是个软弱的人。</TYPE>", "Fade",#000000c0,white);
 
 //1204小林；台詞削除
 //	CreateBalloon("ME_07", 102, 470,320, 320, 150, "StepRect",invalid,"でもヒドイ話じゃないか。,<BR>奴らの糞ときたら、,あの牧場長の<BR>足並に臭いんだ、,シット！</TYPE>");
@@ -209,9 +209,9 @@ page Main
 //->33
 
 	Draw();
-	CreateBalloonEx("ME_01", 102, 340,30, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>嘛总之，,我会把这当作<BR>成为大人物的考验之一，,在这个牧场<BR>再努力一阵子。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01", 102, 340,30, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>嘛总之，,我会把这当作<BR>成为大人物的考验之一，,<BR>在这个牧场再努力一阵子。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 50,200, 430, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>然后当我.作为人成长了一轮之际，...<BR>我考虑再一次.对Babel发起挑战。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 102, 10,300, 250, 120, "Rectangle" , invalid,"<FONT color=white shadow=black>到那时候就请多指教了。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 102, 10,300, 250, 120, "Rectangle" , invalid,"<FONT color=white shadow=black>那时候就请多指教了。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_04", 102, 500,420, 280, 140, "Rectangle" , invalid,"<FONT color=white shadow=black>那么就再见了，,<BR>圣诞快乐。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 
@@ -228,7 +228,7 @@ page Main
 
 	SoundVolume(BGM1,9000,0);
 	Opaque("WHITE",1500,1000,true);
-	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false); // サーッ.wav
 	wait 1000;
 	Delete("ME_*");
 	Delete("IM_*");
@@ -237,12 +237,12 @@ page Main
 
 //->4
 	Draw();
-/*透花*/CreateBalloon("ME_01", 102, 175,45, 320, 145, "Lump" , 300,"<TYPE style=Normal><FONT size=14>斯帕德先生···<BR>,又搞错了什么了···</TYPE>");
+/*透花*/CreateBalloon("ME_01", 102, 175,45, 320, 145, "Lump" , 300,"<TYPE style=Normal><FONT size=14>斯帕德先生···<BR>,还是搞错了什么···</TYPE>");
 /*エマ*/CreateBalloon("ME_02", 102, 410,360, 255, 150, "Ellipse" ,75,"<TYPE style=Normal>嗯...　毕竟是个<BR>不吸取教训的人啊···</TYPE>");
 
-//1204小林；セリフ変更?削除
-///*エマ*/CreateBalloon("ME_03", 102, 490,405, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>反省とか後悔とか...<BR>そういう言葉とは<BR>無縁ぽかったし???</TYPE>");
-/*さゆ*/CreateBalloon("ME_04", 102, 25,385, 240, 160, "Cloud" , 60,"<TYPE style=Normal><FONT face='G' size=18>麻烦了呢——</TYPE>");
+//1204小林；セリフ変更・削除
+///*エマ*/CreateBalloon("ME_03", 102, 490,405, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>反省とか後悔とか...<BR>そういう言葉とは<BR>無縁ぽかったし···</TYPE>");
+/*さゆ*/CreateBalloon("ME_04", 102, 25,385, 240, 160, "Cloud" , 60,"<TYPE style=Normal><FONT face='G' size=18>真是伤脑筋啊——</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_THREE",50,center,middle,"Image/ku-3-3-10.bmp", "Fade",#663300,8);
 	Opaque("SIRO",0,0,false);
@@ -287,7 +287,7 @@ page Main
 	SoundStop(BGM1);
 	SoundVolume(BGM0,1000,0);
 
-	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false); // サーッ.wav
 	Opaque("WHITE",1500,1000,true);
 	Opaque("SIRO",0,1000,true);
 	wait 500;
@@ -310,11 +310,11 @@ page Main
 	SoundVolume(SE2,8000,0);
 
 	//グラハムさんからのメール
-	CreateBalloonEx("ME_01",202, 30,50, 400, 170, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=80>..圣诞快乐。<BR>,..<TYPE style=Fade interval=65>大家，..能为我庆祝生日...<BR>真的非常感谢。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01",202, 30,50, 400, 170, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=80>..圣诞快乐。<BR>,..<TYPE style=Fade interval=65>能为我庆祝生日...<BR>真的非常感谢大家。</TYPE>", "Fade",#000000c0,white);
 
 //1204小林セリフ削除
 //	CreateBalloon("ME_02", 102, 120,80, 360, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>みんな、..<BR>私の誕生日を祝ってくれてありがとう。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 202, 90,330, 460, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>话虽如此，,但在这个世界规模的庆祝活动中，,<BR>就连我的内心也感到了忐忑不安。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 202, 90,330, 460, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>话虽如此，,但在这个世界规模的庆祝活动中，,<BR>就连我的内心也充满了紧张和激动。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	CreateImage("IM_GRA",-2,center,middle,"Image/ku-1-7-58.bmp");
 	Draw();
@@ -337,9 +337,9 @@ page Main
 //->61
 
 	Draw();
-	CreateBalloonEx("ME_04", 102, 30,70, 450, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>大家如此地仰慕我，,.也正是我<BR>是神.和救世主..的有力证明，</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_05", 102, 200,220, 320, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>在高兴之余，,我也<BR>感受到了强烈的责任。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_06", 102, 80,420, 230, 115, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE  style=Fade interval=65>真是艰难啊。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_04", 102, 30,70, 450, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>大家如此地仰慕我，,.也正是我<BR>是神.是救世主..是世界之源的有力证明，</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_05", 102, 200,220, 320, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>在高兴之余，,我也不由得<BR>感受到了强烈的责任。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_06", 102, 80,420, 230, 115, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE  style=Fade interval=65>这真是个难办的事情啊。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	Draw();
 
@@ -357,9 +357,9 @@ page Main
 //->62
 
 	Draw();
-	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>说起来前几天，,在三丁目的公园里发现了<BR>有着很好颜色的秋田犬。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>说起来前几天，,在三丁目的公园里发现了<BR>一只毛色好、血统好的秋田犬。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 10,220, 415, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>虽然我一直尝试说服他与我合作，,<BR>但他就是不肯答应我。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>一直<B>汪汪</B>,　地说着，,<BR>却怎么也不肯说..　<B>嗯</B>。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是答应着我,　<B>汪汪</B>，,<BR>却怎么也不肯答应我说..　<B>嗯</B>。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	Draw();
 
@@ -419,16 +419,16 @@ page Main
 	Delete("ME_*");
 	Delete("IM_GRA");
 
-	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/僒乕僢.wav", 860, 0, 1000, false); // サーッ.wav
 	wait 1000;
 
 //<-63
 
 //->7
 	Draw();
-/*透花*/CreateBalloon("ME_01", 102, 242,60, 245, 125, "Rock" , 287,"<FONT size=13><TYPE style=Normal>·..·..·..格雷厄姆先生,<BR>终于老糊涂了啊···</TYPE>");
+/*透花*/CreateBalloon("ME_01", 102, 242,60, 245, 125, "Rock" , 287,"<FONT size=13><TYPE style=Normal>·..·..·..格雷厄姆先生,<BR>到底是老糊涂了啊···</TYPE>");
 /*エマ*/CreateBalloon("ME_02", 102, 440,65, 302, 140, "NoiseEllipse" , 260,"<TYPE style=Normal><TYPE interval=25>你　..你在说什么！,<BR><TYPE interval=55>不可能会那样吧</TYPE>");
-/*エマ*/CreateBalloon("ME_03", 102, 630,155, 133, 83, "WormEllipse" , invalid,"<FONT size=13><TYPE style=Normal>·..·..·..大概吧</TYPE>");
+/*エマ*/CreateBalloon("ME_03", 102, 630,155, 133, 83, "WormEllipse" , invalid,"<FONT size=13><TYPE style=Normal>·..·..·..大概</TYPE>");
 /*さゆ*/CreateBalloon("ME_04", 102, 15,355, 325, 220, "Cloud" , 75,"<TYPE style=Normal><FONT face='G' size=18><TYPE interval=45>沙友　..想见见<BR>那只小狗！</TYPE>");
 /*透花*/CreateBalloon("ME_05", 102, 410,405, 130, 75, "Ellipse" , invalid,"<TYPE style=Normal><TYPE interval=75>·.·.·.</TYPE>");
 /*エマ*/CreateBalloon("ME_06", 102, 540,425, 130, 75, "Ellipse" , invalid,"<TYPE style=Normal><TYPE interval=75>·.·.·.</TYPE>");

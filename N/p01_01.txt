@@ -31,8 +31,8 @@ page Main
 	Draw();
 /*高宮*/CreateBalloon("ME_01", 102, 335, 100, 270, 140, "Potato" , 20,"<TYPE style=Normal>晚上好<BR>艾玛</TYPE>");
 /*エマ*/CreateBalloon("ME_02", 102, 180,190, 250, 150, "Ellipse" , 134,"<TYPE style=Normal>啊——　,艾伦！</TYPE>");
-/*高宮*/CreateBalloon("ME_03", 102, 460,185, 223, 110, "Potato" , invalid,"<TYPE style=Normal>津名川在？</TYPE>");
-/*透花*/CreateBalloon("ME_04", 102, 200,338, 280, 140, "Dumpling" , -170,"<TYPE style=Normal>主人大人<BR>还在研究所里···</TYPE>");
+/*高宮*/CreateBalloon("ME_03", 102, 460,185, 223, 110, "Potato" , invalid,"<TYPE style=Normal>津名川在吗？</TYPE>");
+/*透花*/CreateBalloon("ME_04", 102, 200,338, 280, 140, "Dumpling" , -170,"<TYPE style=Normal>主人大人<BR>还在研究所那边···</TYPE>");
 ///*高宮*/CreateBalloon("ME_05", 102, 440,420, 330, 145, "Ellipse" , 60,"<TYPE style=Normal>クリスマスの夜まで残業？</TYPE>");
 ///*高宮*/CreateBalloon("ME_06", 102, 530,480, 180, 120, "Ellipse" , invalid,"<TYPE style=Normal>ほんと,<BR>無粋な男だわ</TYPE>");
 	Request("ME_*","Erase");
@@ -85,11 +85,11 @@ page Main
 //->2
 	Draw();
 /*透花*/CreateBalloon("ME_07", 102, 165, 20, 310, 150, "Dumpling" , 240,"<TYPE style=Normal>真抱歉,<BR>难得你们<BR>来了一趟···</TYPE>");
-/*高宮*/CreateBalloon("ME_08", 102, 335,120, 300, 140, "Potato" , 27,"<TYPE style=Normal>啊啦　,别在意<BR>..是我擅自决定过来的</TYPE>");
+/*高宮*/CreateBalloon("ME_08", 102, 335,120, 300, 140, "Potato" , 27,"<TYPE style=Normal>哎呀　,别在意<BR>..是我擅自决定过来的</TYPE>");
 /*高宮*/CreateBalloon("ME_081",102, 490,362, 180, 95, "ThinkEllipse" , 85,"<TYPE style=Normal interval=90><FONT size=12>肚子饿了···</TYPE>");
 /*高宮*/CreateBalloon("ME_082",102, 405,383, 163, 92, "ThinkEllipse" , 105,"<TYPE style=Normal interval=90><FONT size=12>好困···</TYPE>");
-///*透花*/CreateBalloon("ME_09", 102, 200,60, 280, 135, "Dumpling" , 230,"<TYPE style=Normal>はい???,<BR>でも..エレンさん<BR>..今日は???？</TYPE>");
-///*高宮*/CreateBalloon("ME_10", 102, 310,135, 340, 140, "Ellipse" , 40,"<TYPE style=Normal>もちろん　,津名川と<BR>決着をつけに来たんだけど???</TYPE>");
+///*透花*/CreateBalloon("ME_09", 102, 200,60, 280, 135, "Dumpling" , 230,"<TYPE style=Normal>はい···,<BR>でも..エレンさん<BR>..今日は···？</TYPE>");
+///*高宮*/CreateBalloon("ME_10", 102, 310,135, 340, 140, "Ellipse" , 40,"<TYPE style=Normal>もちろん　,津名川と<BR>決着をつけに来たんだけど···</TYPE>");
 ///*エマ*/CreateBalloon("ME_11", 102, 150,247, 220, 120, "Clay" , 250,"<TYPE style=Wave interval=80 speed=1000><FONT face='G' size=18>えー　...またー？</TYPE>");
 	Request("ME_*","Erase");
 	CreateImage("IM_EMA02",51, 30,320,"Image/ta-1-1-4.bmp");
@@ -122,7 +122,7 @@ page Main
 /*チカ*/CreateBalloon("ME_081",102, 485,362, 190, 92, "ThinkEllipse" , 85,"<TYPE style=Normal interval=90><FONT size=12>想吃冰激凌···</TYPE>");
 /*チト*/CreateBalloon("ME_082",102, 375,380, 180, 95, "ThinkEllipse" , 80,"<TYPE style=Normal interval=90><FONT size=12>背好酸···</TYPE>");
 /*高宮*/CreateBalloon("ME_10", 102, 310,135, 340, 140, "Potato" , 40,"<TYPE style=Normal>当然　,是为了和<BR>津名川一决胜负的···</TYPE>");
-/*エマ*/CreateBalloon("ME_11", 102, 150,247, 220, 120, "Clay" , 250,"<TYPE style=Wave interval=80 speed=1000><FONT face='G' size=18>诶——　...还没完吗？</TYPE>");
+/*エマ*/CreateBalloon("ME_11", 102, 150,247, 220, 120, "Clay" , 250,"<TYPE style=Wave interval=80 speed=1000><FONT face='G' size=18>诶——　...又来——？</TYPE>");
 	Request("ME_*","Erase");
 	Draw();
 
@@ -193,7 +193,7 @@ page Main
 
 //->4
 	Draw();
-/*高宮*/CreateBalloon("ME_15", 102, 267, 93, 317, 137, "Potato" , 320,"<TYPE style=Normal>嘛　...对我来说..<BR>这也是个好机会</TYPE>");
+/*高宮*/CreateBalloon("ME_15", 102, 267, 93, 317, 137, "Potato" , 320,"<TYPE style=Normal>总之　...对我来说..<BR>反而可以说是个好机会呢</TYPE>");
 /*透花*/CreateBalloon("ME_16", 102, 140,223, 285, 137, "Dumpling" , 126,"<TYPE style=Normal interval=80>？,　艾伦？...<BR>什么···</TYPE>");
 ///*高宮*/CreateBalloon("ME_17", 102, 330,300, 230, 120, "Ellipse" , 50,"<TYPE style=Normal>あら　...いいのよ</TYPE>");
 ///*高宮*/CreateBalloon("ME_171",102, 234,378, 290, 150, "Ellipse" , invalid,"<TYPE style=Normal>でも　,やることだけは<BR>やらせてもらうわ</TYPE>");
@@ -268,7 +268,7 @@ page Main
 //->6
 	Draw();
 /*高宮*/CreateBalloon("ME_22", 102, 500,120, 300, 140, "StrainRect" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=20>收下吧！</TYPE>");
-/*高宮*/CreateBalloon("ME_221",102,  15,355, 345, 140, "StrainRect" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=20>我们的礼物！</TYPE>");
+/*高宮*/CreateBalloon("ME_221",102,  15,355, 345, 140, "StrainRect" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=20>这是我送给你们的礼物！</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_TAK03a",55,0,250,800,100,false);
 	CreateImage("WI_TAK03a/IM",50,out_left,200,"Image/ta-2-2-7a.bmp");
@@ -325,7 +325,7 @@ page Main
 	MoveEx("IM_TREE",1200,@0,0,true,"Acc4");
 	WaitAction("IM_TREE");
 
-	SoundPlayEx(SE1, "SE/僟僀僫儅僀僩係.wav",970,0,1000,false);
+	SoundPlayEx(SE1, "SE/僟僀僫儅僀僩係.wav",970,0,1000,false); //ダイナマイト４.wav
 	ShakeMove("*",1000,@0,@0,0,40,0,0,true);
 	WaitAction("IM_TREE");
 	wait 500;
@@ -354,7 +354,7 @@ page Main
 //->8
 	Draw();
 /*高宮*/CreateBalloon("ME_26", 102, 270, 10, 287, 145, "Potato" , 225,"<TYPE style=Normal interval=40>啊嘞啊嘞？,<BR>意外冷淡的反应？</TYPE>");
-/*高宮*/CreateBalloon("ME_27", 102,   380,105, 305, 135, "Potato" , invalid,"<TYPE style=Normal interval=40>奇怪啊？...<BR>我　..又在哪里失败了吗？</TYPE>");
+/*高宮*/CreateBalloon("ME_27", 102,   380,105, 305, 135, "Potato" , invalid,"<TYPE style=Normal interval=40>奇怪了？...<BR>我　..又在哪里失败了吗？</TYPE>");
 /*高宮*/CreateBalloon("ME_28", 102,   190,242, 320, 140, "Potato" , 120,"<TYPE style=Normal interval=40>果然我不该做<BR>..不习惯的事吗？</TYPE>");
 /*高宮*/CreateBalloon("ME_29", 102,   100,335, 340, 135, "Dumpling" , invalid,"<TYPE style=Normal interval=40>没用的家伙不管做<BR>什么　..都没用吗？</TYPE>");
 	Request("ME_*","Erase");
@@ -381,10 +381,10 @@ page Main
 //->9
 	SetBaseTextInterval( 50 );
 	Draw();
-/*エマ*/CreateBalloon("ME_28", 102, 400, 227, 317, 138, "Clay" , 295,"<TYPE style=Normal>啊　..完全<BR>..没有那种事···</TYPE>");
-///*エマ*/CreateBalloon("ME_29", 102, 530,180, 310, 160, "Potato" , -100,"<TYPE style=Normal>プレゼントと言われて,<BR>まさか本当にプレゼントが<BR>来るなんて???</TYPE>");
+/*エマ*/CreateBalloon("ME_28", 102, 400, 227, 317, 138, "Clay" , 295,"<TYPE style=Normal>啊　..完全没有<BR>..不是那样的···</TYPE>");
+///*エマ*/CreateBalloon("ME_29", 102, 530,180, 310, 160, "Potato" , -100,"<TYPE style=Normal>プレゼントと言われて,<BR>まさか本当にプレゼントが<BR>来るなんて···</TYPE>");
 /*透花*/CreateBalloon("ME_30",  102, 110,415, 377, 162, "DropDumpling" , 58,"<TYPE style=Normal interval=55>只是以艾伦一贯的作风,<BR>我完全没想到会收到<BR>...一份像样的礼物···</TYPE>");
-///*透花*/CreateBalloon("ME_31", 102,  160,450, 360, 150, "DropDumpling" , 55,"<TYPE style=Normal>もっと...ドカーンとか,<BR>ズギャーンな感じの???</TYPE>");
+///*透花*/CreateBalloon("ME_31", 102,  160,450, 360, 150, "DropDumpling" , 55,"<TYPE style=Normal>もっと...ドカーンとか,<BR>ズギャーンな感じの···</TYPE>");
 	Request("ME_*","Erase");
 	Draw();
 
@@ -403,7 +403,7 @@ page Main
 //->10
 	SetBaseTextInterval( 60 );
 	Draw();
-///*透花*/CreateBalloon("ME_32", 102, 370,210, 325, 150, "Ellipse" , invalid,"<TYPE style=Normal interval=35>でも???,<BR>ありがとうございます！</TYPE>");
+///*透花*/CreateBalloon("ME_32", 102, 370,210, 325, 150, "Ellipse" , invalid,"<TYPE style=Normal interval=35>でも···,<BR>ありがとうございます！</TYPE>");
 /*透花*/CreateBalloon("ME_33", 102, 370,210, 325, 150, "Potato" , 267,"<TYPE style=Normal interval=35>不过···,<TYPE style=Normal interval=35>　我很高兴！<BR>,<TYPE style=Normal interval=45>非常感谢！</TYPE>");
 /*高宮*/CreateBalloon("ME_34", 102,  100,320, 305, 130, "Potato" , 105,"<TYPE style=Normal>没关系了,　反正<BR>可以用经费报销</TYPE>");
 /*透花*/CreateBalloon("ME_35", 102, 277,410, 173, 85, "DropDumpling" , 50,"<TYPE style=Normal>啊——.·.·.·</TYPE>");
@@ -432,8 +432,8 @@ page Main
 //->11
 	Draw();
 ///*高宮*/CreateBalloon("ME_36", 102, 170,  0, 260, 140, "Potato" , invalid,"<TYPE style=Normal>あの男に<BR>伝えておきなさい！</TYPE>");
-/*高宮*/CreateBalloon("ME_361",102,  -20, 143, 350, 150, "Potato" , 314,"<TYPE style=Normal interval=45>帮我转告那个男人！<BR>..明年也不会输的请多关照<BR>,了呢</TYPE>");
-/*高宮*/CreateBalloon("ME_37", 102,  32,260, 266, 125, "Potato" , invalid,"<TYPE style=Normal>那么,<BR>知佳..知登...　回去了！</TYPE>");
+/*高宮*/CreateBalloon("ME_361",102,  -20, 143, 350, 150, "Potato" , 314,"<TYPE style=Normal interval=45>帮我转告那个男人！<BR>..明年我也不会输的<BR>,请多关照了呢</TYPE>");
+/*高宮*/CreateBalloon("ME_37", 102,  32,260, 266, 125, "Potato" , invalid,"<TYPE style=Normal>那么.　知佳..知登..,<BR>我们回去了！</TYPE>");
 /*知佳*/CreateBalloon("ME_38", 102, 640,230, 160, 120, "Ellipse" , invalid,"<TYPE style=Normal><FONT face='G'>好——</TYPE>");
 /*知登*/CreateBalloon("ME_39", 102, 294,460, 160, 120, "Ellipse" , invalid,"<TYPE style=Normal><FONT face='G'>好——</TYPE>");
 //帰る高宮さん一家。閉まるドア。
@@ -482,8 +482,8 @@ page Main
 //->12
 	Draw();
 /*透花*/CreateBalloon("ME_40", 102, 140, 0, 260, 150, "Ellipse" , invalid,"<TYPE style=Normal>艾伦　,到底<BR>是来干嘛的呢？</TYPE>");
-/*透花*/CreateBalloon("ME_41", 102,  20,90, 270, 160, "Ellipse" , -50,"<TYPE style=Normal>真的...<BR>只是来送礼物的···？</TYPE>");
-/*エマ*/CreateBalloon("ME_42", 102, 510,60, 200, 140, "Ellipse" , 240,"<TYPE style=Normal>嗯···,<BR>奇怪的人啊···</TYPE>");
+/*透花*/CreateBalloon("ME_41", 102,  20,90, 270, 160, "Ellipse" , -50,"<TYPE style=Normal>真的只是来...<BR>送礼物的吗···？</TYPE>");
+/*エマ*/CreateBalloon("ME_42", 102, 510,60, 200, 140, "Ellipse" , 240,"<TYPE style=Normal>嗯···,毕竟是个<BR>奇怪的人···</TYPE>");
 //ピンポーン。
 /*エマ*/CreateBalloon("ME_43", 102, 525,200, 250, 130, "Lump" , invalid,"<TYPE style=Normal>真是忙碌的一天呢</TYPE>");
 /*透花*/CreateBalloon("ME_44", 102,  46,360, 220, 150, "Ellipse" , 30,"<TYPE style=Normal>嗯,<BR>不过是谁呢？</TYPE>");

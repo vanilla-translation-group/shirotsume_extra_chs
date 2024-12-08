@@ -76,9 +76,9 @@ page Main
 ///*さゆ*/CreateBalloon("ME_01", 102, 540,  20, 220, 140, "Clay" , invalid,"<TYPE style=Normal><FONT face='G'>う～,　せんせー<BR>おそいですー</TYPE>");
 ///*エマ*/CreateBalloon("ME_02", 102, 270, 160, 325, 145, "LackEllipse" , invalid,"<TYPE style=Normal interval=30>遅い遅い遅い！,<BR></TYPE><TYPE style=Normal>もう　,なにやってんのよ！</TYPE>");
 ///*エマ*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>そーじさんてホント..<BR>女心が分かってないんだから！</TYPE>");
-///*透花*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "Dumpling", invalid,"<TYPE style=Normal>でも,<BR>ご主人さま<BR>お仕事だし???</TYPE>");
-///*透花*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>忙しいし???</TYPE>");
-///*透花*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>がまんしなきゃ...?.?.?</TYPE>");
+///*透花*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "Dumpling", invalid,"<TYPE style=Normal>でも,<BR>ご主人さま<BR>お仕事だし···</TYPE>");
+///*透花*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>忙しいし···</TYPE>");
+///*透花*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>がまんしなきゃ...·.·.·</TYPE>");
 	Request("*","Erase");
 	Draw();
 
@@ -95,10 +95,10 @@ page Main
 /*エマ*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>宗慈真的是..<BR>不懂女孩子的心啊！</TYPE>");
 	Request("ME_03","TapEnter");	call MesWait;
 
-/*透花*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "LackEllipse", invalid,"<TYPE style=Normal>但是,<BR>主人大人<BR>有工作···</TYPE>");
+/*透花*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "LackEllipse", invalid,"<TYPE style=Normal>但是,<BR>主人大人<BR>要上班···</TYPE>");
 	Request("ME_04","TapEnter");	call MesWait;
 
-/*透花*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>很忙吧···</TYPE>");
+/*透花*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>又很忙···</TYPE>");
 	Request("ME_05","Enter");	call MesWait;
 
 /*透花*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>必须忍耐...·.·.·</TYPE>");
@@ -207,7 +207,7 @@ page Main
 /*エマ*/CreateBalloon("ME_14", 102, 570,  14, 240, 120, "Ellipse", -130,"<TYPE style=Normal>哇　有谁来了！</TYPE>");
 /*さゆ*/CreateBalloon("ME_15", 102, -10, 277, 216, 110, "Cloud" , 30,"<TYPE style=Normal><FONT face='G'>是老师吗？</TYPE>");
 /*透花*/CreateBalloon("ME_16", 102, 335, 240, 160, 120, "Ellipse", invalid,"<TYPE style=Normal>不</TYPE>");
-/*透花*/CreateBalloon("ME_161",102, 238, 464, 240, 133, "Ellipse", 20,"<TYPE style=Normal>主人大人<BR>是有钥匙的···</TYPE>");
+/*透花*/CreateBalloon("ME_161",102, 238, 464, 240, 133, "Ellipse", 20,"<TYPE style=Normal>主人大人<BR>有带着钥匙···</TYPE>");
 	Request("ME_*","Erase");
 	CreateClass("CL_EMA",50,0,0,"SIPPO");
 	CreateFrameEx("IM_SAY02",51, 112,-490,"Image/3-2-2-7.bmp", "Fade",#663300,8);
@@ -247,7 +247,7 @@ page Main
 //<-4
 
 //->5
-/*エマ*/CreateBalloon("ME_17", 102, 520, 150, 200, 120, "Dumpling", invalid,"<TYPE style=Normal>好了好了</TYPE>");
+/*エマ*/CreateBalloon("ME_17", 102, 520, 150, 200, 120, "Dumpling", invalid,"<TYPE style=Normal>来了来了</TYPE>");
 /*エマ*/CreateBalloon("ME_171",102,  42, 330, 220, 130, "Dumpling", invalid,"<TYPE style=Normal>现在就来开门——</TYPE>");
 	Request("*","Erase");
 	Opaque("IM_EMA05",0,0,true);

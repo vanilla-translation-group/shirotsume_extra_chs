@@ -185,8 +185,8 @@ page Main
 
 	SoundLoad(SE0,"SE/僇僷.wav"); //カパ.wav
 	SoundLoad(SE1,"SE/僐僩.wav"); //コト.wav
-	SoundLoad(SE2,"SE/僐僩.wav");
-	SoundLoad(SE3,"SE/僐僩.wav");
+	SoundLoad(SE2,"SE/僐僩.wav"); //コト.wav
+	SoundLoad(SE3,"SE/僐僩.wav"); //コト.wav
 	SoundLoad(SE4,"SE/僺儏乕.wav"); //ピュー.wav
 	SoundStop(BGM0);
 	Draw();
@@ -203,7 +203,7 @@ page Main
 	ZoomEx("Node",400,1400,1400,true,"Acc3");
 	ZoomEx("Node",100,1000,1000,true,"Dec3");
 	wait 100;
-	SoundPlayEx(SE0, "SE/僇僷.wav", 880, 0, 1000, false);
+	SoundPlayEx(SE0, "SE/僇僷.wav", 880, 0, 1000, false); //カパ.wav
 
 /*
 	ShakeMove("Node",150,@0,@0,5,5,0,0,true);
@@ -219,17 +219,17 @@ page Main
 	Rotate("Node", 50, 0, true);
 	wait 550;
 
-	SoundPlayEx(SE1, "SE/僐僩.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE1, "SE/僐僩.wav", 860, 0, 1000, false); //コト.wav
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, true);
 	wait 50;
 
-	SoundPlayEx(SE2, "SE/僐僩.wav", 880, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/僐僩.wav", 880, 0, 1000, false); //コト.wav
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, true);
 	wait 50;
 
-	SoundPlayEx(SE3, "SE/僐僩.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE3, "SE/僐僩.wav", 860, 0, 1000, false); //コト.wav
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, false);
 	wait 200;
@@ -241,7 +241,7 @@ page Main
 	wait 800;
 
 
-	SoundPlayEx(SE4, "SE/僺儏乕.wav", 760, 0, 1000, false);
+	SoundPlayEx(SE4, "SE/僺儏乕.wav", 760, 0, 1000, false); //ピュー.wav
 	MoveEx("Node", 500,@0,@220, false, "AccSin");
   	Opaque("Node",500,0,false);
 	Rotate("Node", 500, 1440, false);
