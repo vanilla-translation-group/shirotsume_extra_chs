@@ -29,7 +29,7 @@ page Main
 //->1
 //ガチャ。扉が開く。
 	Draw();
-/*荒山*/CreateBalloon("ME_01", 102, 225,55, 242, 120, "Rock" , invalid,"<TYPE style=Fade>打扰了···</TYPE>");
+/*荒山*/CreateBalloon("ME_01", 102, 225,55, 242, 120, "Rock" , invalid,"<TYPE style=Fade>我来打扰了···</TYPE>");
 /*透花*/CreateBalloon("ME_02", 102, 345,205, 280, 140, "Ellipse" , 40,"<TYPE style=Normal>啊　,荒山先生,<BR>欢迎光临</TYPE>");
 /*エマ*/CreateBalloon("ME_03", 102, 277,437, 250, 140, "Ellipse" , 30,"<TYPE style=Normal>荒山先生！,<BR><TYPE style=Normal interval=30>圣诞快乐！</TYPE>");
 /*荒山*/CreateBalloon("ME_04", 102, 193,245, 320, 155, "Rock" , 120,"<TYPE style=Normal>嗯　,圣诞快乐,..<BR>···收下这个吧</TYPE>");
@@ -76,8 +76,8 @@ page Main
 /*荒山*/CreateBalloon("ME_06", 102, 390,110, 220, 110, "Rock" , invalid,"<TYPE style=Normal>这是香槟</TYPE>");
 /*透花*/CreateBalloon("ME_07", 102, 130,120, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>哇——<BR>...非常感谢！</TYPE>");
 /*荒山*/CreateBalloon("ME_08", 102, -30,285, 320, 125, "Rock" , invalid,"<TYPE style=Normal>别在意<BR>,全都可以用经费报销···</TYPE>");
-/*荒山*/CreateBalloon("ME_081",102, 30,360, 380, 155, "Rock" , invalid,"<TYPE style=Normal>说起来,<BR>津名川宗慈去哪了？</TYPE>");
-/*透花*/CreateBalloon("ME_09", 102, 330,430, 280, 150, "Dumpling" , invalid,"<TYPE style=Normal>主人还在<BR>研究所里<BR>工作···</TYPE>");
+/*荒山*/CreateBalloon("ME_081",102, 30,360, 380, 155, "Rock" , invalid,"<TYPE style=Normal>说起来,<BR>津名川宗慈在哪呢？</TYPE>");
+/*透花*/CreateBalloon("ME_09", 102, 330,430, 280, 150, "Dumpling" , invalid,"<TYPE style=Normal>主人大人还在<BR>研究所里<BR>工作···</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_CAKE",20,0,200,800,200,true);
 	CreateImage("WI_CAKE/IM",20,0,0,"Image/a-1-2-4.bmp");
@@ -108,7 +108,7 @@ page Main
 
 //->3
 	Draw();
-//*荒山*/CreateBalloon("ME_10", 102, 380,0, 160, 100, "Rock" , invalid,"<TYPE style=Normal interval=0 speed=0>何だと???？</TYPE>");
+//*荒山*/CreateBalloon("ME_10", 102, 380,0, 160, 100, "Rock" , invalid,"<TYPE style=Normal interval=0 speed=0>何だと···？</TYPE>");
 /*荒山*/CreateBalloon("ME_101",102, 225,90, 345, 155, "Rock" , invalid,"<TYPE style=Normal>这么重要的日子里<BR>居然还在工作···？</TYPE>");
 /*荒山*/CreateBalloon("ME_11", 102, 340,190, 315, 110, "Rock" , invalid,"<TYPE style=Normal>真是让人难以置信的男人······</TYPE>");
 /*荒山*/CreateBalloon("ME_182",102, 150,330, 275, 110, "Rock" , invalid,"<TYPE style=Normal>······,嗯？</TYPE>");
@@ -116,7 +116,7 @@ page Main
 /*透花*/CreateBalloon("ME_191",102, 370,455, 285, 145, "Dumpling" , invalid,"<TYPE style=Normal>荒山先生<BR>怎么了？</TYPE>");
 
 ///*透花*/CreateBalloon("ME_12", 102, 47,42, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>ご主人さまに<BR>何かご用事なんですか？</TYPE>");
-///*荒山*/CreateBalloon("ME_13", 102, 250,300, 260, 150, "PolyRect" , invalid,"<TYPE style=Normal>いや???,<BR>偶然　近くを通り<BR>かかっただけだ</TYPE>");
+///*荒山*/CreateBalloon("ME_13", 102, 250,300, 260, 150, "PolyRect" , invalid,"<TYPE style=Normal>いや···,<BR>偶然　近くを通り<BR>かかっただけだ</TYPE>");
 ///*透花*/CreateBalloon("ME_14", 102, 150,430, 250, 130, "Dumpling" , invalid,"<TYPE style=Normal>え？<BR>でもケーキが？</TYPE>");
 ///*荒山*/CreateBalloon("ME_15", 102, 330,420, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0 speed=0>偶然だ</TYPE>");
 ///*荒山*/CreateBalloon("ME_151",102, 410,460, 260, 130, "PolyRect" , invalid,"<TYPE style=Normal>お前たちは本当に<BR>運が良い</TYPE>");
@@ -148,11 +148,11 @@ page Main
 //<-3
 //
 //->4
-///*透花*/CreateBalloon("ME_16", 102, 500,15, 240, 130, "Dumpling" , invalid,"<TYPE style=Normal>?..?..?..そ　..そうですか</TYPE>");
+///*透花*/CreateBalloon("ME_16", 102, 500,15, 240, 130, "Dumpling" , invalid,"<TYPE style=Normal>·..·..·..そ　..そうですか</TYPE>");
 ///*さゆ*/CreateBalloon("ME_161",102, 180,53, 200, 140, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=20>あやしー</TYPE>");
 ///*エマ*/CreateBalloon("ME_17", 101, 290,130, 220, 130, "Ellipse" , invalid,"<TYPE style=Normal><FONT face='G' size=20>あやしー</TYPE>");
 ///*荒山*/CreateBalloon("ME_18", 102, 100,370, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal>ふん</TYPE>");
-///*荒山*/CreateBalloon("ME_181",102, 120,420, 320, 150, "PolyRect" , invalid,"<TYPE style=Normal>何を信じようとも<BR>それはお前たちの自由だが???</TYPE>");
+///*荒山*/CreateBalloon("ME_181",102, 120,420, 320, 150, "PolyRect" , invalid,"<TYPE style=Normal>何を信じようとも<BR>それはお前たちの自由だが···</TYPE>");
 //	Request("ME_*","Erase");
 //	Draw();
 //
@@ -173,7 +173,7 @@ page Main
 //<-4
 //
 //->5
-///*荒山*/CreateBalloon("ME_182",102, 300,160, 200, 120, "Rock" , invalid,"<TYPE style=Normal>?.?.?.?.?.?.,ん？</TYPE>");
+///*荒山*/CreateBalloon("ME_182",102, 300,160, 200, 120, "Rock" , invalid,"<TYPE style=Normal>·.·.·.·.·.·.,ん？</TYPE>");
 ///*透花*/CreateBalloon("ME_19", 102, 90,330, 140, 100, "Ellipse" , invalid,"<TYPE style=Normal>？</TYPE>");
 ///*透花*/CreateBalloon("ME_191",102, 110,370, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>荒山さん<BR>どうしたんですか？</TYPE>");
 //	Request("ME_*","Erase");
@@ -214,7 +214,7 @@ page Main
 	SoundPlay(SE2, "SE/A5_03063.wav");
 	ZoomEx("NO_ARA02",800,1000,1000,true,"Acc4");
 
-	SoundPlay(SE0, "SE/僪僇儞.wav");
+	SoundPlay(SE0, "SE/僪僇儞.wav"); //ドカン.wav
 
 	Opaque("WHITE",100,1000,true);
 	Opaque("WI_CAKE/IM",0,0,true);
@@ -268,7 +268,7 @@ page Main
 //->8
 	Draw();
 /*荒山*/CreateBalloon("ME_23", 102, 210,-5, 340, 170, "Strike" , invalid,"<TYPE interval=45><FONT face='G' size=20>这房间<BR>像什么样子！.</TYPE>");
-/*荒山*/CreateBalloon("ME_24", 102, 30,100, 420, 160, "Rock" , 340,"<TYPE style=Normal interval=60>你们啊...　真的觉得<BR>这样准备..<BR>就能享受圣诞节了吗？</TYPE>");
+/*荒山*/CreateBalloon("ME_24", 102, 30,100, 420, 160, "Rock" , 340,"<TYPE style=Normal interval=60>你们啊...　真的觉得<BR>准备成这样..<BR>就能享受圣诞节了吗？</TYPE>");
 /*透花*/CreateBalloon("ME_25", 102, 190,290, 280, 120, "Clay" , invalid,"<TYPE style=Normal><FONT size=14>荒山先生<BR>..你在说什么呢···</TYPE>");
 /*荒山*/CreateBalloon("ME_26", 102, 322,330, 310, 165, "Strike" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=28>就比如！</FONT></TYPE>");
 	Request("ME_*","Erase");
@@ -307,9 +307,9 @@ page Main
 //->9
 	Draw();
 /*荒山*/CreateBalloon("ME_261",102, 150,10, 400, 170, "Strike" , invalid,"<TYPE style=Normal interval=40><B>看那没有任何装饰的<BR>土气圣诞树吧！</TYPE>");
-/*荒山*/CreateBalloon("ME_27", 102, 60,115, 300, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>简直就像盆栽,<BR>一样不像话</TYPE>");
-/*荒山*/CreateBalloon("ME_28", 102, 145,320, 515, 190, "Strike" , invalid,"<TYPE style=Normal interval=40><B>还有这个房间的寒酸模样，<BR>就连派对装饰的影子<BR>都看不到！</TYPE>");
-/*荒山*/CreateBalloon("ME_29", 102, 380,440, 290, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>真是糟透了,<BR>简直跟在守夜一样</TYPE>");
+/*荒山*/CreateBalloon("ME_27", 102, 60,115, 300, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>一点也不像话,<BR>简直就是盆栽</TYPE>");
+/*荒山*/CreateBalloon("ME_28", 102, 145,320, 515, 190, "Strike" , invalid,"<TYPE style=Normal interval=40><B>还有这个房间的寒酸模样<BR>就连派对装饰的影子<BR>都看不到！</TYPE>");
+/*荒山*/CreateBalloon("ME_29", 102, 380,440, 290, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>真是糟透了,<BR>简直像是在守灵</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_ROOM02", 20,0,middle, "Image/a-3-3-11.bmp","Fade",black,8);
 	Opaque("IM_ROOM02", 0, 0, false);
@@ -336,10 +336,10 @@ page Main
 //10
 	Draw();
 /*エマ*/CreateBalloon("ME_30", 102, 50,25, 330, 162, "FatStar" , invalid,"<TYPE style=Normal><FONT face='G' size=20>你说什么<TYPE interval=300 speed=300 style=Spring>～</TYPE>！</TYPE>");
-/*荒山*/CreateBalloon("ME_31", 102, 220,240, 380, 170, "Rock" , 50,"<TYPE style=Normal>在这么松松垮垮的环境里<BR>还装出圣诞快乐的样子<BR>真是让人笑..掉..大..牙..了···</TYPE>");
+/*荒山*/CreateBalloon("ME_31", 102, 220,240, 380, 170, "Rock" , 50,"<TYPE style=Normal>在这么松松垮垮的环境里<BR>还装出圣诞快乐的样子<BR>真是荒..唐..可..笑..···</TYPE>");
 /*荒山*/CreateBalloon("ME_32", 102, 417,307, 420, 200, "Strike" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=18>你们<BR>根本就不理解<BR>圣诞节是什么！</TYPE>");
 /*エマ*/CreateBalloon("ME_33", 102, 70,375, 283, 135, "FatStar" , 160,"<FONT face='G' size=20><TYPE style=Normal interval=30>吵死了！</TYPE>");
-/*エマ*/CreateBalloon("ME_331",102, 175,455, 310, 143, "SplashEllipse" , invalid,"<TYPE style=Normal><FONT face='G' size=18>和你<BR>没有关系吧</TYPE>");
+/*エマ*/CreateBalloon("ME_331",102, 175,455, 310, 143, "SplashEllipse" , invalid,"<TYPE style=Normal><FONT face='G' size=18>这和你<BR>没有关系吧</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_EMA03",50,30,600,"Image/a-4-4-12.bmp", "Fade",#663300,8);
 	Opaque("IM_EMA03", 0, 0, false);
@@ -385,7 +385,7 @@ page Main
 //12
 	Draw();
 /*荒山*/CreateBalloonEx("ME_34", 102, 405,30, 350, 165, "RoundRect" , 250,"<TYPE style=Fade><FONT face='G' size=20 color=white shadow=black>用心听着吧···<BR>年少的EXTRA们啊···</TYPE>", "Vivide",#000000b0,black);
-/*荒山*/CreateBalloonEx("ME_35", 102, 35,363, 405, 190, "RoundRect" , 75,"<TYPE style=Fade interval=35><FONT face='G' size=22 color=white shadow=black>让我...<BR>来教你们圣诞节<BR>真正的.享受方式吧！！</TYPE>", "Vivide",#000000b0,black);
+/*荒山*/CreateBalloonEx("ME_35", 102, 35,363, 405, 190, "RoundRect" , 75,"<TYPE style=Fade interval=35><FONT face='G' size=22 color=white shadow=black>让我来...<BR>教你们圣诞节<BR>真正的.享受方式吧！！</TYPE>", "Vivide",#000000b0,black);
 	Request("ME_*","Erase");
 	CreateWindow("WI_ARA1",50,260,-600,280,600,false);
 //	CreateImage("WI_ARA1/a",50,260,0,"Image/a-4-4-13a.bmp");
@@ -413,13 +413,13 @@ page Main
 //->13
 	Draw();
 /*透花*/CreateBalloon("ME_36", 102, 430,180, 370, 150, "Clay" , 77,"<TYPE style=Normal interval=65>荒山先生···<BR>...很抱歉在你兴奋<BR>的时候打断你···</TYPE>");
-///*透花*/CreateBalloon("ME_361",102, 470,310, 180, 100, "Clay" , invalid,"<TYPE style=Normal>ちょっと???</TYPE>");
+///*透花*/CreateBalloon("ME_361",102, 470,310, 180, 100, "Clay" , invalid,"<TYPE style=Normal>ちょっと···</TYPE>");
 //（受話器を持って）
 ///*荒山*/CreateBalloon("ME_37", 102, 30,50, 150, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0>何だ！</TYPE>");
-/*荒山*/CreateBalloon("ME_371",102, -50,255, 480, 215, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=24>有疑问吗···？　,<TYPE style=Fade interval=30>我允许你<BR>,<TYPE style=Fade interval=35>提出来！</TYPE>");
-///*透花*/CreateBalloon("ME_38", 102, 163,340, 150, 120, "Ellipse" , invalid,"<TYPE style=Normal>いえ???</TYPE>");
-/*透花*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>不···　,因为给附近的人添麻烦了<BR>所以报了警</TYPE>");
-/*透花*/CreateBalloon("ME_39", 102, 365,460, 340, 135, "Clay" , invalid,"<TYPE style=Normal>所以那个···,<BR>你差不多<BR>该回去了···</TYPE>");
+/*荒山*/CreateBalloon("ME_371",102, -50,255, 480, 215, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=24>有疑问吗···？　,<TYPE style=Fade interval=30>可以啊<BR>,<TYPE style=Fade interval=35>你说说看！</TYPE>");
+///*透花*/CreateBalloon("ME_38", 102, 163,340, 150, 120, "Ellipse" , invalid,"<TYPE style=Normal>いえ···</TYPE>");
+/*透花*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>不···　,因为会扰民<BR>所以我报警了</TYPE>");
+/*透花*/CreateBalloon("ME_39", 102, 365,460, 340, 135, "Clay" , invalid,"<TYPE style=Normal>所以那个···,<BR>你最好还是<BR>早点回去吧···</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_TOU02",50,600,35,"Image/a-5-5-14.bmp", "Fade",#663300,8);
 	Opaque("IM_TOU02", 0, 0, true);
@@ -455,7 +455,7 @@ page Main
 //->14
 	Draw();
 /*荒山*/CreateBalloon("ME_40", 102, 195,240, 370, 160, "Rock" , 120,"<TYPE style=Normal interval=65>哼···,　原来如此,<BR>这就是你们的,<BR>『回答』吗···</TYPE>");
-/*荒山*/CreateBalloon("ME_41", 102, 110,350, 340, 142, "Rock" , invalid,"<TYPE style=Normal>那么..　我就暂时离开吧···,<BR>但是　..别忘记了</TYPE>");
+/*荒山*/CreateBalloon("ME_41", 102, 110,350, 340, 142, "Rock" , invalid,"<TYPE style=Normal>那么..　我就暂时撤退了···,<BR>但是　..别忘记了</TYPE>");
 /*荒山*/CreateBalloon("ME_411",102, 315,388, 450, 200, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=22>圣诞节<BR>明年也会有！</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_ARA06",50,60,190,300,100,false);
@@ -493,10 +493,10 @@ page Main
 //	SoundLoad(SE1, "SE/Sound.wav");	
 //逃げる。遠くから聞こえるサイレン。
 	SoundLoad(SE5, "SE/僒僀儗儞.wav"); //サイレン.wav
-	SoundLoad(SE0, "SE/峳嶳懌壒俁.wav");	//荒山足音３.wav
+	SoundLoad(SE0, "SE/峳嶳懌壒俁.wav"); //荒山足音３.wav
 	Draw();
 
-	SoundPlay(SE0, "SE/峳嶳懌壒俁.wav");
+	SoundPlay(SE0, "SE/峳嶳懌壒俁.wav"); //荒山足音３.wav
 	SoundLoop(SE0,true);
 
 //	SoundPlay(SE1, "SE/Sound.wav");
@@ -512,7 +512,7 @@ page Main
 
 	Request("ME_42","Enter");
 	//サイレン
-	SoundPlayEx(SE5, "SE/僒僀儗儞.wav", 920, -1000, 1000, true);
+	SoundPlayEx(SE5, "SE/僒僀儗儞.wav", 920, -1000, 1000, true); //サイレン.wav
 	SoundPan(SE5,8000,1000);
 	call MesWait;
 
@@ -568,7 +568,7 @@ page Main
 
 //17
 	Draw();
-/*透花*/CreateBalloon("ME_45", 102, 496,210, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>荒山先生,　明年也···,<BR>还会再来吗···</TYPE>");
+/*透花*/CreateBalloon("ME_45", 102, 496,210, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>荒山先生,　明年也···,<BR>还打算再来吗···</TYPE>");
 ///*エマ*/CreateBalloon("ME_46", 102, 90,300, 280, 120, "Ellipse" , invalid,"<TYPE style=Normal>嫌なサンタクロースね</TYPE>");
 /*エマ*/CreateBalloon("ME_47", 102, 60,350, 340, 155, "Dumpling" , 55,"<TYPE style=Normal>那家伙···...<BR>绝对是那种沉醉在<BR>自己的话里的人···</TYPE>");
 //ピンポーン。
