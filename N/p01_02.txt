@@ -418,7 +418,7 @@ page Main
 ///*荒山*/CreateBalloon("ME_37", 102, 30,50, 150, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0>何だ！</TYPE>");
 /*荒山*/CreateBalloon("ME_371",102, -50,255, 480, 215, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=24>有疑问吗···？　,<TYPE style=Fade interval=30>可以啊<BR>,<TYPE style=Fade interval=35>你说说看！</TYPE>");
 ///*透花*/CreateBalloon("ME_38", 102, 163,340, 150, 120, "Ellipse" , invalid,"<TYPE style=Normal>いえ···</TYPE>");
-/*透花*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>不···　,因为会扰民<BR>所以我报警了</TYPE>");
+/*透花*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>不···　,因为打扰到邻居了<BR>所以我报警了</TYPE>");
 /*透花*/CreateBalloon("ME_39", 102, 365,460, 340, 135, "Clay" , invalid,"<TYPE style=Normal>所以那个···,<BR>你最好还是<BR>早点回去吧···</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_TOU02",50,600,35,"Image/a-5-5-14.bmp", "Fade",#663300,8);

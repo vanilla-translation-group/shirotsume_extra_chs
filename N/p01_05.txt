@@ -309,7 +309,7 @@ page Main
 /*さゆ*/CreateBalloon("ME_01", 102, 530,185, 345, 190, "Cloud" , 110,"<TYPE style=Normal><FONT size=22 face='G' >啊<TYPE style=Spring speed=400>—</TYPE>,<BR>艾玛把她弄哭了<TYPE style=Spring speed=500>—</TYPE>");
 /*透花*/CreateBalloon("ME_02", 102, 82,120, 330, 150, "DropDumpling" , 300,"<TYPE style=Normal interval=35>艾玛　,<TYPE style=Normal interval=55>之后要向品藤小姐<BR>好好道歉哦</TYPE>");
 /*エマ*/CreateBalloon("ME_03", 102, -30,280, 260, 120, "Clay" , 280,"<TYPE style=Normal>明　<TYPE style=Normal interval=35>...明白了啦</TYPE>");
-/*エマ*/CreateBalloon("ME_04", 102, 250,455, 330, 150, "Clay" , 145,"<TYPE style=Normal>呜——,　<BR><TYPE style=Normal interval=35>为什么我身边的大人们<BR>...全都这么奇怪呢！</TYPE>");
+/*エマ*/CreateBalloon("ME_04", 102, 250,455, 330, 150, "Clay" , 145,"<TYPE style=Normal>呜——,　<BR><TYPE style=Normal interval=35>为什么人家身边的大人们<BR>...全都这么奇怪呢！</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_S1",52,443,48,"Image/si-2-2-11.bmp", "Fade",#663300,8);
 	CreateFrameEx("IM_T1",51,center,middle,"Image/si-2-2-12.bmp", "Fade",#663300,8);

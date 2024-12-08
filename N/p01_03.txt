@@ -108,7 +108,7 @@ page Main
 //スパットさんからのメール
 	Draw();
 	CreateBalloonEx("ME_01", 202, 40,70, 420, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>你们最近还好吗。,我是...<B>斯帕德</B>。,.<BR>这一年，真的是承蒙你们关照了呢。", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_02", 202, 470,230, 310, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我现在，,在最北边的牧场<BR>一边养着牛，..<BR>一边过着隐居生活。", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_02", 202, 470,230, 310, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我现在，,在最北边的牧场<BR>一边养着牛，..<BR>一边过着宁静的生活。", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_03", 202, 15,410, 320, 160, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Normal>我重新审视了自己，,<BR>为了找到全新的、...强大的、...<BR>不输给任何人的自己。", "Fade",#000000c0,white);
 
 	Request("ME_*","Erase");
@@ -172,7 +172,7 @@ page Main
 //	CreateBalloon("ME_02", 102, 190,120, 300, 150, "StepRect",invalid,"雄大な北の自然が、..<BR>僕の病んだ心をゆっくりと<BR>癒してくれるみたいだ。</TYPE>");
 
 	CreateBalloonEx("ME_03", 102, 430,140, 260, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>我是个软弱的人。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_04", 102, 5,260, 380, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black>现在回想起来，..那件事的罪魁祸首<BR>或许就是我的软弱。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_04", 102, 5,260, 380, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black>现在回想起来，..那件事的罪魁祸首<BR>或许就是我的软弱吧。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_05", 102, 85,420, 320, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>像我这样的人，,事到如今<BR>还说这种话是不是太卑鄙了？</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_06", 102,460,455, 300, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=50>还有牛粪臭得让我<BR>三天就要晕倒一次。,..<BR><TYPE interval=75>我真的是个软弱的人。</TYPE>", "Fade",#000000c0,white);
 
@@ -209,7 +209,7 @@ page Main
 //->33
 
 	Draw();
-	CreateBalloonEx("ME_01", 102, 340,30, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>总之，,我会把这当作<BR>成为大人物的考验之一，,<BR>在这个牧场再努力一阵子。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01", 102, 340,30, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>嘛总之，,我会把这当作<BR>成为大人物的考验之一，,<BR>在这个牧场再努力一阵子。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 50,200, 430, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>然后当我.作为人成长了一轮之际，...<BR>我考虑再一次.对Babel发起挑战。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_03", 102, 10,300, 250, 120, "Rectangle" , invalid,"<FONT color=white shadow=black>那时候就请多指教了。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_04", 102, 500,420, 280, 140, "Rectangle" , invalid,"<FONT color=white shadow=black>那么就再见了，,<BR>圣诞快乐。</TYPE>", "Fade",#000000c0,white);
@@ -386,7 +386,7 @@ page Main
 
 //->63
 	Draw();
-	CreateBalloonEx("ME_04", 102, 32,85, 365, 165, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>真是个固执的、,守旧的男儿啊。,.<BR>嘛，,我倒是很喜欢这样<BR>骄傲而孤独的灵魂。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_04", 102, 32,85, 365, 165, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>真是个固执的、,守旧的男人啊。,.<BR>嘛，,我倒是很喜欢这样<BR>骄傲而孤独的灵魂。</TYPE>", "Fade",#000000c0,white);
 //	CreateBalloonEx("ME_01", 102, 40,30, 370, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>まあ、,そんな誇り高い孤独な魂を、..<BR>私は気に入ったんだがね。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 200,260, 320, 160, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>有机会的话，<BR>我也把他介绍给你们吧。,<BR>你们一定能融洽相处的</TYPE>", "Fade",#000000c0,white);
 //	CreateBalloonEx("ME_03", 102, 380,180, 320, 120, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>きっと仲良くなれるだろう。</TYPE>", "Fade",#000000c0,white);

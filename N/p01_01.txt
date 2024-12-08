@@ -193,7 +193,7 @@ page Main
 
 //->4
 	Draw();
-/*高宮*/CreateBalloon("ME_15", 102, 267, 93, 317, 137, "Potato" , 320,"<TYPE style=Normal>总之　...对我来说..<BR>反而是好事</TYPE>");
+/*高宮*/CreateBalloon("ME_15", 102, 267, 93, 317, 137, "Potato" , 320,"<TYPE style=Normal>总之　...对我来说..<BR>反而可以说是个好机会呢</TYPE>");
 /*透花*/CreateBalloon("ME_16", 102, 140,223, 285, 137, "Dumpling" , 126,"<TYPE style=Normal interval=80>？,　艾伦？...<BR>什么···</TYPE>");
 ///*高宮*/CreateBalloon("ME_17", 102, 330,300, 230, 120, "Ellipse" , 50,"<TYPE style=Normal>あら　...いいのよ</TYPE>");
 ///*高宮*/CreateBalloon("ME_171",102, 234,378, 290, 150, "Ellipse" , invalid,"<TYPE style=Normal>でも　,やることだけは<BR>やらせてもらうわ</TYPE>");
@@ -353,8 +353,8 @@ page Main
 
 //->8
 	Draw();
-/*高宮*/CreateBalloon("ME_26", 102, 270, 10, 287, 145, "Potato" , 225,"<TYPE style=Normal interval=40>咦？,<BR>意外冷淡的反应？</TYPE>");
-/*高宮*/CreateBalloon("ME_27", 102,   380,105, 305, 135, "Potato" , invalid,"<TYPE style=Normal interval=40>奇怪吗？...<BR>我　..又在哪里失败了吗？</TYPE>");
+/*高宮*/CreateBalloon("ME_26", 102, 270, 10, 287, 145, "Potato" , 225,"<TYPE style=Normal interval=40>啊嘞啊嘞？,<BR>意外冷淡的反应？</TYPE>");
+/*高宮*/CreateBalloon("ME_27", 102,   380,105, 305, 135, "Potato" , invalid,"<TYPE style=Normal interval=40>奇怪了？...<BR>我　..又在哪里失败了吗？</TYPE>");
 /*高宮*/CreateBalloon("ME_28", 102,   190,242, 320, 140, "Potato" , 120,"<TYPE style=Normal interval=40>果然我不该做<BR>..不习惯的事吗？</TYPE>");
 /*高宮*/CreateBalloon("ME_29", 102,   100,335, 340, 135, "Dumpling" , invalid,"<TYPE style=Normal interval=40>没用的家伙不管做<BR>什么　..都没用吗？</TYPE>");
 	Request("ME_*","Erase");
