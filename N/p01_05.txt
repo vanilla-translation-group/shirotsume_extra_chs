@@ -277,7 +277,7 @@ page Main
 	Opaque("ME_013",300,0,true);	wait 100;
 
 	Draw();
-/*品藤*/CreateBalloon("ME_02", 102, 193,160, 450, 170, "Rock" , 290,"<TYPE style=Normal interval=75><FONT size=15>我从小时候开始..就一心只顾遗物···<BR>,去原宿之类的地方的话...绝对会迷路的···</TYPE>");
+/*品藤*/CreateBalloon("ME_02", 102, 193,160, 450, 170, "Rock" , 290,"<TYPE style=Normal interval=75><FONT size=15>我从小时候开始..就一心只顾古痕的工作···<BR>,去原宿之类的地方的话...绝对会迷路的···</TYPE>");
 /*品藤*/CreateBalloon("ME_03", 102, 320,390, 190, 83, "Clay" , invalid,"<TYPE style=Fade interval=65><FONT size=14>呜呜呜···</TYPE>");
 /*品藤*/CreateBalloon("ME_04", 102, 103,420, 360, 160, "FatStar" , invalid,"<TYPE style=Normal interval=20><FONT size=18 face='G' >艾玛<BR>...对不起！</TYPE>");
 	Request("ME_*","Erase");

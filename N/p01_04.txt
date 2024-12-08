@@ -193,7 +193,7 @@ page Main
 /*上代*/CreateBalloon("ME_13", 102, 345,365, 340, 147, "Potato" , invalid,"<FONT size=18 face='G'>已经一半以上都是我的东西了,<BR>我猜？</TYPE>");
 /*透花*/CreateBalloon("ME_14", 102, 230,490, 250, 120, "Clay" , 145,"<TYPE style=Normal><FONT  size=14>那个,　有点<BR>不太对吧···</TYPE>");
 
-/*上代*/CreateBalloon("ME_01", 102, 265,10, 330, 153, "DropPotato" , 290,"<TYPE style=Normal interval=0>没关系.没关系！,<BR><TYPE style=Normal interval=45>收下吧小透花</TYPE>");
+/*上代*/CreateBalloon("ME_01", 102, 265,10, 330, 153, "DropPotato" , 290,"<TYPE style=Normal interval=0>没事.没事！,<BR><TYPE style=Normal interval=45>收下吧小透花</TYPE>");
 /*上代*/CreateBalloon("ME_02", 102, 167,111, 305, 155, "Potato" , invalid,"<TYPE style=Normal interval=35><FONT size=17>作为我给你的<BR>圣诞礼物！</TYPE>");
 //1205小林セリフ削除
 ///*上代*/CreateBalloon("ME_03", 102, 260,290, 320, 150, "Ellipse" , 40,"<TYPE style=Normal>これなら<BR>プレキオサウルスも瞬殺よ,<BR>絶滅してるけど</TYPE>");
