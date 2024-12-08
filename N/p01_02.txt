@@ -1,6 +1,6 @@
 //----------------------------------------------------------------
-//	¥ê¥Ó¥ó¥°¡£Ò¹¡£
-//	»ÄÉ½¤µ¤óµÇˆö
+//	ãƒªãƒ“ãƒ³ã‚°ã€‚å¤œã€‚
+//	è’å±±ã•ã‚“ç™»å ´
 //----------------------------------------------------------------
 #base_path "../"
 page MesWait
@@ -20,20 +20,20 @@ page Main
 	CreateColor("BLACK",200,in_left,in_top,800,600,"black");
 	SoundLoad(SE0, "SE/A6_22584.WAV");
 
-	//¥¬¥Á¥ã¡£ìé¤¬é_¤¯¡£
+	//ã‚¬ãƒãƒ£ã€‚æ‰‰ãŒé–‹ãã€‚
 	SoundPlay(SE0, "SE/A6_22584.wav");
 	DrawEffect("BLACK",1500,"CurtainLeft",0,1000);
 	WaitAction("BLACK");
 	Delete("BLACK");
 
 //->1
-//¥¬¥Á¥ã¡£ìé¤¬é_¤¯¡£
+//ã‚¬ãƒãƒ£ã€‚æ‰‰ãŒé–‹ãã€‚
 	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_01", 102, 225,55, 242, 120, "Rock" , invalid,"<TYPE style=Fade>´òÈÅÁË¡¤¡¤¡¤</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_02", 102, 345,205, 280, 140, "Ellipse" , 40,"<TYPE style=Normal>°¡¡¡,»ÄÉ½ÏÈÉú,<BR>»¶Ó­¹âÁÙ</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_03", 102, 277,437, 250, 140, "Ellipse" , 30,"<TYPE style=Normal>»ÄÉ½ÏÈÉú£¡,<BR><TYPE style=Normal interval=30>Ê¥µ®¿ìÀÖ£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_04", 102, 193,245, 320, 155, "Rock" , 120,"<TYPE style=Normal>àÅ¡¡,Ê¥µ®¿ìÀÖ,..<BR>¡¤¡¤¡¤ÊÕÏÂÕâ¸ö°É</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_041",102, 315,350, 195, 100, "Rock" , invalid,"<TYPE style=Normal>ÊÇÍÁÌØ²ú</TYPE>");
+/*è’å±±*/CreateBalloon("ME_01", 102, 225,55, 242, 120, "Rock" , invalid,"<TYPE style=Fade>æ‰“æ‰°äº†Â·Â·Â·</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_02", 102, 345,205, 280, 140, "Ellipse" , 40,"<TYPE style=Normal>å•Šã€€,è’å±±å…ˆç”Ÿ,<BR>æ¬¢è¿å…‰ä¸´</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_03", 102, 277,437, 250, 140, "Ellipse" , 30,"<TYPE style=Normal>è’å±±å…ˆç”Ÿï¼,<BR><TYPE style=Normal interval=30>åœ£è¯å¿«ä¹ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_04", 102, 193,245, 320, 155, "Rock" , 120,"<TYPE style=Normal>å—¯ã€€,åœ£è¯å¿«ä¹,..<BR>Â·Â·Â·æ”¶ä¸‹è¿™ä¸ªå§</TYPE>");
+/*è’å±±*/CreateBalloon("ME_041",102, 315,350, 195, 100, "Rock" , invalid,"<TYPE style=Normal>æ˜¯åœŸç‰¹äº§</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_EMA01",50,470,310,"Image/a-1-1-3.bmp", "Fade",#663300,8);
 	CreateFrameEx("IM_TOU01",49,566,70,"Image/a-1-1-2.bmp", "Fade",#663300,8);
@@ -72,12 +72,12 @@ page Main
 
 //->2
 	Draw();
-/*¤µ¤æ*/CreateBalloon("ME_05", 102, 440,5, 320, 150, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=18>ÓĞµ°¸â,<BR>»¹ÓĞ¹ûÖ­£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_06", 102, 390,110, 220, 110, "Rock" , invalid,"<TYPE style=Normal>ÕâÊÇÏãéÄ</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_07", 102, 130,120, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>ÍÛ¡ª¡ª<BR>...·Ç³£¸ĞĞ»£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_08", 102, -30,285, 320, 125, "Rock" , invalid,"<TYPE style=Normal>±ğÔÚÒâ<BR>,È«¶¼¿ÉÒÔÓÃ¾­·Ñ±¨Ïú¡¤¡¤¡¤</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_081",102, 30,360, 380, 155, "Rock" , invalid,"<TYPE style=Normal>ËµÆğÀ´,<BR>½òÃû´¨×Ú´ÈÈ¥ÄÄÁË£¿</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_09", 102, 330,430, 280, 150, "Dumpling" , invalid,"<TYPE style=Normal>Ö÷ÈË»¹ÔÚ<BR>ÑĞ¾¿ËùÀï<BR>¹¤×÷¡¤¡¤¡¤</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_05", 102, 440,5, 320, 150, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=18>æœ‰è›‹ç³•,<BR>è¿˜æœ‰æœæ±ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_06", 102, 390,110, 220, 110, "Rock" , invalid,"<TYPE style=Normal>è¿™æ˜¯é¦™æ§Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_07", 102, 130,120, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>å“‡â€”â€”<BR>...éå¸¸æ„Ÿè°¢ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_08", 102, -30,285, 320, 125, "Rock" , invalid,"<TYPE style=Normal>åˆ«åœ¨æ„<BR>,å…¨éƒ½å¯ä»¥ç”¨ç»è´¹æŠ¥é”€Â·Â·Â·</TYPE>");
+/*è’å±±*/CreateBalloon("ME_081",102, 30,360, 380, 155, "Rock" , invalid,"<TYPE style=Normal>è¯´èµ·æ¥,<BR>æ´¥åå·å®—æ…ˆå»å“ªäº†ï¼Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_09", 102, 330,430, 280, 150, "Dumpling" , invalid,"<TYPE style=Normal>ä¸»äººè¿˜åœ¨<BR>ç ”ç©¶æ‰€é‡Œ<BR>å·¥ä½œÂ·Â·Â·</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_CAKE",20,0,200,800,200,true);
 	CreateImage("WI_CAKE/IM",20,0,0,"Image/a-1-2-4.bmp");
@@ -108,18 +108,18 @@ page Main
 
 //->3
 	Draw();
-//*»ÄÉ½*/CreateBalloon("ME_10", 102, 380,0, 160, 100, "Rock" , invalid,"<TYPE style=Normal interval=0 speed=0>ºÎ¤À¤È???£¿</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_101",102, 225,90, 345, 155, "Rock" , invalid,"<TYPE style=Normal>ÕâÃ´ÖØÒªµÄÈÕ×ÓÀï<BR>¾ÓÈ»»¹ÔÚ¹¤×÷¡¤¡¤¡¤£¿</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_11", 102, 340,190, 315, 110, "Rock" , invalid,"<TYPE style=Normal>ÕæÊÇÈÃÈËÄÑÒÔÖÃĞÅµÄÄĞÈË¡¤¡¤¡¤¡¤¡¤¡¤</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_182",102, 150,330, 275, 110, "Rock" , invalid,"<TYPE style=Normal>¡¤¡¤¡¤¡¤¡¤¡¤,àÅ£¿</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_19", 102, 320,435, 140, 85, "Ellipse" , invalid,"<TYPE style=Normal>£¿</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_191",102, 370,455, 285, 145, "Dumpling" , invalid,"<TYPE style=Normal>»ÄÉ½ÏÈÉú<BR>ÔõÃ´ÁË£¿</TYPE>");
+//*è’å±±*/CreateBalloon("ME_10", 102, 380,0, 160, 100, "Rock" , invalid,"<TYPE style=Normal interval=0 speed=0>ä½•ã ã¨???ï¼Ÿ</TYPE>");
+/*è’å±±*/CreateBalloon("ME_101",102, 225,90, 345, 155, "Rock" , invalid,"<TYPE style=Normal>è¿™ä¹ˆé‡è¦çš„æ—¥å­é‡Œ<BR>å±…ç„¶è¿˜åœ¨å·¥ä½œÂ·Â·Â·ï¼Ÿ</TYPE>");
+/*è’å±±*/CreateBalloon("ME_11", 102, 340,190, 315, 110, "Rock" , invalid,"<TYPE style=Normal>çœŸæ˜¯è®©äººéš¾ä»¥ç½®ä¿¡çš„ç”·äººÂ·Â·Â·Â·Â·Â·</TYPE>");
+/*è’å±±*/CreateBalloon("ME_182",102, 150,330, 275, 110, "Rock" , invalid,"<TYPE style=Normal>Â·Â·Â·Â·Â·Â·,å—¯ï¼Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_19", 102, 320,435, 140, 85, "Ellipse" , invalid,"<TYPE style=Normal>ï¼Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_191",102, 370,455, 285, 145, "Dumpling" , invalid,"<TYPE style=Normal>è’å±±å…ˆç”Ÿ<BR>æ€ä¹ˆäº†ï¼Ÿ</TYPE>");
 
-///*Í¸»¨*/CreateBalloon("ME_12", 102, 47,42, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>¤´Ö÷ÈË¤µ¤Ş¤Ë<BR>ºÎ¤«¤´ÓÃÊÂ¤Ê¤ó¤Ç¤¹¤«£¿</TYPE>");
-///*»ÄÉ½*/CreateBalloon("ME_13", 102, 250,300, 260, 150, "PolyRect" , invalid,"<TYPE style=Normal>¤¤¤ä???,<BR>Å¼È»¡¡½ü¤¯¤òÍ¨¤ê<BR>¤«¤«¤Ã¤¿¤À¤±¤À</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_14", 102, 150,430, 250, 130, "Dumpling" , invalid,"<TYPE style=Normal>¤¨£¿<BR>¤Ç¤â¥±©`¥­¤¬£¿</TYPE>");
-///*»ÄÉ½*/CreateBalloon("ME_15", 102, 330,420, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0 speed=0>Å¼È»¤À</TYPE>");
-///*»ÄÉ½*/CreateBalloon("ME_151",102, 410,460, 260, 130, "PolyRect" , invalid,"<TYPE style=Normal>¤ªÇ°¤¿¤Á¤Ï±¾µ±¤Ë<BR>ß\¤¬Á¼¤¤</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_12", 102, 47,42, 300, 150, "Dumpling" , invalid,"<TYPE style=Normal>ã”ä¸»äººã•ã¾ã«<BR>ä½•ã‹ã”ç”¨äº‹ãªã‚“ã§ã™ã‹ï¼Ÿ</TYPE>");
+///*è’å±±*/CreateBalloon("ME_13", 102, 250,300, 260, 150, "PolyRect" , invalid,"<TYPE style=Normal>ã„ã‚„???,<BR>å¶ç„¶ã€€è¿‘ãã‚’é€šã‚Š<BR>ã‹ã‹ã£ãŸã ã‘ã </TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_14", 102, 150,430, 250, 130, "Dumpling" , invalid,"<TYPE style=Normal>ãˆï¼Ÿ<BR>ã§ã‚‚ã‚±ãƒ¼ã‚­ãŒï¼Ÿ</TYPE>");
+///*è’å±±*/CreateBalloon("ME_15", 102, 330,420, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0 speed=0>å¶ç„¶ã </TYPE>");
+///*è’å±±*/CreateBalloon("ME_151",102, 410,460, 260, 130, "PolyRect" , invalid,"<TYPE style=Normal>ãŠå‰ãŸã¡ã¯æœ¬å½“ã«<BR>é‹ãŒè‰¯ã„</TYPE>");
 	Request("ME_*","Erase");
 //	CreateFrameEx("IM_ARA",50,810,160,"Image/a-1-3-4.bmp","Fade",black,6);
 	Draw();
@@ -148,11 +148,11 @@ page Main
 //<-3
 //
 //->4
-///*Í¸»¨*/CreateBalloon("ME_16", 102, 500,15, 240, 130, "Dumpling" , invalid,"<TYPE style=Normal>?..?..?..¤½¡¡..¤½¤¦¤Ç¤¹¤«</TYPE>");
-///*¤µ¤æ*/CreateBalloon("ME_161",102, 180,53, 200, 140, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=20>¤¢¤ä¤·©`</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_17", 101, 290,130, 220, 130, "Ellipse" , invalid,"<TYPE style=Normal><FONT face='G' size=20>¤¢¤ä¤·©`</TYPE>");
-///*»ÄÉ½*/CreateBalloon("ME_18", 102, 100,370, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal>¤Õ¤ó</TYPE>");
-///*»ÄÉ½*/CreateBalloon("ME_181",102, 120,420, 320, 150, "PolyRect" , invalid,"<TYPE style=Normal>ºÎ¤òĞÅ¤¸¤è¤¦¤È¤â<BR>¤½¤ì¤Ï¤ªÇ°¤¿¤Á¤Î×ÔÓÉ¤À¤¬???</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_16", 102, 500,15, 240, 130, "Dumpling" , invalid,"<TYPE style=Normal>?..?..?..ãã€€..ãã†ã§ã™ã‹</TYPE>");
+///*ã•ã‚†*/CreateBalloon("ME_161",102, 180,53, 200, 140, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=20>ã‚ã‚„ã—ãƒ¼</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_17", 101, 290,130, 220, 130, "Ellipse" , invalid,"<TYPE style=Normal><FONT face='G' size=20>ã‚ã‚„ã—ãƒ¼</TYPE>");
+///*è’å±±*/CreateBalloon("ME_18", 102, 100,370, 160, 100, "PolyRect" , invalid,"<TYPE style=Normal>ãµã‚“</TYPE>");
+///*è’å±±*/CreateBalloon("ME_181",102, 120,420, 320, 150, "PolyRect" , invalid,"<TYPE style=Normal>ä½•ã‚’ä¿¡ã˜ã‚ˆã†ã¨ã‚‚<BR>ãã‚Œã¯ãŠå‰ãŸã¡ã®è‡ªç”±ã ãŒ???</TYPE>");
 //	Request("ME_*","Erase");
 //	Draw();
 //
@@ -173,9 +173,9 @@ page Main
 //<-4
 //
 //->5
-///*»ÄÉ½*/CreateBalloon("ME_182",102, 300,160, 200, 120, "Rock" , invalid,"<TYPE style=Normal>?.?.?.?.?.?.,¤ó£¿</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_19", 102, 90,330, 140, 100, "Ellipse" , invalid,"<TYPE style=Normal>£¿</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_191",102, 110,370, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>»ÄÉ½¤µ¤ó<BR>¤É¤¦¤·¤¿¤ó¤Ç¤¹¤«£¿</TYPE>");
+///*è’å±±*/CreateBalloon("ME_182",102, 300,160, 200, 120, "Rock" , invalid,"<TYPE style=Normal>?.?.?.?.?.?.,ã‚“ï¼Ÿ</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_19", 102, 90,330, 140, 100, "Ellipse" , invalid,"<TYPE style=Normal>ï¼Ÿ</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_191",102, 110,370, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>è’å±±ã•ã‚“<BR>ã©ã†ã—ãŸã‚“ã§ã™ã‹ï¼Ÿ</TYPE>");
 //	Request("ME_*","Erase");
 //	Draw();
 
@@ -193,7 +193,7 @@ page Main
 
 //->6
 	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_20", 102, 70,250, 600, 260, "Star" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=30>¿ªÊ²Ã´ÍæĞ¦£¡</FONT></TYPE>");
+/*è’å±±*/CreateBalloon("ME_20", 102, 70,250, 600, 260, "Star" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=30>å¼€ä»€ä¹ˆç©ç¬‘ï¼</FONT></TYPE>");
 	Request("ME_*","Erase");
 	CreateNode("NO_ARA02",50,350,140);
 	CreateImage("NO_ARA02/IM",50,center,middle,"Image/a-2-2-5.bmp");
@@ -202,7 +202,7 @@ page Main
 	CreateColor("WHITE",200,center,middle,800,600,"white");
 	Opaque("WHITE",0,0,true);
 	//explosion01slow.wav
-	SoundLoad(SE0, "SE/ƒhƒJƒ“.wav"); //¥É¥«¥ó.wav
+	SoundLoad(SE0, "SE/åƒªåƒ‡å„.wav"); //ãƒ‰ã‚«ãƒ³.wav
 	SoundLoad(SE1, "SE/explosion01slow.wav");
 	SoundLoad(SE2, "SE/A5_03063.wav");
 	SoundLoad(SE3, "SE/A5_02050.wav");
@@ -214,7 +214,7 @@ page Main
 	SoundPlay(SE2, "SE/A5_03063.wav");
 	ZoomEx("NO_ARA02",800,1000,1000,true,"Acc4");
 
-	SoundPlay(SE0, "SE/ƒhƒJƒ“.wav");
+	SoundPlay(SE0, "SE/åƒªåƒ‡å„.wav");
 
 	Opaque("WHITE",100,1000,true);
 	Opaque("WI_CAKE/IM",0,0,true);
@@ -240,8 +240,8 @@ page Main
 //<-6
 
 //->7
-/*¤µ¤æ*/CreateBalloon("ME_21", 102, 220,35, 335, 180, "Cloud" , -140,"<FONT face='G' size=28><TYPE style=Normal>ÚÀ<TYPE interval=300 speed=300 style=Spring>¡ª</TYPE>£¿</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_22", 102, 165,270, 375, 185, "Ice" ,210,"<TYPE interval=35><FONT face='G' size=22>Í»È»¾Í<BR>ÉúÆøÁË<TYPE interval=400 speed=400 style=Spring>¡ª</TYPE>£¡£¿</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_21", 102, 220,35, 335, 180, "Cloud" , -140,"<FONT face='G' size=28><TYPE style=Normal>è¯¶<TYPE interval=300 speed=300 style=Spring>â€”</TYPE>ï¼Ÿ</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_22", 102, 165,270, 375, 185, "Ice" ,210,"<TYPE interval=35><FONT face='G' size=22>çªç„¶å°±<BR>ç”Ÿæ°”äº†<TYPE interval=400 speed=400 style=Spring>â€”</TYPE>ï¼ï¼Ÿ</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_SAY01",50,120,64,"Image/a-3-3-7.bmp", "Fade",#663300,8);
 	CreateFrameEx("IM_EMA02",50,140,250,"Image/a-3-3-8.bmp", "Fade",#663300,8);
@@ -267,10 +267,10 @@ page Main
 
 //->8
 	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_23", 102, 210,-5, 340, 170, "Strike" , invalid,"<TYPE interval=45><FONT face='G' size=20>Õâ·¿¼ä<BR>ÏñÊ²Ã´Ñù×Ó£¡.</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_24", 102, 30,100, 420, 160, "Rock" , 340,"<TYPE style=Normal interval=60>ÄãÃÇ°¡...¡¡ÕæµÄ¾õµÃ<BR>ÕâÑù×¼±¸..<BR>¾ÍÄÜÏíÊÜÊ¥µ®½ÚÁËÂğ£¿</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_25", 102, 190,290, 280, 120, "Clay" , invalid,"<TYPE style=Normal><FONT size=14>»ÄÉ½ÏÈÉú<BR>..ÄãÔÚËµÊ²Ã´ÄØ¡¤¡¤¡¤</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_26", 102, 322,330, 310, 165, "Strike" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=28>¾Í±ÈÈç£¡</FONT></TYPE>");
+/*è’å±±*/CreateBalloon("ME_23", 102, 210,-5, 340, 170, "Strike" , invalid,"<TYPE interval=45><FONT face='G' size=20>è¿™æˆ¿é—´<BR>åƒä»€ä¹ˆæ ·å­ï¼.</TYPE>");
+/*è’å±±*/CreateBalloon("ME_24", 102, 30,100, 420, 160, "Rock" , 340,"<TYPE style=Normal interval=60>ä½ ä»¬å•Š...ã€€çœŸçš„è§‰å¾—<BR>è¿™æ ·å‡†å¤‡..<BR>å°±èƒ½äº«å—åœ£è¯èŠ‚äº†å—ï¼Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_25", 102, 190,290, 280, 120, "Clay" , invalid,"<TYPE style=Normal><FONT size=14>è’å±±å…ˆç”Ÿ<BR>..ä½ åœ¨è¯´ä»€ä¹ˆå‘¢Â·Â·Â·</TYPE>");
+/*è’å±±*/CreateBalloon("ME_26", 102, 322,330, 310, 165, "Strike" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=28>å°±æ¯”å¦‚ï¼</FONT></TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_TOU02",50,50,300,"Image/a-3-3-10.bmp", "Fade",#663300,8);
 	Opaque("IM_TOU02",0,0,true);
@@ -306,10 +306,10 @@ page Main
 
 //->9
 	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_261",102, 150,10, 400, 170, "Strike" , invalid,"<TYPE style=Normal interval=40><B>¿´ÄÇÃ»ÓĞÈÎºÎ×°ÊÎµÄ<BR>ÍÁÆøÊ¥µ®Ê÷°É£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_27", 102, 60,115, 300, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>¼òÖ±¾ÍÏñÅèÔÔ,<BR>Ò»Ñù²»Ïñ»°</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_28", 102, 145,320, 515, 190, "Strike" , invalid,"<TYPE style=Normal interval=40><B>»¹ÓĞÕâ¸ö·¿¼äµÄº®ËáÄ£Ñù£¬<BR>¾ÍÁ¬ÅÉ¶Ô×°ÊÎµÄÓ°×Ó<BR>¶¼¿´²»µ½£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_29", 102, 380,440, 290, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>ÕæÊÇÔãÍ¸ÁË,<BR>¼òÖ±¸úÔÚÊØÒ¹Ò»Ñù</TYPE>");
+/*è’å±±*/CreateBalloon("ME_261",102, 150,10, 400, 170, "Strike" , invalid,"<TYPE style=Normal interval=40><B>çœ‹é‚£æ²¡æœ‰ä»»ä½•è£…é¥°çš„<BR>åœŸæ°”åœ£è¯æ ‘å§ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_27", 102, 60,115, 300, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>ç®€ç›´å°±åƒç›†æ ½,<BR>ä¸€æ ·ä¸åƒè¯</TYPE>");
+/*è’å±±*/CreateBalloon("ME_28", 102, 145,320, 515, 190, "Strike" , invalid,"<TYPE style=Normal interval=40><B>è¿˜æœ‰è¿™ä¸ªæˆ¿é—´çš„å¯’é…¸æ¨¡æ ·ï¼Œ<BR>å°±è¿æ´¾å¯¹è£…é¥°çš„å½±å­<BR>éƒ½çœ‹ä¸åˆ°ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_29", 102, 380,440, 290, 130, "Rock" , invalid,"<TYPE style=Normal interval=65><FONT face='G' size=17>çœŸæ˜¯ç³Ÿé€äº†,<BR>ç®€ç›´è·Ÿåœ¨å®ˆå¤œä¸€æ ·</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_ROOM02", 20,0,middle, "Image/a-3-3-11.bmp","Fade",black,8);
 	Opaque("IM_ROOM02", 0, 0, false);
@@ -335,11 +335,11 @@ page Main
 
 //10
 	Draw();
-/*¥¨¥Ş*/CreateBalloon("ME_30", 102, 50,25, 330, 162, "FatStar" , invalid,"<TYPE style=Normal><FONT face='G' size=20>ÄãËµÊ²Ã´<TYPE interval=300 speed=300 style=Spring>¡«</TYPE>£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_31", 102, 220,240, 380, 170, "Rock" , 50,"<TYPE style=Normal>ÔÚÕâÃ´ËÉËÉ¿å¿åµÄ»·¾³Àï<BR>»¹×°³öÊ¥µ®¿ìÀÖµÄÑù×Ó<BR>ÕæÊÇÈÃÈËĞ¦..µô..´ó..ÑÀ..ÁË¡¤¡¤¡¤</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_32", 102, 417,307, 420, 200, "Strike" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=18>ÄãÃÇ<BR>¸ù±¾¾Í²»Àí½â<BR>Ê¥µ®½ÚÊÇÊ²Ã´£¡</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_33", 102, 70,375, 283, 135, "FatStar" , 160,"<FONT face='G' size=20><TYPE style=Normal interval=30>³³ËÀÁË£¡</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_331",102, 175,455, 310, 143, "SplashEllipse" , invalid,"<TYPE style=Normal><FONT face='G' size=18>ºÍÄã<BR>Ã»ÓĞ¹ØÏµ°É</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_30", 102, 50,25, 330, 162, "FatStar" , invalid,"<TYPE style=Normal><FONT face='G' size=20>ä½ è¯´ä»€ä¹ˆ<TYPE interval=300 speed=300 style=Spring>ï½</TYPE>ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_31", 102, 220,240, 380, 170, "Rock" , 50,"<TYPE style=Normal>åœ¨è¿™ä¹ˆæ¾æ¾å®å®çš„ç¯å¢ƒé‡Œ<BR>è¿˜è£…å‡ºåœ£è¯å¿«ä¹çš„æ ·å­<BR>çœŸæ˜¯è®©äººç¬‘..æ‰..å¤§..ç‰™..äº†Â·Â·Â·</TYPE>");
+/*è’å±±*/CreateBalloon("ME_32", 102, 417,307, 420, 200, "Strike" , invalid,"<TYPE style=Normal interval=30><FONT face='G' size=18>ä½ ä»¬<BR>æ ¹æœ¬å°±ä¸ç†è§£<BR>åœ£è¯èŠ‚æ˜¯ä»€ä¹ˆï¼</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_33", 102, 70,375, 283, 135, "FatStar" , 160,"<FONT face='G' size=20><TYPE style=Normal interval=30>åµæ­»äº†ï¼</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_331",102, 175,455, 310, 143, "SplashEllipse" , invalid,"<TYPE style=Normal><FONT face='G' size=18>å’Œä½ <BR>æ²¡æœ‰å…³ç³»å§</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_EMA03",50,30,600,"Image/a-4-4-12.bmp", "Fade",#663300,8);
 	Opaque("IM_EMA03", 0, 0, false);
@@ -384,8 +384,8 @@ page Main
 
 //12
 	Draw();
-/*»ÄÉ½*/CreateBalloonEx("ME_34", 102, 405,30, 350, 165, "RoundRect" , 250,"<TYPE style=Fade><FONT face='G' size=20 color=white shadow=black>ÓÃĞÄÌı×Å°É¡¤¡¤¡¤<BR>ÄêÉÙµÄEXTRAÃÇ°¡¡¤¡¤¡¤</TYPE>", "Vivide",#000000b0,black);
-/*»ÄÉ½*/CreateBalloonEx("ME_35", 102, 35,363, 405, 190, "RoundRect" , 75,"<TYPE style=Fade interval=35><FONT face='G' size=22 color=white shadow=black>ÈÃÎÒ...<BR>À´½ÌÄãÃÇÊ¥µ®½Ú<BR>ÕæÕıµÄ.ÏíÊÜ·½Ê½°É£¡£¡</TYPE>", "Vivide",#000000b0,black);
+/*è’å±±*/CreateBalloonEx("ME_34", 102, 405,30, 350, 165, "RoundRect" , 250,"<TYPE style=Fade><FONT face='G' size=20 color=white shadow=black>ç”¨å¿ƒå¬ç€å§Â·Â·Â·<BR>å¹´å°‘çš„EXTRAä»¬å•ŠÂ·Â·Â·</TYPE>", "Vivide",#000000b0,black);
+/*è’å±±*/CreateBalloonEx("ME_35", 102, 35,363, 405, 190, "RoundRect" , 75,"<TYPE style=Fade interval=35><FONT face='G' size=22 color=white shadow=black>è®©æˆ‘...<BR>æ¥æ•™ä½ ä»¬åœ£è¯èŠ‚<BR>çœŸæ­£çš„.äº«å—æ–¹å¼å§ï¼ï¼</TYPE>", "Vivide",#000000b0,black);
 	Request("ME_*","Erase");
 	CreateWindow("WI_ARA1",50,260,-600,280,600,false);
 //	CreateImage("WI_ARA1/a",50,260,0,"Image/a-4-4-13a.bmp");
@@ -412,14 +412,14 @@ page Main
 	SoundVolume(SE3,5000,0);
 //->13
 	Draw();
-/*Í¸»¨*/CreateBalloon("ME_36", 102, 430,180, 370, 150, "Clay" , 77,"<TYPE style=Normal interval=65>»ÄÉ½ÏÈÉú¡¤¡¤¡¤<BR>...ºÜ±§Ç¸ÔÚÄãĞË·Ü<BR>µÄÊ±ºò´ò¶ÏÄã¡¤¡¤¡¤</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_361",102, 470,310, 180, 100, "Clay" , invalid,"<TYPE style=Normal>¤Á¤ç¤Ã¤È???</TYPE>");
-//£¨ÊÜÔ’Æ÷¤ò³Ö¤Ã¤Æ£©
-///*»ÄÉ½*/CreateBalloon("ME_37", 102, 30,50, 150, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0>ºÎ¤À£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_371",102, -50,255, 480, 215, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=24>ÓĞÒÉÎÊÂğ¡¤¡¤¡¤£¿¡¡,<TYPE style=Fade interval=30>ÎÒÔÊĞíÄã<BR>,<TYPE style=Fade interval=35>Ìá³öÀ´£¡</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_38", 102, 163,340, 150, 120, "Ellipse" , invalid,"<TYPE style=Normal>¤¤¤¨???</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>²»¡¤¡¤¡¤¡¡,ÒòÎª¸ø¸½½üµÄÈËÌíÂé·³ÁË<BR>ËùÒÔ±¨ÁË¾¯</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_39", 102, 365,460, 340, 135, "Clay" , invalid,"<TYPE style=Normal>ËùÒÔÄÇ¸ö¡¤¡¤¡¤,<BR>Äã²î²»¶à<BR>¸Ã»ØÈ¥ÁË¡¤¡¤¡¤</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_36", 102, 430,180, 370, 150, "Clay" , 77,"<TYPE style=Normal interval=65>è’å±±å…ˆç”ŸÂ·Â·Â·<BR>...å¾ˆæŠ±æ­‰åœ¨ä½ å…´å¥‹<BR>çš„æ—¶å€™æ‰“æ–­ä½ Â·Â·Â·</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_361",102, 470,310, 180, 100, "Clay" , invalid,"<TYPE style=Normal>ã¡ã‚‡ã£ã¨???</TYPE>");
+//ï¼ˆå—è©±å™¨ã‚’æŒã£ã¦ï¼‰
+///*è’å±±*/CreateBalloon("ME_37", 102, 30,50, 150, 100, "PolyRect" , invalid,"<TYPE style=Normal interval=0>ä½•ã ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_371",102, -50,255, 480, 215, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=24>æœ‰ç–‘é—®å—Â·Â·Â·ï¼Ÿã€€,<TYPE style=Fade interval=30>æˆ‘å…è®¸ä½ <BR>,<TYPE style=Fade interval=35>æå‡ºæ¥ï¼</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_38", 102, 163,340, 150, 120, "Ellipse" , invalid,"<TYPE style=Normal>ã„ãˆ???</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_381",102, 480,360, 310, 140, "Clay" , invalid,"<TYPE style=Normal>ä¸Â·Â·Â·ã€€,å› ä¸ºç»™é™„è¿‘çš„äººæ·»éº»çƒ¦äº†<BR>æ‰€ä»¥æŠ¥äº†è­¦</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_39", 102, 365,460, 340, 135, "Clay" , invalid,"<TYPE style=Normal>æ‰€ä»¥é‚£ä¸ªÂ·Â·Â·,<BR>ä½ å·®ä¸å¤š<BR>è¯¥å›å»äº†Â·Â·Â·</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_TOU02",50,600,35,"Image/a-5-5-14.bmp", "Fade",#663300,8);
 	Opaque("IM_TOU02", 0, 0, true);
@@ -454,9 +454,9 @@ page Main
 
 //->14
 	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_40", 102, 195,240, 370, 160, "Rock" , 120,"<TYPE style=Normal interval=65>ºß¡¤¡¤¡¤,¡¡Ô­À´Èç´Ë,<BR>Õâ¾ÍÊÇÄãÃÇµÄ,<BR>¡º»Ø´ğ¡»Âğ¡¤¡¤¡¤</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_41", 102, 110,350, 340, 142, "Rock" , invalid,"<TYPE style=Normal>ÄÇÃ´..¡¡ÎÒ¾ÍÔİÊ±Àë¿ª°É¡¤¡¤¡¤,<BR>µ«ÊÇ¡¡..±ğÍü¼ÇÁË</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_411",102, 315,388, 450, 200, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=22>Ê¥µ®½Ú<BR>Ã÷ÄêÒ²»áÓĞ£¡</TYPE>");
+/*è’å±±*/CreateBalloon("ME_40", 102, 195,240, 370, 160, "Rock" , 120,"<TYPE style=Normal interval=65>å“¼Â·Â·Â·,ã€€åŸæ¥å¦‚æ­¤,<BR>è¿™å°±æ˜¯ä½ ä»¬çš„,<BR>ã€å›ç­”ã€å—Â·Â·Â·</TYPE>");
+/*è’å±±*/CreateBalloon("ME_41", 102, 110,350, 340, 142, "Rock" , invalid,"<TYPE style=Normal>é‚£ä¹ˆ..ã€€æˆ‘å°±æš‚æ—¶ç¦»å¼€å§Â·Â·Â·,<BR>ä½†æ˜¯ã€€..åˆ«å¿˜è®°äº†</TYPE>");
+/*è’å±±*/CreateBalloon("ME_411",102, 315,388, 450, 200, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=22>åœ£è¯èŠ‚<BR>æ˜å¹´ä¹Ÿä¼šæœ‰ï¼</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_ARA06",50,60,190,300,100,false);
 	CreateOutlineEx("OL_ARA06",50,60,190,300,100,"Fade",black,6);
@@ -480,8 +480,8 @@ page Main
 //<-14
 
 //->15	Draw();
-/*»ÄÉ½*/CreateBalloon("ME_42", 102, 130,210, 370, 160, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=20>ÎÒÒ»¶¨»á<BR>»ØÀ´µÄ£¡</TYPE>");
-/*»ÄÉ½*/CreateBalloon("ME_421",102, 190,320, 470, 150, "Gas" , invalid,"<TYPE style=Fade interval=115><FONT face='G' size=24>¹ş¹ş¹ş¹ş¹ş¹ş£¡£¡£¡</TYPE>");
+/*è’å±±*/CreateBalloon("ME_42", 102, 130,210, 370, 160, "Strike" , invalid,"<TYPE style=Normal><FONT face='G' size=20>æˆ‘ä¸€å®šä¼š<BR>å›æ¥çš„ï¼</TYPE>");
+/*è’å±±*/CreateBalloon("ME_421",102, 190,320, 470, 150, "Gas" , invalid,"<TYPE style=Fade interval=115><FONT face='G' size=24>å“ˆå“ˆå“ˆå“ˆå“ˆå“ˆï¼ï¼ï¼</TYPE>");
 	Request("ME_*","Erase");
 	CreateWindow("WI_ARA07",30,60,60,200,400,false);
 	CreateOutlineEx("OL_ARA07",30,60,60,200,400,"Fade",black,6);
@@ -491,12 +491,12 @@ page Main
 	Opaque("OL_ARA07", 0, 0, true);
 
 //	SoundLoad(SE1, "SE/Sound.wav");	
-//ÌÓ¤²¤ë¡£ßh¤¯¤«¤éÂ„¤³¤¨¤ë¥µ¥¤¥ì¥ó¡£
-	SoundLoad(SE5, "SE/ƒTƒCƒŒƒ“.wav"); //¥µ¥¤¥ì¥ó.wav
-	SoundLoad(SE0, "SE/rR‘«‰¹‚R.wav");	//»ÄÉ½×ãÒô£³.wav
+//é€ƒã’ã‚‹ã€‚é ãã‹ã‚‰èã“ãˆã‚‹ã‚µã‚¤ãƒ¬ãƒ³ã€‚
+	SoundLoad(SE5, "SE/åƒ’åƒ€å„—å„.wav"); //ã‚µã‚¤ãƒ¬ãƒ³.wav
+	SoundLoad(SE0, "SE/å³³å¶³æ‡Œå£’ä¿.wav");	//è’å±±è¶³éŸ³ï¼“.wav
 	Draw();
 
-	SoundPlay(SE0, "SE/rR‘«‰¹‚R.wav");
+	SoundPlay(SE0, "SE/å³³å¶³æ‡Œå£’ä¿.wav");
 	SoundLoop(SE0,true);
 
 //	SoundPlay(SE1, "SE/Sound.wav");
@@ -511,8 +511,8 @@ page Main
 	Move("WI_ARA07/IM",8000,@0,@-287,false);
 
 	Request("ME_42","Enter");
-	//¥µ¥¤¥ì¥ó
-	SoundPlayEx(SE5, "SE/ƒTƒCƒŒƒ“.wav", 920, -1000, 1000, true);
+	//ã‚µã‚¤ãƒ¬ãƒ³
+	SoundPlayEx(SE5, "SE/åƒ’åƒ€å„—å„.wav", 920, -1000, 1000, true);
 	SoundPan(SE5,8000,1000);
 	call MesWait;
 
@@ -532,9 +532,9 @@ page Main
 
 //16
 	Draw();
-/*¤µ¤æ*/CreateBalloon("ME_43", 102, -70,12, 366, 190, "Cloud" ,315,"<TYPE style=Normal><FONT face='G' size=20>¾¯²ìÏÈÉú<TYPE interval=400 speed=400 style=Spring>¡ª</TYPE>,<BR>ÔÚÄÇ±ß<TYPE interval=400 speed=400 style=Spring>¡ª</TYPE></TYPE>");
-/*¤µ¤æ*/CreateBalloon("ME_431",102, 0,180, 210, 125, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=20>°¡¹ş¹ş</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_44", 102, 340,220, 335, 150, "Dumpling" , 65,"<TYPE style=Normal>É³ÓÑ¡ª¡ª<BR>,°ÑÍ·Éì³ö´°Íâ<BR>ºÜÎ£ÏÕµÄ</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_43", 102, -70,12, 366, 190, "Cloud" ,315,"<TYPE style=Normal><FONT face='G' size=20>è­¦å¯Ÿå…ˆç”Ÿ<TYPE interval=400 speed=400 style=Spring>â€”</TYPE>,<BR>åœ¨é‚£è¾¹<TYPE interval=400 speed=400 style=Spring>â€”</TYPE></TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_431",102, 0,180, 210, 125, "Cloud" , invalid,"<TYPE style=Normal><FONT face='G' size=20>å•Šå“ˆå“ˆ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_44", 102, 340,220, 335, 150, "Dumpling" , 65,"<TYPE style=Normal>æ²™å‹â€”â€”<BR>,æŠŠå¤´ä¼¸å‡ºçª—å¤–<BR>å¾ˆå±é™©çš„</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_SAY02",50, 60,60,"Image/a-6-6-17.bmp", "Fade",#663300,8);
 	Opaque("IM_SAY02",0,0,true);
@@ -568,12 +568,12 @@ page Main
 
 //17
 	Draw();
-/*Í¸»¨*/CreateBalloon("ME_45", 102, 496,210, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>»ÄÉ½ÏÈÉú,¡¡Ã÷ÄêÒ²¡¤¡¤¡¤,<BR>»¹»áÔÙÀ´Âğ¡¤¡¤¡¤</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_46", 102, 90,300, 280, 120, "Ellipse" , invalid,"<TYPE style=Normal>ÏÓ¤Ê¥µ¥ó¥¿¥¯¥í©`¥¹¤Í</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_47", 102, 60,350, 340, 155, "Dumpling" , 55,"<TYPE style=Normal>ÄÇ¼Ò»ï¡¤¡¤¡¤...<BR>¾ø¶ÔÊÇÄÇÖÖ³Á×íÔÚ<BR>×Ô¼ºµÄ»°ÀïµÄÈË¡¤¡¤¡¤</TYPE>");
-//¥Ô¥ó¥İ©`¥ó¡£
-/*Í¸»¨*/CreateBalloon("ME_48", 102, 462,410, 200, 120, "Dumpling" , 110,"<TYPE style=Normal>°¡¡¡À´ÁË¡ª¡ª</TYPE>");
-//¾A¤¯¡£
+/*é€èŠ±*/CreateBalloon("ME_45", 102, 496,210, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>è’å±±å…ˆç”Ÿ,ã€€æ˜å¹´ä¹ŸÂ·Â·Â·,<BR>è¿˜ä¼šå†æ¥å—Â·Â·Â·</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_46", 102, 90,300, 280, 120, "Ellipse" , invalid,"<TYPE style=Normal>å«Œãªã‚µãƒ³ã‚¿ã‚¯ãƒ­ãƒ¼ã‚¹ã­</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_47", 102, 60,350, 340, 155, "Dumpling" , 55,"<TYPE style=Normal>é‚£å®¶ä¼™Â·Â·Â·...<BR>ç»å¯¹æ˜¯é‚£ç§æ²‰é†‰åœ¨<BR>è‡ªå·±çš„è¯é‡Œçš„äººÂ·Â·Â·</TYPE>");
+//ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
+/*é€èŠ±*/CreateBalloon("ME_48", 102, 462,410, 200, 120, "Dumpling" , 110,"<TYPE style=Normal>å•Šã€€æ¥äº†â€”â€”</TYPE>");
+//ç¶šãã€‚
 	Request("ME_*","Erase");
 
 	CreateFrameEx("IM_TWO01",50,500,35,"Image/a-6-6-18.bmp", "Fade",#663300,8);
@@ -581,7 +581,7 @@ page Main
 	ZoomEx("IM_TWO01",0,800,577,true,"Linear");
 
 
-//	SoundLoad(SE0, "SE/A6_25662.WAV");	//¥Ô¥ó¥İ©`¥ó¡£
+//	SoundLoad(SE0, "SE/A6_25662.WAV");	//ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
 	Draw();
 
 	Move("IM_TOU02",5000,250,150,false);
@@ -593,7 +593,7 @@ page Main
 	Request("ME_45","Enter");	call MesWait;
 //	Request("ME_46","Enter");	call MesWait;
 	Request("ME_47","TapEnter");	call MesWait;
-	//¥Ô¥ó¥İ©`¥ó¡£
+	//ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
 	SoundPlayEx(SE0, "SE/A6_25662.wav", 900, 0, 1000, false);
 //	SoundPlay(SE0, "SE/A6_25662.wav");
 	wait 1000;

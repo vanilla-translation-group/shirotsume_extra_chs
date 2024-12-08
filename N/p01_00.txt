@@ -1,7 +1,7 @@
 
 //----------------------------------------------------------------
-//	¥ê¥Ó¥ó¥°¡£Ò¹¡£
-//	¼Ò¤Ç½òÃû´¨¤Î¢¤ê¤ò´ı¤ÄÈıÈË¡£
+//	ãƒªãƒ“ãƒ³ã‚°ã€‚å¤œã€‚
+//	å®¶ã§æ´¥åå·ã®å¸°ã‚Šã‚’å¾…ã¤ä¸‰äººã€‚
 //----------------------------------------------------------------
 #base_path "../"
 
@@ -47,17 +47,17 @@ page Main
 	SoundLoad(BGM1,"M/BGM_09.ogg");
 	Draw();
 
-	//	ü\¥Õ¥§©`¥É¥¤¥ó
+	//	é»’ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³
 	Opaque("BLACK",1500,0,true);
 
-	//	¥¿¥¤¥È¥ë
+	//	ã‚¿ã‚¤ãƒˆãƒ«
 	Opaque("IM_TITLE0",1000,1000,true);
 	Opaque("IM_TITLE0",3000,0,false);
 	Opaque("IM_TITLE1",2000,1000,false);
 	wait 4000;
 	Opaque("IM_TITLE1",2000,0,true);
 
-	//	Ñ©·™é]¤¸	±³¾°ü\¡ú²¿Îİ
+	//	é›ªçª“é–‰ã˜	èƒŒæ™¯é»’â†’éƒ¨å±‹
 	MoveEx("WI_Snow",2000,440,0,false,"Dec2");
 	MoveEx("WI_Snow/WI",2000,-119,0,false,"Dec2");
 	Opaque("KURO",0,0,false);
@@ -66,19 +66,19 @@ page Main
 
 	wait 400;
 	SoundPlay(BGM1,"M/BGM_09.ogg");
-	//	ÈÕ¸¶
+	//	æ—¥ä»˜
 	MoveEx("IM_DATE",1000,@150,@0,false,"Dec4");
 	Opaque("IM_DATE",800,1000,false);
 	wait 2000;
 //<-0
 
 //->1
-///*¤µ¤æ*/CreateBalloon("ME_01", 102, 540,  20, 220, 140, "Clay" , invalid,"<TYPE style=Normal><FONT face='G'>¤¦¡«,¡¡¤»¤ó¤»©`<BR>¤ª¤½¤¤¤Ç¤¹©`</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_02", 102, 270, 160, 325, 145, "LackEllipse" , invalid,"<TYPE style=Normal interval=30>ßW¤¤ßW¤¤ßW¤¤£¡,<BR></TYPE><TYPE style=Normal>¤â¤¦¡¡,¤Ê¤Ë¤ä¤Ã¤Æ¤ó¤Î¤è£¡</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>¤½©`¤¸¤µ¤ó¤Æ¥Û¥ó¥È..<BR>Å®ĞÄ¤¬·Ö¤«¤Ã¤Æ¤Ê¤¤¤ó¤À¤«¤é£¡</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "Dumpling", invalid,"<TYPE style=Normal>¤Ç¤â,<BR>¤´Ö÷ÈË¤µ¤Ş<BR>¤ªÊËÊÂ¤À¤·???</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>Ã¦¤·¤¤¤·???</TYPE>");
-///*Í¸»¨*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>¤¬¤Ş¤ó¤·¤Ê¤­¤ã...?.?.?</TYPE>");
+///*ã•ã‚†*/CreateBalloon("ME_01", 102, 540,  20, 220, 140, "Clay" , invalid,"<TYPE style=Normal><FONT face='G'>ã†ï½,ã€€ã›ã‚“ã›ãƒ¼<BR>ãŠãã„ã§ã™ãƒ¼</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_02", 102, 270, 160, 325, 145, "LackEllipse" , invalid,"<TYPE style=Normal interval=30>é…ã„é…ã„é…ã„ï¼,<BR></TYPE><TYPE style=Normal>ã‚‚ã†ã€€,ãªã«ã‚„ã£ã¦ã‚“ã®ã‚ˆï¼</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>ããƒ¼ã˜ã•ã‚“ã¦ãƒ›ãƒ³ãƒˆ..<BR>å¥³å¿ƒãŒåˆ†ã‹ã£ã¦ãªã„ã‚“ã ã‹ã‚‰ï¼</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "Dumpling", invalid,"<TYPE style=Normal>ã§ã‚‚,<BR>ã”ä¸»äººã•ã¾<BR>ãŠä»•äº‹ã ã—???</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>å¿™ã—ã„ã—???</TYPE>");
+///*é€èŠ±*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>ãŒã¾ã‚“ã—ãªãã‚ƒ...?.?.?</TYPE>");
 	Request("*","Erase");
 	Draw();
 
@@ -86,22 +86,22 @@ page Main
 	Move("IM_DATE",800,@100,@0,false);
 	Opaque("IM_DATE",500,0,false);
 
-/*¤µ¤æ*/CreateBalloon("ME_01", 102, 540,  20, 220, 140, "Clay" , invalid,"<TYPE style=Normal><FONT face='G'>ÎØ¡«,¡¡ÀÏÊ¦<BR>ºÃÂı°¡¡ª¡ª</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_01", 102, 540,  20, 220, 140, "Clay" , invalid,"<TYPE style=Normal><FONT face='G'>å‘œï½,ã€€è€å¸ˆ<BR>å¥½æ…¢å•Šâ€”â€”</TYPE>");
 	Request("ME_01","TapEnter");	call MesWait;
 
-/*¥¨¥Ş*/CreateBalloon("ME_02", 102, 270, 160, 325, 145, "LackEllipse" , invalid,"<TYPE style=Normal interval=30>Ì«ÂıÁËÌ«ÂıÁË£¡,<BR></TYPE><TYPE style=Normal>ÕæÊÇµÄ¡¡,ÔÚ¸ÉÊ²Ã´°¡£¡</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_02", 102, 270, 160, 325, 145, "LackEllipse" , invalid,"<TYPE style=Normal interval=30>å¤ªæ…¢äº†å¤ªæ…¢äº†ï¼,<BR></TYPE><TYPE style=Normal>çœŸæ˜¯çš„ã€€,åœ¨å¹²ä»€ä¹ˆå•Šï¼</TYPE>");
 	Request("ME_02","TapEnter");	call MesWait;
 
-/*¥¨¥Ş*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>×Ú´ÈÕæµÄÊÇ..<BR>²»¶®Å®º¢×ÓµÄĞÄ°¡£¡</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_03", 102, 370, 250, 380, 150, "Ellipse" , invalid,"<TYPE style=Normal>å®—æ…ˆçœŸçš„æ˜¯..<BR>ä¸æ‡‚å¥³å­©å­çš„å¿ƒå•Šï¼</TYPE>");
 	Request("ME_03","TapEnter");	call MesWait;
 
-/*Í¸»¨*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "LackEllipse", invalid,"<TYPE style=Normal>µ«ÊÇ,<BR>Ö÷ÈË´óÈË<BR>ÓĞ¹¤×÷¡¤¡¤¡¤</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_04", 102,  50, 290, 250, 150, "LackEllipse", invalid,"<TYPE style=Normal>ä½†æ˜¯,<BR>ä¸»äººå¤§äºº<BR>æœ‰å·¥ä½œÂ·Â·Â·</TYPE>");
 	Request("ME_04","TapEnter");	call MesWait;
 
-/*Í¸»¨*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>ºÜÃ¦°É¡¤¡¤¡¤</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_05", 102,  50, 440, 200, 100, "Dumpling", invalid,"<TYPE style=Normal>å¾ˆå¿™å§Â·Â·Â·</TYPE>");
 	Request("ME_05","Enter");	call MesWait;
 
-/*Í¸»¨*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>±ØĞëÈÌÄÍ...¡¤.¡¤.¡¤</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_06", 102, 150, 490, 230, 100, "Dumpling", invalid,"<TYPE style=Normal>å¿…é¡»å¿è€...Â·.Â·.Â·</TYPE>");
 	Request("ME_06","Enter");	call MesWait;
 	WaitKey();
 
@@ -119,10 +119,10 @@ page Main
 
 //->2
 	Draw();
-///*¥¨¥Ş*/CreateBalloon("ME_07", 102, 298,  23, 224, 125, "DropEllipse", -30,"¤À<TYPE style=Spring interval=500 speed=500>¡«</TYPE>¤«<TYPE style=Spring interval=500 speed=500>¡«</TYPE>¤é<TYPE style=Spring interval=500 speed=500>¡«</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_071",102,  90, 100, 300, 150, "Ellipse", invalid,"<TYPE style=Normal>ºÎ¤Ç½ñÈÕ¤ËÏŞ¤Ã¤Æ<BR>¤³¤ó¤ÊßW¤¯¤Ş¤ÇÊËÊÂ¤ò<BR>¤·¤Æ¤ë¤Î¤è¤Ã£¡</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_08", 102, 275, 270, 280, 150, "Ellipse", 40,"<TYPE style=Normal>½ñÈÕ¤Ï¥¯¥ê¥¹¥Ş¥¹¤è£¡..<BR>¥¯¥ê¥¹¥Ş¥¹£¡</TYPE>");
-///*¥¨¥Ş*/CreateBalloon("ME_09", 102, 190, 390, 330, 120, "HNoiseEllipse", invalid,"<FONT size=26 face=G>¼{µÃ¤¤¤«¤Ê<TYPE style=Spring interval=500 speed=500>¡«</TYPE>¤¤</FONT>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_07", 102, 298,  23, 224, 125, "DropEllipse", -30,"ã <TYPE style=Spring interval=500 speed=500>ï½</TYPE>ã‹<TYPE style=Spring interval=500 speed=500>ï½</TYPE>ã‚‰<TYPE style=Spring interval=500 speed=500>ï½</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_071",102,  90, 100, 300, 150, "Ellipse", invalid,"<TYPE style=Normal>ä½•ã§ä»Šæ—¥ã«é™ã£ã¦<BR>ã“ã‚“ãªé…ãã¾ã§ä»•äº‹ã‚’<BR>ã—ã¦ã‚‹ã®ã‚ˆã£ï¼</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_08", 102, 275, 270, 280, 150, "Ellipse", 40,"<TYPE style=Normal>ä»Šæ—¥ã¯ã‚¯ãƒªã‚¹ãƒã‚¹ã‚ˆï¼..<BR>ã‚¯ãƒªã‚¹ãƒã‚¹ï¼</TYPE>");
+///*ã‚¨ãƒ*/CreateBalloon("ME_09", 102, 190, 390, 330, 120, "HNoiseEllipse", invalid,"<FONT size=26 face=G>ç´å¾—ã„ã‹ãª<TYPE style=Spring interval=500 speed=500>ï½</TYPE>ã„</FONT>");
 	Request("*","Erase");
 	CreateNode("OL_EMA",50,523,65);
 	CreateOutlineEx("OL_EMA/OL",50,0,0,330,280, "Fade",#663300,8);
@@ -140,14 +140,14 @@ page Main
 	MoveEx("OL_EMA",800,@-100,@0,false,"Dec3");
 	Opaque("OL_EMA/OL",500,1000,false);
 	Opaque("OL_EMA/01",500,1000,false);
-/*¥¨¥Ş*/CreateBalloon("ME_07", 102, 298,  23, 224, 125, "DropEllipse", -30,"Ëù<TYPE style=Spring interval=500 speed=500>¡«</TYPE>ÒÔ<TYPE style=Spring interval=500 speed=500>¡«</TYPE>Ëµ<TYPE style=Spring interval=500 speed=500>¡«</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_07", 102, 298,  23, 224, 125, "DropEllipse", -30,"æ‰€<TYPE style=Spring interval=500 speed=500>ï½</TYPE>ä»¥<TYPE style=Spring interval=500 speed=500>ï½</TYPE>è¯´<TYPE style=Spring interval=500 speed=500>ï½</TYPE>");
 	Request("ME_07","TapEnter");	call MesWait;
-/*¥¨¥Ş*/CreateBalloon("ME_071",102,  90, 100, 300, 150, "Ellipse", invalid,"<TYPE style=Normal>ÎªÊ²Ã´Æ«Æ«ÔÚ½ñÌì<BR>Òª¹¤×÷µ½<BR>ÕâÃ´Íí°¡£¡</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_071",102,  90, 100, 300, 150, "Ellipse", invalid,"<TYPE style=Normal>ä¸ºä»€ä¹ˆåååœ¨ä»Šå¤©<BR>è¦å·¥ä½œåˆ°<BR>è¿™ä¹ˆæ™šå•Šï¼</TYPE>");
 	Request("ME_071","TapEnter");	call MesWait;
 	Opaque("OL_EMA/02",800,1000,false);	wait 500;
-/*¥¨¥Ş*/CreateBalloon("ME_08", 102, 275, 270, 280, 150, "Ellipse", 40,"<TYPE style=Normal>½ñÌì¿ÉÊÇÊ¥µ®½Ú°¡£¡..<BR>Ê¥µ®½Ú£¡</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_08", 102, 275, 270, 280, 150, "Ellipse", 40,"<TYPE style=Normal>ä»Šå¤©å¯æ˜¯åœ£è¯èŠ‚å•Šï¼..<BR>åœ£è¯èŠ‚ï¼</TYPE>");
 	Request("ME_08","TapEnter");	call MesWait;
-/*¥¨¥Ş*/CreateBalloon("ME_09", 102, 190, 390, 330, 120, "HNoiseEllipse", invalid,"<FONT size=26 face=G>²»ÄÜ½Ó<TYPE style=Spring interval=500 speed=500>¡«</TYPE>ÊÜ</FONT>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_09", 102, 190, 390, 330, 120, "HNoiseEllipse", invalid,"<FONT size=26 face=G>ä¸èƒ½æ¥<TYPE style=Spring interval=500 speed=500>ï½</TYPE>å—</FONT>");
 	Request("ME_09","TapEnter");	call MesWait;
 	WaitKey();
 	Opaque("ME_07",500,0,false);	wait 100;
@@ -159,15 +159,15 @@ page Main
 
 //->3
 	Draw();
-/*¤µ¤æ*/CreateBalloon("ME_10", 102, -10, 320, 300, 150, "Cloud" , 83,"<TYPE style=Normal><FONT face='G'>°¡¹ş¹ş,<BR>°¬Âê¡¡,Í·ÉÏ¶¼ÆøµÃÃ°ÑÌÁË¡«</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_11", 102, 320, 233, 250, 120, "NoiseEllipse", 42,"<TYPE style=Spit>ÄËËµÊ²Ã´¡«</TYPE>");
-/*¤µ¤æ*/CreateBalloon("ME_12", 102, 252,  46, 200, 100, "Cloud", 247,"<TYPE style=Normal><FONT face='G'>°¡¹ş¹ş<TYPE style=Spring interval=500 speed=500>¡«</TYPE></TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_13", 102, 330, 440, 320, 160, "Ellipse", 170,"<TYPE style=Normal>ÍÛ¡ª¡ª,<BR>ÄãÃÇÁ½¸ö¶¼±ğ³³ÁË¡¤¡¤¡¤</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_10", 102, -10, 320, 300, 150, "Cloud" , 83,"<TYPE style=Normal><FONT face='G'>å•Šå“ˆå“ˆ,<BR>è‰¾ç›ã€€,å¤´ä¸Šéƒ½æ°”å¾—å†’çƒŸäº†ï½</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_11", 102, 320, 233, 250, 120, "NoiseEllipse", 42,"<TYPE style=Spit>ä¹ƒè¯´ä»€ä¹ˆï½</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_12", 102, 252,  46, 200, 100, "Cloud", 247,"<TYPE style=Normal><FONT face='G'>å•Šå“ˆå“ˆ<TYPE style=Spring interval=500 speed=500>ï½</TYPE></TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_13", 102, 330, 440, 320, 160, "Ellipse", 170,"<TYPE style=Normal>å“‡â€”â€”,<BR>ä½ ä»¬ä¸¤ä¸ªéƒ½åˆ«åµäº†Â·Â·Â·</TYPE>");
 	Request("*","Erase");
 	CreateFrameEx("IM_SAY01",50,  80, 0,"Image/3-1-1-3.bmp", "Fade",#663300,8);
 	Opaque("IM_SAY01", 0, 0, false);
 	CreateFrameEx("IM_TOU01",50,-370,370,"Image/3-1-1-5.bmp", "Fade",#663300,8);
-	//	¥Ô¥ó¥İ©`¥ó¡£
+	//	ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
 	SoundLoad(SE0, "SE/A6_25662.WAV");
 	
 	Draw();
@@ -188,7 +188,7 @@ page Main
 
 	Opaque("IM_TOU01",800,1000,false);
 	MoveEx("IM_TOU01",1000,in_left,@0,false,"Linear");
-	Request("ME_13","TapEnter");	wait 2300;		//¤ï©`
+	Request("ME_13","TapEnter");	wait 2300;		//ã‚ãƒ¼
 
 	SoundPlayEx(SE0, "SE/A6_25662.wav", 900, 0, 1000, false);
 //	SoundPlay(SE0, "SE/A6_25662.wav");
@@ -204,10 +204,10 @@ page Main
 
 //->4
 	Draw();
-/*¥¨¥Ş*/CreateBalloon("ME_14", 102, 570,  14, 240, 120, "Ellipse", -130,"<TYPE style=Normal>ÍÛ¡¡ÓĞË­À´ÁË£¡</TYPE>");
-/*¤µ¤æ*/CreateBalloon("ME_15", 102, -10, 277, 216, 110, "Cloud" , 30,"<TYPE style=Normal><FONT face='G'>ÊÇÀÏÊ¦Âğ£¿</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_16", 102, 335, 240, 160, 120, "Ellipse", invalid,"<TYPE style=Normal>²»</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_161",102, 238, 464, 240, 133, "Ellipse", 20,"<TYPE style=Normal>Ö÷ÈË´óÈË<BR>ÊÇÓĞÔ¿³×µÄ¡¤¡¤¡¤</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_14", 102, 570,  14, 240, 120, "Ellipse", -130,"<TYPE style=Normal>å“‡ã€€æœ‰è°æ¥äº†ï¼</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_15", 102, -10, 277, 216, 110, "Cloud" , 30,"<TYPE style=Normal><FONT face='G'>æ˜¯è€å¸ˆå—ï¼Ÿ</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_16", 102, 335, 240, 160, 120, "Ellipse", invalid,"<TYPE style=Normal>ä¸</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_161",102, 238, 464, 240, 133, "Ellipse", 20,"<TYPE style=Normal>ä¸»äººå¤§äºº<BR>æ˜¯æœ‰é’¥åŒ™çš„Â·Â·Â·</TYPE>");
 	Request("ME_*","Erase");
 	CreateClass("CL_EMA",50,0,0,"SIPPO");
 	CreateFrameEx("IM_SAY02",51, 112,-490,"Image/3-2-2-7.bmp", "Fade",#663300,8);
@@ -247,13 +247,13 @@ page Main
 //<-4
 
 //->5
-/*¥¨¥Ş*/CreateBalloon("ME_17", 102, 520, 150, 200, 120, "Dumpling", invalid,"<TYPE style=Normal>ºÃÁËºÃÁË</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_171",102,  42, 330, 220, 130, "Dumpling", invalid,"<TYPE style=Normal>ÏÖÔÚ¾ÍÀ´¿ªÃÅ¡ª¡ª</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_17", 102, 520, 150, 200, 120, "Dumpling", invalid,"<TYPE style=Normal>å¥½äº†å¥½äº†</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_171",102,  42, 330, 220, 130, "Dumpling", invalid,"<TYPE style=Normal>ç°åœ¨å°±æ¥å¼€é—¨â€”â€”</TYPE>");
 	Request("*","Erase");
 	Opaque("IM_EMA05",0,0,true);
 	Draw();
 
-	//¥Ô¥ó¥İ©`¥ó¡£
+	//ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
 
 	SoundPlayEx(SE0, "SE/A6_25662.wav", 900, 0, 1000, false);
 //	SoundPlay(SE0, "SE/A6_25662.wav");

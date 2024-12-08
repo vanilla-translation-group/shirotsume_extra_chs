@@ -1,6 +1,6 @@
 //----------------------------------------------------------------
-//	¥ê¥Ó¥ó¥°¡£Ò¹¡£
-//	½òÃû´¨¤µ¤óµÇˆö
+//	ãƒªãƒ“ãƒ³ã‚°ã€‚å¤œã€‚
+//	æ´¥åå·ã•ã‚“ç™»å ´
 //----------------------------------------------------------------
 #base_path "../"
 page MsgWait
@@ -21,12 +21,12 @@ page Main
 	CreateColor("BLACK",200,in_left,in_top,800,600,"black");
 
 //->1
-//ÉÙ¤·•rég½Uß^¡£
-//¥Ô¥ó¥İ©`¥ó¡£
+//å°‘ã—æ™‚é–“çµŒéã€‚
+//ãƒ”ãƒ³ãƒãƒ¼ãƒ³ã€‚
 	Draw();
-/*Í¸»¨*/CreateBalloon("ME_01", 102, 340,2, 240, 120, "Ellipse" , 320,"<TYPE style=Normal>ÄúÊÇÄÄÎ»£¿</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_02", 102, 225,182, 275, 133, "Dumpling" , -20,"<TYPE style=Normal>ÕæÊÇ¡ª¡ª¡¡,Õâ´ÎÓÖÊÇË­¡ª¡ª£¿</TYPE>");
-/*¤µ¤æ*/CreateBalloon("ME_03", 102, 245,360, 180, 120, "Cloud" , 304,"<TYPE style=Normal><FONT face='G' size=20>Ë­¡ª¡ª£¿</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_01", 102, 340,2, 240, 120, "Ellipse" , 320,"<TYPE style=Normal>æ‚¨æ˜¯å“ªä½ï¼Ÿ</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_02", 102, 225,182, 275, 133, "Dumpling" , -20,"<TYPE style=Normal>çœŸæ˜¯â€”â€”ã€€,è¿™æ¬¡åˆæ˜¯è°â€”â€”ï¼Ÿ</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_03", 102, 245,360, 180, 120, "Cloud" , 304,"<TYPE style=Normal><FONT face='G' size=20>è°â€”â€”ï¼Ÿ</TYPE>");
 	Request("ME_*","Erase");
 	CreateNode("NO_T",50,680,18);
 	CreateNode("NO_E",50,550,200);
@@ -70,21 +70,21 @@ page Main
 
 //->2
 	Draw();
-/*½òÃû*/CreateBalloon("ME_01", 102, 10,35, 337, 160, "Dumpling", invalid,"<TYPE style=Normal>¹ş¹ş¹ş<BR>,²»ºÃÒâË¼À´ÍíÁË,<BR>ÊÇÎÒ°¡</TYPE>");
-/*½òÃû*/CreateBalloon("ME_02", 102, -45,290, 290, 140, "Dumpling", invalid,"<TYPE style=Normal>ĞĞÀîÓĞµã¶à,<BR>¿Õ²»³öÀ´ÊÖ</TYPE>");
-/*½òÃû*/CreateBalloon("ME_03", 102, 65,385, 260, 125, "Dumpling", invalid,"<TYPE style=Normal>ÄÜ°ïÎÒ¿ªÏÂÃÅÂğ</TYPE>");
+/*æ´¥å*/CreateBalloon("ME_01", 102, 10,35, 337, 160, "Dumpling", invalid,"<TYPE style=Normal>å“ˆå“ˆå“ˆ<BR>,ä¸å¥½æ„æ€æ¥æ™šäº†,<BR>æ˜¯æˆ‘å•Š</TYPE>");
+/*æ´¥å*/CreateBalloon("ME_02", 102, -45,290, 290, 140, "Dumpling", invalid,"<TYPE style=Normal>è¡Œææœ‰ç‚¹å¤š,<BR>ç©ºä¸å‡ºæ¥æ‰‹</TYPE>");
+/*æ´¥å*/CreateBalloon("ME_03", 102, 65,385, 260, 125, "Dumpling", invalid,"<TYPE style=Normal>èƒ½å¸®æˆ‘å¼€ä¸‹é—¨å—</TYPE>");
 	Request("ME_*","Erase");
 //	CreateImage("IM_TU",50,0,0,"Image/tu-1-1-4.png");
-//	CreateColor("½òÃû´¨",50,in_left,in_top,200,600,#000066);
+//	CreateColor("æ´¥åå·",50,in_left,in_top,200,600,#000066);
 
-	CreateFrameEx("½òÃû´¨",30,-600,0,"Image/tu-Sky02.bmp", "Fade",#000000,8);
-	CreateEffect("½òÃû´¨/Ñ©",0,600,0,200,600,"SlowSnow");
-	Opaque("½òÃû´¨",0,0,true);
+	CreateFrameEx("æ´¥åå·",30,-600,0,"Image/tu-Sky02.bmp", "Fade",#000000,8);
+	CreateEffect("æ´¥åå·/é›ª",0,600,0,200,600,"SlowSnow");
+	Opaque("æ´¥åå·",0,0,true);
 
 	SoundPlayEx(BGM0,"M/BGM_11.ogg",1000,0,1000,true);
 	Draw();
 
-	Opaque("½òÃû´¨",1200,1000,false);	wait 800;
+	Opaque("æ´¥åå·",1200,1000,false);	wait 800;
 	Request("ME_01","Enter");	call MsgWait;
 	Request("ME_02","Enter");	call MsgWait;
 	Request("ME_03","Enter");	call MsgWait;
@@ -95,10 +95,10 @@ page Main
 
 //->3
 	Draw();
-/*Í¸»¨*/CreateBalloon("ME_01", 102, 350,-10, 120, 100, "Ellipse" , invalid,"<TYPE style=Jump><FONT size=22>£¡</FONT></TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_02",102, 400,20, 220, 120, "Ellipse" , 320,"<TYPE style=Normal>Ö÷ÈË´óÈË¡¤¡¤¡¤</TYPE>");
-/*¥¨¥Ş*/CreateBalloon("ME_04", 102, 280,180, 200, 130, "Potato" ,-20,"<TYPE style=Normal>×Ú´È£¡</TYPE>");
-/*¤µ¤æ*/CreateBalloon("ME_03", 102, 570,370, 210, 140, "Cloud" , 220,"<TYPE style=Normal><FONT face='G' size=20>ÀÏÊ¦¡«..<BR>ÖÕÓÚ¡«</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_01", 102, 350,-10, 120, 100, "Ellipse" , invalid,"<TYPE style=Jump><FONT size=22>ï¼</FONT></TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_02",102, 400,20, 220, 120, "Ellipse" , 320,"<TYPE style=Normal>ä¸»äººå¤§äººÂ·Â·Â·</TYPE>");
+/*ã‚¨ãƒ*/CreateBalloon("ME_04", 102, 280,180, 200, 130, "Potato" ,-20,"<TYPE style=Normal>å®—æ…ˆï¼</TYPE>");
+/*ã•ã‚†*/CreateBalloon("ME_03", 102, 570,370, 210, 140, "Cloud" , 220,"<TYPE style=Normal><FONT face='G' size=20>è€å¸ˆï½..<BR>ç»ˆäºï½</TYPE>");
 	Request("ME_*","Erase");
 	CreateImage("NO_T/2",52,0,0,"Image/tu-1-1-5.bmp");
 	CreateImage("NO_E/2",52,0,0,"Image/tu-1-1-6.bmp");
@@ -128,19 +128,19 @@ page Main
 	Delete("ME_*");
 	Delete("IM_*");
 	Delete("NO_*");
-	Delete("½òÃû´¨*");
+	Delete("æ´¥åå·*");
 //<-3
 //<-3
 
 	System( "DisableControl" );
 
 //->4
-	//¥É¥¢¤òé_¤±¤ë¡£¥×¥ì¥¼¥ó¥È¤ò›gÉ½³Ö¤Ã¤¿½òÃû´¨¡£Íâ¤ÏÑ©¡£
-/*¤µ¤æ*/CreateBalloon("ME_01", 102, 395,213, 360, 175, "Cloud" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=24 face='G'>»¶Ó­»ØÀ´¡ª¡ª£¡</TYPE>");
-/*¤¨¤Ş*/CreateBalloon("ME_02", 102, 180,342, 330, 150, "Ellipse" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=26>»¶Ó­»ØÀ´¡ª¡ª£¡</TYPE>");
-/*Í¸»¨*/CreateBalloon("ME_03", 102, 365,450,290, 125, "Dumpling" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=22>»¶Ó­»ØÀ´¡ª¡ª£¡</TYPE>");
-//¤½¤Î¤Ş¤Ş¤æ¤Ã¤¯¤ê¥Õ¥§©`¥É¥¢¥¦¥È¡£
-//½KÁË¡£
+	//ãƒ‰ã‚¢ã‚’é–‹ã‘ã‚‹ã€‚ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆã‚’æ²¢å±±æŒã£ãŸæ´¥åå·ã€‚å¤–ã¯é›ªã€‚
+/*ã•ã‚†*/CreateBalloon("ME_01", 102, 395,213, 360, 175, "Cloud" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=24 face='G'>æ¬¢è¿å›æ¥â€”â€”ï¼</TYPE>");
+/*ãˆã¾*/CreateBalloon("ME_02", 102, 180,342, 330, 150, "Ellipse" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=26>æ¬¢è¿å›æ¥â€”â€”ï¼</TYPE>");
+/*é€èŠ±*/CreateBalloon("ME_03", 102, 365,450,290, 125, "Dumpling" , invalid,"<TYPE style=Fade interval=80 speed=1500><FONT size=22>æ¬¢è¿å›æ¥â€”â€”ï¼</TYPE>");
+//ãã®ã¾ã¾ã‚†ã£ãã‚Šãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã€‚
+//çµ‚äº†ã€‚
 	Request("ME_*","Erase");
 	CreateImage("BA_SKY",5,0,in_bottom,"Image/tu-sky.bmp");
 	CreateEffect("EF_SKY",10,0,0,800,600,"SlowSnow");
@@ -183,11 +183,11 @@ page Main
 	CreateImage("IM_STAFF",250,400,370,"Image/staffroll.png");
 	Opaque("IM_STAFF",0,0,true);
 
-	SoundLoad(SE0,"SE/ƒJƒp.wav"); //¥«¥Ñ.wav
-	SoundLoad(SE1,"SE/ƒRƒg.wav"); //¥³¥È.wav
-	SoundLoad(SE2,"SE/ƒRƒg.wav");
-	SoundLoad(SE3,"SE/ƒRƒg.wav");
-	SoundLoad(SE4,"SE/ƒsƒ…[.wav"); //¥Ô¥å©`.wav
+	SoundLoad(SE0,"SE/åƒ‡åƒ·.wav"); //ã‚«ãƒ‘.wav
+	SoundLoad(SE1,"SE/åƒåƒ©.wav"); //ã‚³ãƒˆ.wav
+	SoundLoad(SE2,"SE/åƒåƒ©.wav");
+	SoundLoad(SE3,"SE/åƒåƒ©.wav");
+	SoundLoad(SE4,"SE/åƒºå„ä¹•.wav"); //ãƒ”ãƒ¥ãƒ¼.wav
 	SoundStop(BGM0);
 	Draw();
 
@@ -203,7 +203,7 @@ page Main
 	ZoomEx("Node",400,1400,1400,true,"Acc3");
 	ZoomEx("Node",100,1000,1000,true,"Dec3");
 	wait 100;
-	SoundPlayEx(SE0, "SE/ƒJƒp.wav", 880, 0, 1000, false);
+	SoundPlayEx(SE0, "SE/åƒ‡åƒ·.wav", 880, 0, 1000, false);
 
 /*
 	ShakeMove("Node",150,@0,@0,5,5,0,0,true);
@@ -219,17 +219,17 @@ page Main
 	Rotate("Node", 50, 0, true);
 	wait 550;
 
-	SoundPlayEx(SE1, "SE/ƒRƒg.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE1, "SE/åƒåƒ©.wav", 860, 0, 1000, false);
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, true);
 	wait 50;
 
-	SoundPlayEx(SE2, "SE/ƒRƒg.wav", 880, 0, 1000, false);
+	SoundPlayEx(SE2, "SE/åƒåƒ©.wav", 880, 0, 1000, false);
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, true);
 	wait 50;
 
-	SoundPlayEx(SE3, "SE/ƒRƒg.wav", 860, 0, 1000, false);
+	SoundPlayEx(SE3, "SE/åƒåƒ©.wav", 860, 0, 1000, false);
 	Rotate("Node", 50, -20, true);
 	Rotate("Node", 50, 0, false);
 	wait 200;
@@ -241,7 +241,7 @@ page Main
 	wait 800;
 
 
-	SoundPlayEx(SE4, "SE/ƒsƒ…[.wav", 760, 0, 1000, false);
+	SoundPlayEx(SE4, "SE/åƒºå„ä¹•.wav", 760, 0, 1000, false);
 	MoveEx("Node", 500,@0,@220, false, "AccSin");
   	Opaque("Node",500,0,false);
 	Rotate("Node", 500, 1440, false);
