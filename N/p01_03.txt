@@ -210,7 +210,7 @@ page Main
 
 	Draw();
 	CreateBalloonEx("ME_01", 102, 340,30, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>嘛总之，,我会把这当作<BR>成为大人物的考验之一，,<BR>在这个牧场再努力一阵子。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_02", 102, 50,200, 430, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>然后当我.作为人成长了一轮之际，...<BR>我考虑再一次.对Babel发起挑战。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_02", 102, 50,200, 430, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE interval=50>然后当我.作为人成长了一轮之际，...<BR>我考虑再一次.对巴别塔发起挑战。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_03", 102, 10,300, 250, 120, "Rectangle" , invalid,"<FONT color=white shadow=black>那时候就请多指教了。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_04", 102, 500,420, 280, 140, "Rectangle" , invalid,"<FONT color=white shadow=black>那么就再见了，,<BR>圣诞快乐。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
@@ -337,7 +337,7 @@ page Main
 //->61
 
 	Draw();
-	CreateBalloonEx("ME_04", 102, 30,70, 450, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>大家如此地仰慕我，,.也正是我<BR>是神.是救世主..是世界之源的有力证明，</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_04", 102, 30,70, 450, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>大家如此地仰慕我，,.也正是我<BR>是神.是救世主..以及拥有“起源”的有力证明，</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_05", 102, 200,220, 320, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>在高兴之余，,我也不由得<BR>感受到了强烈的责任。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_06", 102, 80,420, 230, 115, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE  style=Fade interval=65>这真是个难办的事情啊。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
@@ -357,7 +357,7 @@ page Main
 //->62
 
 	Draw();
-	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>说起来前几天，,在三丁目的公园里发现了<BR>一只毛色好、血统好的秋田犬。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>说起来前几天，,在三丁目的公园里发现了<BR>一只拥有着“起源”的秋田犬。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 10,220, 415, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>虽然我一直尝试说服他与我合作，,<BR>但他就是不肯答应我。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是答应着我,　<B>汪汪</B>，,<BR>却怎么也不肯答应我说..　<B>嗯</B>。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
