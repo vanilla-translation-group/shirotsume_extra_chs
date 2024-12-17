@@ -218,7 +218,7 @@ page Main
 //
 //->5
 	Draw();
-/*エマ*/CreateBalloon("ME_06", 102, 195,45, 327, 160, "Ice" , 215,"<TYPE style=Normal interval=20>说起来品藤小姐！,<BR><TYPE style=Normal interval=25>为什么这些都是<BR>上古时代的遗物.呢！</TYPE>");
+/*エマ*/CreateBalloon("ME_06", 102, 195,45, 327, 160, "Ice" , 215,"<TYPE style=Normal interval=20>说起来品藤小姐！,<BR><TYPE style=Normal interval=25>为什么全部都是<BR>时代错误遗物.呢！</TYPE>");
 /*エマ*/CreateBalloon("ME_05", 102, 60,245, 300, 130, "DropDumpling" , 105,"<TYPE style=Normal>有没有<BR>更普通一点的礼物···</TYPE>");
 /*品藤*/CreateBalloon("ME_01", 102, 290,210, 285, 130, "Pool" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=24>诶诶！</TYPE>");
 /*品藤*/CreateBalloon("ME_012", 102, 251,390, 282, 117, "Rock" , 330,"<TYPE style=Fade interval=85><FONT size=14>..因为.......因为<BR>.......我···</TYPE>");
@@ -277,7 +277,7 @@ page Main
 	Opaque("ME_013",300,0,true);	wait 100;
 
 	Draw();
-/*品藤*/CreateBalloon("ME_02", 102, 193,160, 450, 170, "Rock" , 290,"<TYPE style=Normal interval=75><FONT size=15>我从小..便一心扑在古痕的工作上了···<BR>,如果去原宿这样的地方...绝对会迷路的···</TYPE>");
+/*品藤*/CreateBalloon("ME_02", 102, 193,160, 450, 170, "Rock" , 290,"<TYPE style=Normal interval=75><FONT size=15>我从小就..一心扑在古痕的工作上···<BR>,如果去原宿这样的地方...绝对会迷路的···</TYPE>");
 /*品藤*/CreateBalloon("ME_03", 102, 320,390, 190, 83, "Clay" , invalid,"<TYPE style=Fade interval=65><FONT size=14>呜呜呜···</TYPE>");
 /*品藤*/CreateBalloon("ME_04", 102, 103,420, 360, 160, "FatStar" , invalid,"<TYPE style=Normal interval=20><FONT size=18 face='G' >艾玛<BR>...对不起！</TYPE>");
 	Request("ME_*","Erase");
