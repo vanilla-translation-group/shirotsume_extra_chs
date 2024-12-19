@@ -96,7 +96,7 @@ page Main
 //->3
 	Draw();
 /*透花*/CreateBalloon("ME_01", 102, 350,-10, 120, 100, "Ellipse" , invalid,"<TYPE style=Jump><FONT size=22>！</FONT></TYPE>");
-/*透花*/CreateBalloon("ME_02",102, 400,20, 220, 120, "Ellipse" , 320,"<TYPE style=Normal>主人大人···</TYPE>");
+/*透花*/CreateBalloon("ME_02",102, 400,20, 220, 120, "Ellipse" , 320,"<TYPE style=Normal>主人···</TYPE>");
 /*エマ*/CreateBalloon("ME_04", 102, 280,180, 200, 130, "Potato" ,-20,"<TYPE style=Normal>宗慈！</TYPE>");
 /*さゆ*/CreateBalloon("ME_03", 102, 570,370, 210, 140, "Cloud" , 220,"<TYPE style=Normal><FONT face='G' size=20>老师～..<BR>终于～</TYPE>");
 	Request("ME_*","Erase");
