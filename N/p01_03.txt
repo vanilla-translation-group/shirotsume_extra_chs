@@ -359,7 +359,7 @@ page Main
 	Draw();
 	CreateBalloonEx("ME_01", 102, 95,20, 390, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>话说前些日子，,我在三丁目的公园遇到了<BR>一只毛色出众、拥有着“起源”的秋田犬。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_02", 102, 10,220, 415, 150, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>我尝试说服他与我合作，,<BR>但他十分执拗。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是冲着我,　<B>汪汪</B>地回应，,<BR>却不肯给出　<B>嗯</B>的答复</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 102, 330,385, 320, 140, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=65>只是冲着我,　<B>汪汪</B>地回应，,<BR>却不肯给出　<B>嗯</B>的答复。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	Draw();
 

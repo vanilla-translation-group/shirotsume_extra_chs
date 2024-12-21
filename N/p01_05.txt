@@ -218,7 +218,7 @@ page Main
 //
 //->5
 	Draw();
-/*エマ*/CreateBalloon("ME_06", 102, 195,45, 327, 160, "Ice" , 215,"<TYPE style=Normal interval=20>说起来品藤小姐！,<BR><TYPE style=Normal interval=25>为什么全部都是<BR>时代错误遗物.呢！</TYPE>");
+/*エマ*/CreateBalloon("ME_06", 102, 195,45, 327, 160, "Ice" , 215,"<TYPE style=Normal interval=20>说起来品藤小姐！,<BR><TYPE style=Normal interval=25>为什么全部都是<BR><RUBY text=' OOPArts '>时代错误遗物</RUBY>.呢！</TYPE>");
 /*エマ*/CreateBalloon("ME_05", 102, 60,245, 300, 130, "DropDumpling" , 105,"<TYPE style=Normal>有没有<BR>更普通一点的礼物···</TYPE>");
 /*品藤*/CreateBalloon("ME_01", 102, 290,210, 285, 130, "Pool" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=24>诶诶！</TYPE>");
 /*品藤*/CreateBalloon("ME_012", 102, 251,390, 282, 117, "Rock" , 330,"<TYPE style=Fade interval=85><FONT size=14>..因为.......因为<BR>.......我···</TYPE>");
