@@ -25,7 +25,7 @@ page Main
 
 //->1
 /*透花*/CreateBalloon("ME_01", 102, 580,30, 175, 100, "Ellipse" , invalid,"<TYPE style=Normal>好的</TYPE>");
-/*透花*/CreateBalloon("ME_02", 102, 300,270, 280,135, "Ellipse" , 47,"<TYPE style=Normal>非常<BR>感谢</TYPE>");
+/*透花*/CreateBalloon("ME_02", 102, 300,270, 280,135, "Ellipse" , 47,"<TYPE style=Normal>非常感谢</TYPE>");
 	Request("ME_*","Erase");
 	CreateFrameEx("IM_TOU",50,500,150,"Image/ku-1-1-1.bmp", "Fade",#663300,8);
 	Opaque("IM_*",0,0,true);
@@ -49,7 +49,7 @@ page Main
 //->2
 	Draw();
 /*さゆ*/CreateBalloon("ME_01", 102, 95,100, 265, 200, "Cloud"  , invalid,"<TYPE style=Normal><FONT face='G' size=22>是谁呀——？</TYPE>");
-/*透花*/CreateBalloon("ME_02", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>嗯　..是邮递员<BR>,送来了一封像是圣诞贺卡的信</TYPE>");
+/*透花*/CreateBalloon("ME_02", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>嗯　..是邮递员<BR>,送来了一封<BR>像是圣诞贺卡的信</TYPE>");
 //1204小林；セリフ統合
 ///*透花*/CreateBalloon("ME_03", 102, 350,290, 325, 155, "Dumpling" , 70,"<TYPE style=Normal>クリスマスカードみたい</TYPE>");
 /*透花*/CreateBalloon("ME_04", 102, 275,395, 310, 140, "Dumpling" , invalid,"<TYPE style=Normal>是谁寄的呢···,<BR>嗯——...　首先是···</TYPE>");
@@ -238,7 +238,7 @@ page Main
 //->4
 	Draw();
 /*透花*/CreateBalloon("ME_01", 102, 175,45, 320, 145, "Lump" , 300,"<TYPE style=Normal><FONT size=14>斯帕德先生···<BR>,还是搞错了什么···</TYPE>");
-/*エマ*/CreateBalloon("ME_02", 102, 410,360, 255, 150, "Ellipse" ,75,"<TYPE style=Normal>嗯...　毕竟是个<BR>不吸取教训的人啊···</TYPE>");
+/*エマ*/CreateBalloon("ME_02", 102, 410,360, 255, 150, "Ellipse" ,75,"<TYPE style=Normal>嗯...　毕竟是个<BR>不吸取教训的人啊<BR>···</TYPE>");
 
 //1204小林；セリフ変更·削除
 ///*エマ*/CreateBalloon("ME_03", 102, 490,405, 300, 150, "Ellipse" , invalid,"<TYPE style=Normal>反省とか後悔とか...<BR>そういう言葉とは<BR>無縁ぽかったし···</TYPE>");
@@ -273,7 +273,7 @@ page Main
 //<-4
 
 //->5
-/*エマ*/CreateBalloon("ME_01", 102, 525,42, 180, 145, "Dumpling" , 255,"<TYPE style=Normal>下一张是谁写的？</TYPE>");
+/*エマ*/CreateBalloon("ME_01", 102, 525,42, 180, 145, "Dumpling" , 255,"<TYPE style=Normal>下一张<BR>是谁写的？</TYPE>");
 /*透花*/CreateBalloon("ME_02", 102, 410,400, 250, 115, "Dumpling"   , 112,"<TYPE style=Normal>嗯　,稍微<BR>等一下哦···</TYPE>");
 	Request("ME_*","Erase");
 	Request("ME_01","TapEnter");	call MsgWait;
@@ -339,7 +339,7 @@ page Main
 	Draw();
 	CreateBalloonEx("ME_04", 102, 30,70, 450, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>能像这样被大家仰慕，,.无疑是对我<BR>是神，.是救世主..以及拥有“起源”的有力证明，</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_05", 102, 200,220, 320, 130, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE style=Fade interval=55>虽然心中满是欣喜，,但责任感<BR>也随之而来。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_06", 102, 80,420, 230, 115, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE  style=Fade interval=65>这确实是一件复杂的事啊。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_06", 102, 80,420, 230, 115, "Rectangle" , invalid,"<FONT color=white shadow=black><TYPE  style=Fade interval=65>这确实是一件<BR>复杂的事啊。</TYPE>", "Fade",#000000c0,white);
 	Request("ME_*","Erase");
 	Draw();
 

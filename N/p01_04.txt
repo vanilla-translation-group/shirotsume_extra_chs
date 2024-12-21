@@ -363,7 +363,7 @@ page Main
 //->9
 	Draw();
 /*上代*/CreateBalloon("ME_01", 102, 148,50, 325, 160, "Dumpling" , invalid,"<TYPE style=Normal interval=45>啊,　说起来我<BR>是在工作途中<BR>偷偷溜出来的</TYPE>");
-/*上代*/CreateBalloon("ME_02", 102, 290,130, 330, 157, "Dumpling" , invalid,"<TYPE style=Normal interval=35>好了...<BR>我要回去造厉害的杀伤性武器了<BR>大家也要加油！</TYPE>");
+/*上代*/CreateBalloon("ME_02", 102, 290,130, 330, 157, "Dumpling" , invalid,"<TYPE style=Normal interval=35>好了...　我要回去造<BR>厉害的杀伤性武器了<BR>大家也要加油！</TYPE>");
 /*上代*/CreateBalloon("ME_03", 102, 295,390, 344, 140, "Potato" , invalid,"<TYPE style=Normal>那么<BR>小透花　,<BR>爱你哦～</TYPE>");
 /*上代*/CreateBalloon("ME_04", 102, 505,475, 155, 90, "Dumpling" , invalid,"<TYPE style=Normal>再见啦——</TYPE>");
 	Request("ME_*","Erase");

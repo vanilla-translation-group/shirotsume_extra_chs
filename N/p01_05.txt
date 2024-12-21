@@ -222,7 +222,7 @@ page Main
 /*エマ*/CreateBalloon("ME_05", 102, 60,245, 300, 130, "DropDumpling" , 105,"<TYPE style=Normal>有没有<BR>更普通一点的礼物···</TYPE>");
 /*品藤*/CreateBalloon("ME_01", 102, 290,210, 285, 130, "Pool" , invalid,"<TYPE style=Normal interval=0><FONT face='G' size=24>诶诶！</TYPE>");
 /*品藤*/CreateBalloon("ME_012", 102, 251,390, 282, 117, "Rock" , 330,"<TYPE style=Fade interval=85><FONT size=14>..因为.......因为<BR>.......我···</TYPE>");
-/*品藤*/CreateBalloon("ME_013", 102, 120,455, 370, 130, "Rock" , invalid,"<TYPE style=Normal interval=75><FONT size=14>普通的女孩子想要什么<BR>...　我不知道啊···</TYPE>");
+/*品藤*/CreateBalloon("ME_013", 102, 120,455, 370, 130, "Rock" , invalid,"<TYPE style=Normal interval=75><FONT size=14>普通的女孩子想要什么<BR>...我不知道啊···</TYPE>");
 
 //逃げる。ガチャン。ドアが閉まる。
 	Request("ME_*","Erase");

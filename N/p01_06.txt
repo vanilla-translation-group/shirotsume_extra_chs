@@ -25,7 +25,7 @@ page Main
 //ピンポーン。
 	Draw();
 /*透花*/CreateBalloon("ME_01", 102, 340,2, 240, 120, "Ellipse" , 320,"<TYPE style=Normal>您是哪位？</TYPE>");
-/*エマ*/CreateBalloon("ME_02", 102, 225,182, 275, 133, "Dumpling" , -20,"<TYPE style=Normal>真是——　,这次又是谁——？</TYPE>");
+/*エマ*/CreateBalloon("ME_02", 102, 225,182, 275, 133, "Dumpling" , -20,"<TYPE style=Normal>真是的——<BR>,这次又是谁——？</TYPE>");
 /*さゆ*/CreateBalloon("ME_03", 102, 245,360, 180, 120, "Cloud" , 304,"<TYPE style=Normal><FONT face='G' size=20>谁——？</TYPE>");
 	Request("ME_*","Erase");
 	CreateNode("NO_T",50,680,18);
