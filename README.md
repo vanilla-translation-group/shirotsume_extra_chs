@@ -1,6 +1,8 @@
 # 白诘草话-番外篇- 津名川家的圣诞节 汉化补丁
 
-在 Releases 中下载补丁，把其中内容复制到游戏文件夹下，打开 sirotume\_ex\_chs.exe 启动游戏。
+在 Releases 中下载补丁压缩包，把其中内容解压到游戏文件夹下，运行 sirotume\_ex\_chs.exe 启动游戏。
+
+本次实验性地采用了 GPG 签名来保证补丁的安全性和完整性。可以在 Releases 页面中获得签名文件，并从 keyserver 导入我们的公钥对压缩包进行验证。
 
 ## Staff
 
@@ -15,6 +17,8 @@
 测试：Misaka13514、MujiTogawa
 
 特别感谢：arc\_conv 开发者 w8m
+
+签名人员：scientificworld、baiyuanneko、Misaka13514
 
 ## Thoughts
 
@@ -70,4 +74,4 @@
 
 ## Copyright
 
-修改后的文本和 x64dbg 补丁以 Unlicense 许可证授权，属于公有领域；其余所有部分版权归 Littlewitch 所有。
+修改后的文本、资源脚本和 x64dbg 补丁以 Unlicense 许可证授权，属于公有领域；其余所有部分版权归 Littlewitch 所有。
