@@ -28,6 +28,14 @@
 
 ### Misaka13514
 
+~~你们啊... 真心觉得以这样的短篇 ADV 就能享受圣诞节了吗？年少的EXTRA们啊~~
+
+在百忙的考试周破防时间中我度过了一年一度的圣诞节，所以请大家连同我的份一起在圣诞节享受生活吧，圣诞快乐。
+
+本次短篇我并没有做出很多修改 ([#1](https://github.com/vanilla-translation-group/shirotsume_extra_chs/pull/1))，主要的工作是辅助 @scientificworld 和 @MujiTogawa 建立讨论空间和结果的代码记录 ([#2](https://github.com/vanilla-translation-group/shirotsume_extra_chs/pull/2))。@scientificworld 完成了绝大部分的工作， @MujiTogawa 的许多润色为译文增加了地道程度，本次汉化离不开你们的贡献。
+
+本作代码注释中有部分日文台词，我们没有翻译（不影响游戏效果），如果在游玩作品之余有兴趣的话也可以来看看。还可以考虑加入我们的汉化工作，找 @scientificworld ~~签订契约~~（x
+
 ### Muji Togawa
 
 在百忙的备考（摸鱼）时间中，被 @scientificworld 摇来，第一次参与作品汉化。<br>
