@@ -171,10 +171,10 @@ page Main
 //1204小林；台詞削除
 //	CreateBalloon("ME_02", 102, 190,120, 300, 150, "StepRect",invalid,"雄大な北の自然が、..<BR>僕の病んだ心をゆっくりと<BR>癒してくれるみたいだ。</TYPE>");
 
-	CreateBalloonEx("ME_03", 102, 430,140, 260, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>说到底，我是个软弱的人。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_03", 102, 430,140, 260, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>说到底，<BR>我是个软弱的人。</TYPE>", "Fade",#000000c0,white);
 	CreateBalloonEx("ME_04", 102, 5,260, 380, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black>现在回想起来，..那件事的罪魁祸首<BR>或许正是我的软弱。</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_05", 102, 85,420, 320, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>像我这样的人，,事到如今<BR>还说这种话，会不会显得太卑鄙了？</TYPE>", "Fade",#000000c0,white);
-	CreateBalloonEx("ME_06", 102,460,455, 300, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=50>还有啊，牛粪的味道实在难以忍受，<BR>每不出三天我便会被臭得熏倒。,..<BR><TYPE interval=75>我还真是个软弱的人呐。</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_05", 102, 85,420, 320, 130, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=75>像我这样的人，,<BR>事到如今还说这种话，<BR>会不会显得太卑鄙了？</TYPE>", "Fade",#000000c0,white);
+	CreateBalloonEx("ME_06", 102,460,455, 300, 150, "Rectangle" ,invalid,"<FONT color=white shadow=black><TYPE interval=50>此外我实在难以忍受牛粪味，<BR>每不出三天便会被臭得熏倒。,..<BR><TYPE interval=75>我还真是个软弱的人呐。</TYPE>", "Fade",#000000c0,white);
 
 //1204小林；台詞削除
 //	CreateBalloon("ME_07", 102, 470,320, 320, 150, "StepRect",invalid,"でもヒドイ話じゃないか。,<BR>奴らの糞ときたら、,あの牧場長の<BR>足並に臭いんだ、,シット！</TYPE>");
